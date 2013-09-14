@@ -12,8 +12,9 @@ c.perform({
   },
   run: function(callback) {
     // find the form fields and press submit
-    pos = jQuery('#login-button').offset()
-    window.chimera.sendEvent("click", pos.left + 10, pos.top + 10)
+    pos = jQuery('#login-button').offset();
+    window.chimera.sendEvent("click", pos.left + 10, pos.top + 10);
+    callback(null);
   },
   callback: function(err, result) {
     // capture a screen shot
@@ -31,6 +32,7 @@ c.perform({
       url: "http://www.mywebsite.com",
       run: function(callback) {
         // You're logged in here!
+        callback(null);
       },
       callback: function(err, result) {
         // capture a screen shot that shows we're logged in
