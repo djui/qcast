@@ -1,0 +1,6 @@
+{
+  "ignoreSslErrors": true,
+  "loadImages": false,
+  "localToRemoteUrlAccess": true,
+  "webSecurity": false
+}
