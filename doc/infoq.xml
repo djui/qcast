@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:taxo="http://purl.org/rss/1.0/modules/taxonomy/" version="2.0">
+  <channel>
+    <title>InfoQ Personalized Feed for Uwe Dauernheim</title>
+    <link>http://www.infoq.com</link>
+    <description>This RSS feed is a personalized feed, unique to your account on InfoQ.com. You can select the major InfoQ topics you are interested in via a drop-down menu. This appears (if you are logged in) when you click your name in the top right corner of the web page. The menu affects what you will see on the homepage and in this RSS feed. You can do finer-grained personalization of specific topics on your preferences page or by clicking on any topic and clicking exclude. If your personalization settings are not reflected in this RSS feed, then you may not be using a feed URL associated with your InfoQ account. For best accuracy, login on InfoQ and then grab a new RSS feed URL from the Personal Feed link on the left side menu. Enjoy!</description>
+    <item>
+      <title>Ruby On Rails State of Practice Results</title>
+      <link>http://www.infoq.com/news/2013/09/rails-results</link>
+      <description>Over the past months, InfoQ published three research items on the current state of Ruby on Rails practice. Now the results are in and we're taking a look at what tools Rails developers currently use. &lt;i&gt;By Mirko Stocker&lt;/i&gt;</description>
+      <category>Ruby</category>
+      <category>Testing</category>
+      <category>Ruby on Rails</category>
+      <category>Dynamic Languages</category>
+      <category>Deployment</category>
+      <category>Cloud Computing</category>
+      <category>Web Servers</category>
+      <category>Development</category>
+      <category>content.news.category</category>
+      <pubDate>Tue, 17 Sep 2013 17:28:00 GMT</pubDate>
+      <guid>http://www.infoq.com/news/2013/09/rails-results</guid>
+      <dc:creator>Mirko Stocker</dc:creator>
+      <dc:date>2013-09-17T17:28:00Z</dc:date>
+      <dc:identifier>/news/2013/09/rails-results</dc:identifier>
+    </item>
+    <item>
+      <title>Postgres Gets Even More Reliability, High Availability, Several Developer-Friendly Features</title>
+      <link>http://www.infoq.com/news/2013/09/postgres-9-3</link>
+      <description>PostgreSQL 9.3 comes with Fast Fail-over and streaming-only Remastering as well as many developer-focussed features such as materialized views, auto-updateable views, many features for JSON data-type and more.  &lt;i&gt;By Roopesh Shenoy&lt;/i&gt;</description>
+      <category>Development</category>
+      <category>Postgres</category>
+      <category>content.news.category</category>
+      <pubDate>Tue, 17 Sep 2013 14:51:00 GMT</pubDate>
+      <guid>http://www.infoq.com/news/2013/09/postgres-9-3</guid>
+      <dc:creator>Roopesh Shenoy</dc:creator>
+      <dc:date>2013-09-17T14:51:00Z</dc:date>
+      <dc:identifier>/news/2013/09/postgres-9-3</dc:identifier>
+    </item>
+    <item>
+      <title>GitHub Enterprise Adds New User Interface, Two Factor Authentication and Identicons</title>
+      <link>http://www.infoq.com/news/2013/09/github-enterprise-new-features</link>
+      <description>GutHub has updated its enterprise release with a new user interface, support for LDAP and two-factor authentication and identicons in addition to several feature improvements. &lt;i&gt;By Anand Narayanaswamy&lt;/i&gt;</description>
+      <category>github</category>
+      <category>Authentication</category>
+      <category>Development</category>
+      <category>content.news.category</category>
+      <pubDate>Tue, 17 Sep 2013 11:41:00 GMT</pubDate>
+      <guid>http://www.infoq.com/news/2013/09/github-enterprise-new-features</guid>
+      <dc:creator>Anand Narayanaswamy</dc:creator>
+      <dc:date>2013-09-17T11:41:00Z</dc:date>
+      <dc:identifier>/news/2013/09/github-enterprise-new-features</dc:identifier>
+    </item>
+    <item>
+      <title>Article: Tips for Tuning the Garbage First Garbage Collector</title>
+      <link>http://www.infoq.com/articles/tuning-tips-G1-GC</link>
+      <description>In July Monica Beckwith explored the theory of the new G1 GC Garbage First Garbage Collector.&#xD;
+In this second installment, Monica delves into more practical aspects and provides guidance for tuning. &lt;i&gt;By Monica Beckwith&lt;/i&gt;</description>
+      <category>GarbageCollection</category>
+      <category>Performance Tuning</category>
+      <category>Development</category>
+      <category>Enterprise Architecture</category>
+      <category>Performance</category>
+      <category>content.articles.category</category>
+      <pubDate>Tue, 17 Sep 2013 11:00:00 GMT</pubDate>
+      <guid>http://www.infoq.com/articles/tuning-tips-G1-GC</guid>
+      <dc:creator>Monica Beckwith</dc:creator>
+      <dc:date>2013-09-17T11:00:00Z</dc:date>
+      <dc:identifier>/articles/tuning-tips-G1-GC</dc:identifier>
+    </item>
+    <item>
+      <title>Presentation: The Future of the JVM</title>
+      <link>http://www.infoq.com/presentations/jvm-future-parallelism-cores</link>
+      <description>The panelists discuss the future of the JVM in the context of parallelism and high concurrency of tomorrow’s thousands of cores. &lt;i&gt;By Jamie Allen, Cliff Click, Charlie Hunt, Doug Lea, Michael Pilquist&lt;/i&gt;</description>
+      <category>JVM</category>
+      <category>Concurrency</category>
+      <category>Parallel Programming</category>
+      <category>Multi-core</category>
+      <category>Architecture &amp; Design</category>
+      <category>Panel</category>
+      <category>ETE 2013</category>
+      <category>content.presentations.category</category>
+      <pubDate>Tue, 17 Sep 2013 01:35:00 GMT</pubDate>
+      <guid>http://www.infoq.com/presentations/jvm-future-parallelism-cores</guid>
+      <dc:creator>Jamie Allen, Cliff Click, Charlie Hunt, Doug Lea, Michael Pilquist</dc:creator>
+      <dc:date>2013-09-17T01:35:00Z</dc:date>
+      <dc:identifier>/presentations/jvm-future-parallelism-cores</dc:identifier>
+    </item>
+    <item>
+      <title>Presentation: Protocols, Functors and Type Classes</title>
+      <link>http://www.infoq.com/presentations/polymorphism-functional-oop</link>
+      <description>Creighton Kirkendall discusses how polymorphism is implemented in Clojure, Ocaml, Haskell and Scala. &lt;i&gt;By Creighton Kirkendall&lt;/i&gt;</description>
+      <category>Scala</category>
+      <category>Functional Programming</category>
+      <category>OOP</category>
+      <category>Haskell</category>
+      <category>Language Design</category>
+      <category>Clojure</category>
+      <category>Development</category>
+      <category>Lambda Jam 2013</category>
+      <category>content.presentations.category</category>
+      <pubDate>Tue, 17 Sep 2013 01:25:00 GMT</pubDate>
+      <guid>http://www.infoq.com/presentations/polymorphism-functional-oop</guid>
+      <dc:creator>Creighton Kirkendall</dc:creator>
+      <dc:date>2013-09-17T01:25:00Z</dc:date>
+      <dc:identifier>/presentations/polymorphism-functional-oop</dc:identifier>
+    </item>
+    <item>
+      <title>Experiences Versioning a RESTful Service</title>
+      <link>http://www.infoq.com/news/2013/09/versioning-restful-services</link>
+      <description>Use server driven content negotiation, but enhance the response with links to alternate versions and formats of the representation, thus letting the client choose which URIs to follow due to its needs Howard Dierking recently wrote when comparing his newly gained experiences working with designing the next major revision of the NuGet API, V3, with his thoughts almost a year ago.&#xD;
+ &lt;i&gt;By Jan Stenberg&lt;/i&gt;</description>
+      <category>SOA</category>
+      <category>REST</category>
+      <category>Web Services</category>
+      <category>Development</category>
+      <category>Architecture &amp; Design</category>
+      <category>content.news.category</category>
+      <pubDate>Mon, 16 Sep 2013 22:00:00 GMT</pubDate>
+      <guid>http://www.infoq.com/news/2013/09/versioning-restful-services</guid>
+      <dc:creator>Jan Stenberg</dc:creator>
+      <dc:date>2013-09-16T22:00:00Z</dc:date>
+      <dc:identifier>/news/2013/09/versioning-restful-services</dc:identifier>
+    </item>
+    <item>
+      <title>Testing Tools for .NET Developers</title>
+      <link>http://www.infoq.com/research/dotnet-testing-tools</link>
+      <description>It often happens that the tools we rely on the most are also the most immature. We tolerate them because they fulfill an essential role. Other tools are really well designed, but aren’t important enough to justify the cost in time and money. And a rare few hit both marks. InfoQ wants to know which tools .NET testing tools you like to use and which you need to use.  &lt;i&gt;By Jonathan Allen&lt;/i&gt;</description>
+      <category>Selenium</category>
+      <category>HTML</category>
+      <category>Jasmine</category>
+      <category>Development</category>
+      <category>Architecture &amp; Design</category>
+      <category>content.news.category</category>
+      <pubDate>Mon, 16 Sep 2013 10:50:00 GMT</pubDate>
+      <guid>http://www.infoq.com/research/dotnet-testing-tools</guid>
+      <dc:creator>Jonathan Allen</dc:creator>
+      <dc:date>2013-09-16T10:50:00Z</dc:date>
+      <dc:identifier>/research/dotnet-testing-tools</dc:identifier>
+    </item>
+    <item>
+      <title>Article: Implementing Software Lifecycle Integration (Part Two)</title>
+      <link>http://www.infoq.com/articles/Implementing-SLI</link>
+      <description>In this article we focus on the practical steps a software delivery professional should take in implementing an end-to-end software delivery process. The three basic steps are prioritizing needs, team building, and measuring results. &lt;i&gt;By Dave West&lt;/i&gt;</description>
+      <category>ALM</category>
+      <category>Process &amp; Practices</category>
+      <category>content.articles.category</category>
+      <pubDate>Mon, 16 Sep 2013 10:40:00 GMT</pubDate>
+      <guid>http://www.infoq.com/articles/Implementing-SLI</guid>
+      <dc:creator>Dave West</dc:creator>
+      <dc:date>2013-09-16T10:40:00Z</dc:date>
+      <dc:identifier>/articles/Implementing-SLI</dc:identifier>
+    </item>
+    <item>
+      <title>Interview: Saul Mora on Design Patterns for Mobile Development</title>
+      <link>http://www.infoq.com/interviews/mora-mobile-design-patterns</link>
+      <description>Saul Mora explains why Design Patterns are useful for mobile developers to understand (iOS) APIs, the power of Objective-C, mobile development trends, the difference between iOS and Android, and more. &lt;i&gt;By Saul Mora&lt;/i&gt;</description>
+      <category>Mobile</category>
+      <category>Apple</category>
+      <category>QCon</category>
+      <category>Design Pattern</category>
+      <category>Android</category>
+      <category>Cocoa</category>
+      <category>iOS</category>
+      <category>Objective-C</category>
+      <category>Development</category>
+      <category>QCon New York 2013</category>
+      <category>content.interviews.category</category>
+      <pubDate>Mon, 16 Sep 2013 09:59:00 GMT</pubDate>
+      <guid>http://www.infoq.com/interviews/mora-mobile-design-patterns</guid>
+      <dc:creator>Saul Mora</dc:creator>
+      <dc:date>2013-09-16T09:59:00Z</dc:date>
+      <dc:identifier>/interviews/mora-mobile-design-patterns</dc:identifier>
+    </item>
+    <item>
+      <title>FreeBSD 10 Alpha Built With clang</title>
+      <link>http://www.infoq.com/news/2013/09/freebsd10-clang</link>
+      <description>FreeBSD 10 has had its first alpha release, bringing with it a long planned for change to switch to the Clang compiler instead of GCC on platforms where it is available. It is also the first FreeBSD release to run on the Raspberry Pi. Read on to find out more about the decision to switch compilers, and what it means for users.&#xD;
+ &lt;i&gt;By Alex Blewitt&lt;/i&gt;</description>
+      <category>LLVM</category>
+      <category>Clang</category>
+      <category>Development</category>
+      <category>content.news.category</category>
+      <pubDate>Mon, 16 Sep 2013 09:00:00 GMT</pubDate>
+      <guid>http://www.infoq.com/news/2013/09/freebsd10-clang</guid>
+      <dc:creator>Alex Blewitt</dc:creator>
+      <dc:date>2013-09-16T09:00:00Z</dc:date>
+      <dc:identifier>/news/2013/09/freebsd10-clang</dc:identifier>
+    </item>
+    <item>
+      <title>Ruby 2.1 Garbage Collection to Address Criticism on Large Scale Deployments</title>
+      <link>http://www.infoq.com/news/2013/09/ruby-2-1-gc-revamp</link>
+      <description>Ruby’s creator announced the move to generational garbage collection in Ruby 2.1 in what is expected to be an important performance boost for the language. The announcement took place during Barcelona Ruby Conference where Ruby’s GC was singled out as a major pain point in large scale Ruby deployments. &lt;i&gt;By Manuel Pais&lt;/i&gt;</description>
+      <category>Ruby</category>
+      <category>JRuby</category>
+      <category>Ruby on Rails</category>
+      <category>Rubinius</category>
+      <category>GarbageCollection</category>
+      <category>github</category>
+      <category>Development</category>
+      <category>content.news.category</category>
+      <pubDate>Mon, 16 Sep 2013 01:22:00 GMT</pubDate>
+      <guid>http://www.infoq.com/news/2013/09/ruby-2-1-gc-revamp</guid>
+      <dc:creator>Manuel Pais</dc:creator>
+      <dc:date>2013-09-16T01:22:00Z</dc:date>
+      <dc:identifier>/news/2013/09/ruby-2-1-gc-revamp</dc:identifier>
+    </item>
+    <item>
+      <title>Presentation: Enabling Cloud Services with Programmability</title>
+      <link>http://www.infoq.com/presentations/rest-cloud-riverbed</link>
+      <description>Chris White shares Riverbed’s experience using REST across multiple products, being integrated with Python, JavaScript, OpenStack, Puppet, Django, jQuery, and other technologies. &lt;i&gt;By Chris White&lt;/i&gt;</description>
+      <category>Stories &amp; Case Studies</category>
+      <category>REST</category>
+      <category>Cloud Computing</category>
+      <category>Enterprise</category>
+      <category>Architecture &amp; Design</category>
+      <category>Operations &amp; Infrastructure</category>
+      <category>Enterprise Architecture</category>
+      <category>Cloud</category>
+      <category>Cloud East 2013</category>
+      <category>content.presentations.category</category>
+      <pubDate>Mon, 16 Sep 2013 01:20:00 GMT</pubDate>
+      <guid>http://www.infoq.com/presentations/rest-cloud-riverbed</guid>
+      <dc:creator>Chris White</dc:creator>
+      <dc:date>2013-09-16T01:20:00Z</dc:date>
+      <dc:identifier>/presentations/rest-cloud-riverbed</dc:identifier>
+    </item>
+    <item>
+      <title>Presentation: RText: A Cross-editor DSL Framework</title>
+      <link>http://www.infoq.com/presentations/RText-DSL</link>
+      <description>Martin Thiede introduces and demoes RText, an open source textual DSL framework that can be used with almost any text editor or IDE. &lt;i&gt;By Martin Thiede&lt;/i&gt;</description>
+      <category>Domain Specific Languages</category>
+      <category>Frameworks</category>
+      <category>DSLs</category>
+      <category>Development</category>
+      <category>Architecture &amp; Design</category>
+      <category>Text Editor</category>
+      <category>Code Generation Cambridge UK 2013</category>
+      <category>content.presentations.category</category>
+      <pubDate>Mon, 16 Sep 2013 01:00:00 GMT</pubDate>
+      <guid>http://www.infoq.com/presentations/RText-DSL</guid>
+      <dc:creator>Martin Thiede</dc:creator>
+      <dc:date>2013-09-16T01:00:00Z</dc:date>
+      <dc:identifier>/presentations/RText-DSL</dc:identifier>
+    </item>
+    <item>
+      <title>Presentation: Advanced Sensors in Mobile Devices</title>
+      <link>http://www.infoq.com/presentations/mobile-smartphone-sensors</link>
+      <description>Adam Blum covers the latest smartphone capabilities, how developers can use them to stay ahead of the pack, giving real world examples of hardware and applications that are at the forefront of this ever-changing frontier. &lt;i&gt;By Adam Blum&lt;/i&gt;</description>
+      <category>Mobile</category>
+      <category>Mobile Development</category>
+      <category>Development</category>
+      <category>QCon London 2013</category>
+      <category>content.presentations.category</category>
+      <pubDate>Sat, 14 Sep 2013 23:30:00 GMT</pubDate>
+      <guid>http://www.infoq.com/presentations/mobile-smartphone-sensors</guid>
+      <dc:creator>Adam Blum</dc:creator>
+      <dc:date>2013-09-14T23:30:00Z</dc:date>
+      <dc:identifier>/presentations/mobile-smartphone-sensors</dc:identifier>
+    </item>
+    <item>
+      <title>Presentation: Modern Legacy Systems</title>
+      <link>http://www.infoq.com/presentations/net-java-legacy-techniques</link>
+      <description>Robert Annett explores some of the issues of upgrading, maintaining or replacing legacy Java and .NET applications that haven't been touched in a decade, providing advice on solving common problems. &lt;i&gt;By Robert Annett&lt;/i&gt;</description>
+      <category>Java</category>
+      <category>.NET</category>
+      <category>Legacy Code</category>
+      <category>Architecture &amp; Design</category>
+      <category>QCon London 2013</category>
+      <category>content.presentations.category</category>
+      <pubDate>Sat, 14 Sep 2013 23:20:00 GMT</pubDate>
+      <guid>http://www.infoq.com/presentations/net-java-legacy-techniques</guid>
+      <dc:creator>Robert Annett</dc:creator>
+      <dc:date>2013-09-14T23:20:00Z</dc:date>
+      <dc:identifier>/presentations/net-java-legacy-techniques</dc:identifier>
+    </item>
+  </channel>
+</rss>
+
