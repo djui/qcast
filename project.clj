@@ -4,11 +4,14 @@
   :license {:name "Eclipse Public License"
             :url "http://www.eclipse.org/legal/epl-v10.html"}
   :min-lein-version "2.0.0"
-  :dependencies [[http-kit "2.1.10"]
-                 [clj-http "0.7.6"]
-                 [com.taoensso/timbre "2.3.0"]
+  :dependencies [[clj-http "0.7.7"]
+                 [clj-time "0.6.0"]
+                 [com.taoensso/timbre "2.6.2"]
                  [enlive "1.1.4"]
-                 [org.clojars.scsibug/feedparser-clj "0.4.0"]
-                 [org.clojure/clojure "1.5.1"]]
+                 [hiccup "1.0.4"]
+                 [korma "0.3.0-RC5"]
+                 [org.clojure/clojure "1.5.1"]
+                 [org.clojure/java.jdbc "0.3.0-alpha5"]
+                 [org.xerial/sqlite-jdbc "3.7.2"]]
   :main infoq-podcast.core
   :uberjar-name "infoq-podcast-standalone.jar")

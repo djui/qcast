@@ -15,6 +15,11 @@
        "Mobile/11A465 "
        "Safari/9537.53"))
 
+;;; Utilities
+
+(defn- parse-int [s]
+  (. Integer parseInt s))
+
 
 ;;; Internals
 
@@ -22,7 +27,18 @@
   (let [options {:headers {"User-Agent" ios-user-agent}, :as :stream}]
     (http/get url options)))
 
+(defn- HEAD [url]
+  (let [options {:headers {"User-Agent" ios-user-agent}, :as :stream}]
+    (http/head url options)))
+
+
 ;;; API
+
+(defn content-header [url]
+  (let [header (-> (HEAD url) :headers)
+        length (parse-int (get header "content-length"))
+        type (get header "content-type")]
+    [length type]))
 
 (defn dom [url]
   (-> (GET url) :body css/html-resource))

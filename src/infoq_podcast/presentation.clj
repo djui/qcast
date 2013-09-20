@@ -66,9 +66,11 @@
                dom))
 
 (defn- video [dom]
-  (html/select [:#video :> :source]
-               (html/attr :src)
-               dom))
+  (let [url (html/select [:#video :> :source]
+                         (html/attr :src)
+                         dom)
+        [length type] (html/content-header url)]
+    [url length type]))
 
 (defn- date [dom]
   (html/select [:.author_general]
@@ -98,10 +100,11 @@
 ;;; API
 
 (defn metadata [id]
-  (let [md-keys [:id :poster :keywords :summary :title :authors
-                 :date :length :video :slides :times]
-        md-vals (juxt (constantly id) poster keywords summary title authors
-                      date length video slides times)]
+  (let [md-keys [:id :link :poster :keywords :summary :title :authors :date
+                 :length :video :slides :times]
+        md-vals (juxt (constantly id) (constantly (str base-url id)) poster
+                      keywords summary title authors date length video slides
+                      times)]
     (debug "Fetching presentation" id)
     (->> (str base-url id)
          html/dom
