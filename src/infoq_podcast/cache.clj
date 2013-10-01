@@ -32,7 +32,8 @@
     (->> {:id id, :cdate date, :data data}
          pre-process
          (db/insert db-spec :presentation))
-    (catch java.sql.SQLException e)))
+    (catch java.sql.SQLException e
+      (info "Presentation already exists" id))))
 
 (defn lookup [id]
   (->> (db/select' db-spec :presentation

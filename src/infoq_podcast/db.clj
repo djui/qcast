@@ -24,12 +24,11 @@
 
 (defn create-table [db name & specs]
   (let [stmt (apply ddl/create-table (conj specs name))]
-    (prn stmt)
     (jdbc/db-do-commands db stmt)))
 
-(defn ensure-table [db tbl-name & specs]
-  (let [name' (str "IF NOT EXISTS " (name tbl-name))] ;; ugly hack
-    (apply create-table (conj specs name' db))))
+(defn ensure-table [db table & specs]
+  (let [table' (str "IF NOT EXISTS " (name table))] ;; ugly hack
+    (apply create-table (conj specs table' db))))
 
 
 ;; DML
@@ -37,12 +36,24 @@
 (defn insert
   "Thin wrapper around jdbc/insert!"
   [db table & opts]
-  (apply jdbc/insert! (cons opts table db)))
+  (apply jdbc/insert! (cons db (cons table opts))))
+
+(defn insert-or-ignore
+  "Thin wrapper around jdbc/insert! ignoring failure if unique key already
+  exists."
+  [db table & opts]
+  (throw Exception "Not yet implemented"))
+
+(defn insert-or-replace
+  "Thin wrapper around jdbc/insert! replacing the row(s) if unique key already
+  exists."
+    [db table & opts]
+    (throw Exception "Not yet implemented"))
 
 (defn query
   "Query a SELECT statement."
   [db sql-params & opts]
-  (apply jdbc/query (cons opts sql-params db)))
+  (apply jdbc/query (cons db (cons sql-params opts))))
 
 (defn select
   "Create SELECT statement."
@@ -62,7 +73,7 @@
 (def order-by dml/order-by)
 
 (defn limit [n]
-  (str "LIMIT ") n)
+  (str "LIMIT " n))
 
 ;; Transformer
 
