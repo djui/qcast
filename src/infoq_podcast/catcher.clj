@@ -1,4 +1,4 @@
-(ns infoq-podcast.presentation
+(ns infoq-podcast.catcher
   (:import [java.text.SimpleDateFormat])
   (:require [clojure.string     :as string]
             [infoq-podcast.html :as html]

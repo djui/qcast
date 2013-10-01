@@ -1,11 +1,11 @@
 (ns infoq-podcast.core
   (:gen-class)
-  (:require [clojure.string             :as string]
-            [infoq-podcast.cache        :as cache]
-            [infoq-podcast.presentation :as presentation]
-            [infoq-podcast.feed.rss     :as rss]
+  (:require [clojure.string         :as string]
+            [infoq-podcast.cache    :as cache]
+            [infoq-podcast.catcher  :as catcher]
+            [infoq-podcast.feed.rss :as rss]
             ;;[org.httpkit.client     :as http-kit]
-            [taoensso.timbre            :as timbre :refer [trace debug info]]))
+            [taoensso.timbre        :as timbre :refer [trace debug info]]))
 
 
 ;;; Main
@@ -35,7 +35,7 @@
                  (rss/language "en-US")
                  (rss/generator "InfoQ-Feed-Generator/1.0")]
         extensions [:atom :itunes :feedburner :simple-chapters :content :history]
-        items (->> (presentation/latest) (take 4) (map presentation/metadata) (map prepare))
+        items (->> (catcher/latest) (take 4) (map catcher/metadata) (map prepare))
         feed (rss/feed channel items extensions)]
     (prn (cache/latest))
     (clojure.pprint/pprint feed)))
