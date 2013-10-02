@@ -1,6 +1,6 @@
 (ns infoq-podcast.cache
   (:require [infoq-podcast.db :as db]
-            [taoensso.timbre  :as timbre :refer [trace debug info]]))
+            [taoensso.timbre  :as timbre :refer [trace debug info warn]]))
 
 
 ;;; Globals
@@ -27,13 +27,13 @@
                    [:cdate :DATETIME "NOT NULL"]
                    [:data :BLOB "NOT NULL"]))
   
-(defn put [id date data]
+(defn put [item]
   (try ;; Protect against existing entries
-    (->> {:id id, :cdate date, :data data}
+    (->> {:id (:id item), :cdate (:date item), :data item}
          pre-process
          (db/insert db-spec :presentation))
     (catch java.sql.SQLException e
-      (info "Presentation already exists" id))))
+      (warn "Presentation already exists" item))))
 
 (defn lookup [id]
   (->> (db/select' db-spec :presentation
