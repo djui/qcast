@@ -45,5 +45,6 @@
                    (db/order-by {:cdate :desc})
                    (db/limit 1))
        (map post-process)
-       first :cdate))
+       first
+       :id))
 
