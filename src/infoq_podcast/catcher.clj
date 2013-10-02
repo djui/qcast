@@ -114,7 +114,7 @@
 (defn latest
   ([] (latest 0))
   ([marker]
-     (let [dom (-> (str base-url "/presentations/" marker) html/dom)]
-       (debug "Fetching page" marker)
-       ;; FIXME: Sequence currently not lazy. But why?!
-       (lazy-cat (overview-ids dom) #_(lazy-seq (latest (+ marker 12)))))))
+     (debug "Fetching overview from index:" marker)
+     (let [dom (-> (str base-url "/presentations/" marker) html/dom)
+           items (overview-ids dom)]
+       (lazy-cat items (latest (+ marker (count items)))))))
