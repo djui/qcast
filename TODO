@@ -1,0 +1,6 @@
+* Investigate getting rid of hiccup
+* Investigage getting rid of enlive
+* Answer why http-kit instead of ring
+* Answer why clj-http and http-kit
+* Answer why timbre instead of core.logging
+* Bring in clojure.contrib.djui
