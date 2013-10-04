@@ -2,6 +2,7 @@
   (:import [java.text.SimpleDateFormat])
   (:require [clojure.string     :as string]
             [infoq-podcast.html :as html]
+            [infoq-podcast.util :as util]
             [taoensso.timbre    :as timbre :refer [trace debug info]]))
 
 
@@ -10,28 +11,10 @@
 (def base-url "http://www.infoq.com")
 
 
-;;; Utilities
+;;; Internals
 
 (defn- resource-url [path]
   (str base-url path))
-
-(defn- parse-int [s]
-  (. Integer parseInt s))
-
-(defn- parse-date [s]
-  (let [format (java.text.SimpleDateFormat. "MMM dd, yyyy")]
-    (.parse format s)))
-
-(defn- interval->sec [s]
-  (let [units (map parse-int (string/split s #":"))]
-    (+ (* (first units) 60)
-       (second units))))
-
-(defn first-true [coll]
-  (some identity coll))
-
-
-;;; Internals
 
 (defn- poster [dom]
   (-> (html/meta :property "og:image" dom)
@@ -62,7 +45,7 @@
 
 (defn- length [dom]
   (html/select [:.videolength2]
-               #(-> % html/inner-text interval->sec)
+               #(-> % html/inner-text util/interval->sec)
                dom))
 
 (defn- video [dom]
@@ -74,13 +57,13 @@
 
 (defn- date [dom]
   (html/select [:.author_general]
-               #(->> % (html/inner-text 2) (re-find #"(?s)on\s*(.*)") second parse-date)
+               #(->> % (html/inner-text 2) (re-find #"(?s)on\s*(.*)") second util/parse-date)
                dom))
 
 (defn- slides [dom]
   (let [mapper #(some->> % html/inner-text (re-find #".*var slides.*"))]
     (->> (html/select-all [:script] mapper dom)
-         first-true
+         util/first-true
          (re-seq #"'(.+?)'")
          (map second)
          (map resource-url))))
@@ -88,10 +71,10 @@
 (defn- times [dom]
   (let [mapper #(some->> % html/inner-text (re-find #".*var TIMES.*"))]
     (->> (html/select-all [:script] mapper dom)
-         first-true
+         util/first-true
          (re-seq #"(\d+?),")
          (map second)
-         (map parse-int))))
+         (map util/parse-int))))
 
 (defn- overview-ids [dom]
   (html/select-all [:.news_type_video :> :a] (html/attr :href) dom))

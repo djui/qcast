@@ -1,6 +1,7 @@
 (ns infoq-podcast.html
   (:require [clj-http.client        :as http]
             [clojure.string         :as string]
+            [infoq-podcast.util     :as util]
             [net.cgrand.enlive-html :as css]
             [taoensso.timbre        :as timbre :refer [trace debug info]])
   (:refer-clojure :exclude [meta]))
@@ -14,11 +15,6 @@
        "Version/7.0 "
        "Mobile/11A465 "
        "Safari/9537.53"))
-
-;;; Utilities
-
-(defn- parse-int [s]
-  (. Integer parseInt s))
 
 
 ;;; Internals
@@ -36,7 +32,7 @@
 
 (defn content-header [url]
   (let [header (-> (HEAD url) :headers)
-        length (parse-int (get header "content-length"))
+        length (util/parse-int (get header "content-length"))
         type (get header "content-type")]
     [length type]))
 

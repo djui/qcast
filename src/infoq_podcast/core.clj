@@ -4,30 +4,9 @@
             [infoq-podcast.cache    :as cache]
             [infoq-podcast.catcher  :as catcher]
             [infoq-podcast.feed.rss :as rss]
+            [infoq-podcast.util     :as util]
             ;;[org.httpkit.client     :as http-kit]
             [taoensso.timbre        :as timbre :refer [trace debug info]]))
-
-
-;;; Utilities
-
-(defn- interspaced
-  "Repeatedly execute task-fn following a t ms sleep. If arg is given, pass arg
-  to the initial execution and its result to subsequent executions."
-  ([t task-fn]
-     (future
-       (loop []
-         (task-fn)
-         (Thread/sleep t)
-         (recur))))
-  ([t task-fn arg]
-     (future
-       (loop [arg' arg]
-         (let [res (task-fn arg')]
-           (Thread/sleep t)
-           (recur res))))))
-
-(defn- secs [n]
-  (* n 1000))
 
 
 ;;; Internals
@@ -73,12 +52,12 @@
      (prn "Done.")))
 
 
+
 ;;; Main
 
 (defn -main []
-  (let [task #(cache-updates (cache/latest) 13)]
-    (info "Starting")
-    (info "Initializing cache")
-    (cache/init)
-    (info "Spawing update task")
-    (interspaced (secs 30) task)))
+  (info "Starting")
+  (info "Initializing cache") (cache/init)
+  (let [task #(cache-updates (cache/latest))]
+    (info "Spawing catcher task") (util/interspaced (util/secs 30) task))
+  (info "Done"))
