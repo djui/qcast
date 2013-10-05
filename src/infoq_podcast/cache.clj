@@ -11,40 +11,41 @@
 (defn- pre-process [row]
   (-> row
       (update-in [:data] db/from-edn)
-      (update-in [:cdate] db/from-inst)))
+      (update-in [:date] db/from-inst)))
 
 (defn- post-process [row]
   (-> row
-      (update-in [:data] db/to-edn)
-      (update-in [:cdate] db/to-inst)))
+      (update-in [:date] db/to-inst)
+      (update-in [:data] db/to-edn)))
 
 
 ;;; API
 
 (defn init []
-  (db/ensure-table db-spec :presentation
-                   [:id :TEXT "NOT NULL" "PRIMARY KEY"]
-                   [:cdate :DATETIME "NOT NULL"]
+  (db/ensure-table db-spec :presentations
+                   [:id :TEXT "PRIMARY KEY" "NOT NULL"]
+                   [:cdate :DATETIME "DEFAULT CURRENT_TIMESTAMP"]
+                   ;;[:cdate :DATETIME "DEFAULT (datetime ('now','localtime'))"]
+                   [:date :DATETIME "NOT NULL"]
                    [:data :BLOB "NOT NULL"]))
   
 (defn put [item]
   (try ;; Protect against existing entries
-    (->> {:id (:id item), :cdate (:date item), :data item}
+    (->> {:id (:id item), :date (:date item), :data item}
          pre-process
-         (db/insert db-spec :presentation))
+         (db/insert db-spec :presentations))
     (catch java.sql.SQLException e
       (warn "Presentation already exists" item))))
 
 (defn lookup [id]
-  (->> (db/select' db-spec :presentation
+  (->> (db/select' db-spec :presentations
                    (db/where {:id id}))
        (map post-process)))
 
-(defn latest []
-  (->> (db/select' db-spec * :presentation
-                   (db/order-by {:cdate :desc})
-                   (db/limit 1))
-       (map post-process)
-       first
-       :id))
-
+(defn latest
+  ([] (first (latest 1)))
+  ([n]
+     (->> (db/select' db-spec * :presentations
+                      (db/order-by {:date :desc})
+                      (db/limit n))
+          (map post-process))))

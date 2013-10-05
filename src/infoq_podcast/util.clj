@@ -20,8 +20,9 @@
            (Thread/sleep t)
            (recur res))))))
 
-(defn secs [n]
-  (* n 1000))
+(defn seconds
+  ([] (seconds 1))
+  ([n] (* n 1000)))
 
 (defn parse-int [s]
   (. Integer parseInt s))
