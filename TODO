@@ -1,6 +1,20 @@
-* Investigate getting rid of hiccup
-* Investigage getting rid of enlive
-* Answer why http-kit instead of ring
-* Answer why clj-http and http-kit
-* Answer why timbre instead of core.logging
-* Bring in clojure.contrib.djui
+[ ] Investigate getting rid of hiccup
+[ ] Investigage getting rid of enlive
+[ ] Answer why enlive and hiccup
+[ ] Answer why http-kit instead of ring
+[ ] Answer why clj-http and http-kit
+[ ] Answer why timbre instead of core.logging
+[ ] Bring in clojure.contrib.djui
+[ ] Write infoq server mock serving static content for testing
+[ ] Write better SQL abstraction reducing JDBC dml and sql dependencies
+[ ] Implement RSS extensions
+[ ] Check for RSS/Atom specs constraints
+[ ] Add config for: check interval, feed length, initial cache length, ...
+[ ] Separate creation_date, publish_date, record_date
+[ ] Add mp3 and pdf link
+[ ] Parse date from video link filename (but which year?)
+[ ] Make all dates UTC when saving
+[+] Fix enclosure bug
+[ ] Generate id for same sort order as website
+[ ] Set feed image
+[ ] Set episode image
