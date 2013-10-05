@@ -8,7 +8,6 @@
             [infoq-podcast.catcher  :as catcher]
             [infoq-podcast.feed.rss :as rss]
             [infoq-podcast.util     :as util]
-            ;;[org.httpkit.client     :as http-kit]
             [org.httpkit.server     :as http]
             [taoensso.timbre        :as timbre :refer [trace debug info]]))
 

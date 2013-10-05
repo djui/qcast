@@ -42,9 +42,6 @@
   (let [format (java.text.SimpleDateFormat. "EEE, dd MMM yyyy HH:mm:ss ZZZZ")]
     (.format format inst)))
 
-(defn- map->seq [coll]
-  (map identity coll))
-
 (defn- insert? [coll kv]
   (let [contains? #(->> % (map first) set %2)]
     (if (contains? coll (first kv))

@@ -24,6 +24,18 @@
   ([] (seconds 1))
   ([n] (* n 1000)))
 
+(defn minutes
+  ([] (minutes 1))
+  ([n] (* n (seconds 60))))
+
+(defn hours
+  ([] (hours 1))
+  ([n] (* n (minutes 60))))
+
+(defn days
+  ([] (days 1))
+  ([n] (* n (hours 24))))
+
 (defn parse-int [s]
   (. Integer parseInt s))
 

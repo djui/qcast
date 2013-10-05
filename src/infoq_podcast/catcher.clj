@@ -97,7 +97,7 @@
 (defn latest
   ([] (latest 0))
   ([marker]
-     (debug "Fetching overview from index:" marker)
+     (debug "Fetching overview from index" marker)
      (let [dom (-> (str base-url "/presentations/" marker) html/dom)
            items (overview-ids dom)]
        (lazy-cat items (latest (+ marker (count items)))))))
