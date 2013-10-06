@@ -7,5 +7,6 @@
 ;;; Main
 
 (defn -main []
+  (cache/init)
   (server/-main)
   (catcher/-main))
