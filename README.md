@@ -14,8 +14,8 @@ Or using Java:
 
 ## Usage
 
-[http://app.heroku.com/infoq-podcast](remote) or
-[http://localhost:8000/](local).
+[http://infoq-podcast.herokuapp.com/](remote) or
+[http://localhost:8090/](local).
 
 ## Design
 

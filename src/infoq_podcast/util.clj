@@ -1,8 +1,21 @@
 (ns infoq-podcast.util
+  (:import [java.text.SimpleDateFormat])
   (:require [clojure.string :as string]))
 
 
 ;;; API
+
+
+;; Core
+
+(defn parse-int [s]
+  (. Integer parseInt s))
+
+(defn first-true [coll]
+  (some identity coll))
+
+
+;; Time
 
 (defn interspaced
   "Repeatedly execute task-fn following a t ms sleep. If arg is given, pass arg
@@ -36,9 +49,6 @@
   ([] (days 1))
   ([n] (* n (hours 24))))
 
-(defn parse-int [s]
-  (. Integer parseInt s))
-
 (defn parse-date [s]
   (let [format (java.text.SimpleDateFormat. "MMM dd, yyyy")]
     (.parse format s)))
@@ -47,6 +57,3 @@
   (let [units (map parse-int (string/split s #":"))]
     (+ (* (first units) 60)
        (second units))))
-
-(defn first-true [coll]
-  (some identity coll))

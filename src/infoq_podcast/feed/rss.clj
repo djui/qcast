@@ -113,13 +113,18 @@
 
 (defn feed
   "Create a RSS 2.0 feed.
-  Specification: http://cyber.law.harvard.edu/rss/rss.html
+  Specification: [rss spec](http://cyber.law.harvard.edu/rss/rss.html)
   Extensions can be:
     * [itunes](http://www.itunes.com/dtds/podcast-1.0.dtd)
+      [itunes spec](http://www.apple.com/itunes/podcasts/specs.html)
     * [feedburner](http://rssnamespace.org/feedburner/ext/1.0)
+      [feedburner spec]()
     * [simple-chapters](http://podlove.org/simple-chapters)
+      [simple-chapters spec](http://podlove.org/simple-chapters)
     * [content](http://purl.org/rss/1.0/modules/content)
-    * [history](http://purl.org/syndication/history/1.0)"
+      [content spec]()
+    * [history](http://purl.org/syndication/history/1.0)
+      [history spec]()"
   [info entries & [extensions]]
   (let [attrs (merge {:version "2.0"} (namespaces extensions))]
     (xml [:rss attrs (channel info entries)])))

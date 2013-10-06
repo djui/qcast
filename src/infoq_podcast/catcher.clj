@@ -1,5 +1,4 @@
 (ns infoq-podcast.catcher
-  (:import [java.text.SimpleDateFormat])
   (:require [clojure.string     :as string]
             [infoq-podcast.html :as html]
             [infoq-podcast.util :as util]
@@ -8,13 +7,17 @@
 
 ;;; Globals
 
-(def base-url "http://www.infoq.com")
-
 
 ;;; Internals
 
+(defn- base-url [& s]
+  (apply str "http://www.infoq.com" s))
+
+
+;; Scraping Internals
+
 (defn- resource-url [path]
-  (str base-url path))
+  (base-url path))
 
 (defn- poster [dom]
   (-> (html/meta :property "og:image" dom)
@@ -80,16 +83,16 @@
   (html/select-all [:.news_type_video :> :a] (html/attr :href) dom))
 
 
-;;; API
+;; Scraping API
 
 (defn metadata [id]
   (let [md-keys [:id :link :poster :keywords :summary :title :authors :date
                  :length :video :slides :times]
-        md-vals (juxt (constantly id) (constantly (str base-url id)) poster
+        md-vals (juxt (constantly id) (constantly (base-url id)) poster
                       keywords summary title authors date length video slides
                       times)]
     (debug "Fetching presentation" id)
-    (->> (str base-url id)
+    (->> (base-url id)
          html/dom
          md-vals
          (zipmap md-keys))))
@@ -98,6 +101,7 @@
   ([] (latest 0))
   ([marker]
      (debug "Fetching overview from index" marker)
-     (let [dom (-> (str base-url "/presentations/" marker) html/dom)
+     (let [dom (-> (base-url "/presentations/" marker) html/dom)
            items (overview-ids dom)]
        (lazy-cat items (latest (+ marker (count items)))))))
+
