@@ -7,9 +7,6 @@
             [taoensso.timbre     :as timbre :refer [trace debug info]]))
 
 
-;;; Globals
-
-
 ;;; Internals
 
 (defn- base-url [& s]
@@ -127,6 +124,12 @@
 
 ;;; Main
 
-(defn -main []
+(defn -main [& args]
   (info "Starting catcher")
-  (util/interspaced (util/minutes) cache-updates))
+  (case (first args)
+    "once" )
+  (if (= (first args) "once")
+    (do (info "Running once")
+        (cache-updates))
+    (do (info "Running periodically")
+        (util/interspaced (util/minutes) cache-updates))))

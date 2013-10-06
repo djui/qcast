@@ -73,6 +73,7 @@
   (route/files "/static/")
   (route/not-found "Not found"))
 
-(defn -main []
+(defn -main [& args]
   (info "Starting web server")
-  (http/run-server (handler/site app-routes) {}))
+  (let [port (if args (util/parse-int (first args)) 8080)]
+    (http/run-server (handler/site app-routes) {:port port})))
