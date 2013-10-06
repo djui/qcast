@@ -1,8 +1,10 @@
 (ns infoq-podcast.catcher
-  (:require [clojure.string     :as string]
-            [infoq-podcast.html :as html]
-            [infoq-podcast.util :as util]
-            [taoensso.timbre    :as timbre :refer [trace debug info]]))
+  (:gen-class)
+  (:require [clojure.string      :as string]
+            [infoq-podcast.cache :as cache]
+            [infoq-podcast.html  :as html]
+            [infoq-podcast.util  :as util]
+            [taoensso.timbre     :as timbre :refer [trace debug info]]))
 
 
 ;;; Globals
@@ -85,7 +87,7 @@
 
 ;; Scraping API
 
-(defn metadata [id]
+(defn- metadata [id]
   (let [md-keys [:id :link :poster :keywords :summary :title :authors :date
                  :length :video :slides :times]
         md-vals (juxt (constantly id) (constantly (base-url id)) poster
@@ -97,7 +99,7 @@
          md-vals
          (zipmap md-keys))))
 
-(defn latest
+(defn- latest
   ([] (latest 0))
   ([marker]
      (debug "Fetching overview from index" marker)
@@ -105,3 +107,26 @@
            items (overview-ids dom)]
        (lazy-cat items (latest (+ marker (count items)))))))
 
+
+(defn- cache-updates
+  "Scrape the overview sites and collect its oughly 12 items per site until
+  finding an seen item (since). Scrape a maximum of limit or 100 items. This
+  sequence requires additional two requests (page+video) per item, thus n%12 +
+  2*n."
+  ([] (cache-updates (cache/latest)))
+  ([since] (cache-updates since 100))
+  ([since limit]
+     (let [since-id (or (:id since) :inf)]
+       (info "Check for updates since" since-id)
+       (->> (latest)
+            (take-while #(not= % since-id))
+            (pmap metadata)
+            (map cache/put)
+            (dorun (dec limit))))))
+
+
+;;; Main
+
+(defn -main []
+  (info "Starting catcher")
+  (util/interspaced (util/minutes) cache-updates))

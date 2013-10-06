@@ -1,4 +1,5 @@
 (ns infoq-podcast.cache
+  (:gen-class)
   (:require [infoq-podcast.db :as db]
             [taoensso.timbre  :as timbre :refer [trace debug info warn]]))
 
@@ -22,6 +23,7 @@
 ;;; API
 
 (defn init []
+  (info "Initializing cache")
   (db/ensure-table db-spec :presentations
                    [:id :TEXT "PRIMARY KEY" "NOT NULL"]
                    [:cdate :DATETIME "DEFAULT CURRENT_TIMESTAMP"]
