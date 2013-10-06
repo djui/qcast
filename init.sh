@@ -1,3 +1,3 @@
 #!/bin/sh -e
 
-lein run -m infoq-podcast.cache/init
+lein run with-profile production -m infoq-podcast.cache/init
