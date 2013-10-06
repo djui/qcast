@@ -1,3 +1,3 @@
-web:     lein with-profile production run
-server:  lein with-profile production run -m infoq-podcast.server
-catcher: lein with-profile production run -m infoq-podcast.catcher
+web:     lein with-profile production trampoline run
+server:  lein with-profile production trampoline run -m infoq-podcast.server
+catcher: lein with-profile production trampoline run -m infoq-podcast.catcher
