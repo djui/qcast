@@ -26,10 +26,6 @@
   (let [stmt (apply ddl/create-table (conj specs name))]
     (jdbc/db-do-commands db stmt)))
 
-(defn ensure-table [db table & specs]
-  (let [table' (str "IF NOT EXISTS " (name table))] ;; ugly hack
-    (apply create-table (conj specs table' db))))
-
 
 ;; DML
 

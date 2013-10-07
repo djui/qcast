@@ -24,13 +24,13 @@
 
 (defn init []
   (info "Initializing cache")
-  (db/ensure-table db-spec :presentations
+  (db/create-table db-spec :presentations
                    [:id :TEXT "PRIMARY KEY" "NOT NULL"]
                    [:cdate :DATETIME "DEFAULT CURRENT_TIMESTAMP"]
                    ;;[:cdate :DATETIME "DEFAULT (datetime ('now','localtime'))"]
                    [:date :DATETIME "NOT NULL"]
                    [:data :BLOB "NOT NULL"]))
-  
+
 (defn put [item]
   (try ;; Protect against existing entries
     (->> {:id (:id item), :date (:date item), :data item}
