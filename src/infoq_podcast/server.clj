@@ -46,20 +46,6 @@
        "</head>"
        "<body>"
        "  <h1>InfoQ Presentation podcast</h1>"
-       "  <a href=\"podcast://donots.local:8090/feed\">Subscribe (Instacast)</a><br/>"
-       "  <a href=\"pcast://donots.local:8090/feed\">Subscribe (Podcast)</a><br/>"
-
-       "  <a href=\"pktc://donots.local:8090/feed\">Subscribe (Pocket Casts)</a><br/>"
-       "  <a href=\"pktc://open\">Subscribe (Pocket Casts open)</a><br/>"
-       "  <a href=\"pktc://open/http://donots.local:8090/feed\">Subscribe (Pocket Casts open)</a><br/>"
-       "  <a href=\"pktc://open?http://donots.local:8090/feed\">Subscribe (Pocket Casts open)</a><br/>"
-       "  <a href=\"pktc://open?url=http://donots.local:8090/feed\">Subscribe (Pocket Casts open)</a><br/>"
-       "  <a href=\"pktc://play\">Subscribe (Pocket Casts play)</a><br/>"
-       "  <a href=\"pktc://play/http://donots.local:8090/feed\">Subscribe (Pocket Casts play)</a><br/>"
-       "  <a href=\"pktc://play?http://donots.local:8090/feed\">Subscribe (Pocket Casts play)</a><br/>"
-       "  <a href=\"pktc://play?url=http://donots.local:8090/feed\">Subscribe (Pocket Casts play)</a><br/>"
-       
-       "  <a href=\"itpc://donots.local:8090/feed\">Subscribe (iTunes)</a><br/>"
        "  <a href=\"http://donots.local:8090/feed\">Subscribe</a><br/>"
        "</body>"
        "</html>"))
