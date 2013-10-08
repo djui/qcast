@@ -1,6 +1,7 @@
 (ns infoq-podcast.catcher
   (:gen-class)
-  (:require [clj-time.format     :as time]
+  (:require [clj-time.coerce     :as time-coerce]
+            [clj-time.format     :as time]
             [clojure.string      :as string]
             [infoq-podcast.cache :as cache]
             [infoq-podcast.html  :as html :refer :all]
@@ -45,10 +46,19 @@
         [length type] (content-header url)]
     [url length type]))
 
-(defn- date [dom]
-  (html/select [:.author_general]
-               #(->> % (html/inner-text 2) (re-find #"(?s)on\s*(.*)") second util/parse-date)
-               dom))
+(defn- record-date [dom]
+  (let [transformer #(some->> % (attr :src)
+                              (re-find #"/([0-9]{2}-[a-z]{3})-.*$") second
+                              (time/parse (time/formatter "yy-MMM"))
+                              time-coerce/to-date)]
+    (select [:#video :> :source] transformer dom)))
+
+(defn- publish-date [dom]
+  (let [transformer #(some->> % (inner-text 2)
+                              (re-find #"(?s)on\s*(.*)") second
+                              (time/parse (time/formatter "MMM dd, yyyy"))
+                              time-coerce/to-date)]
+    (select [:.author_general] transformer dom)))
 
 (defn- slides [dom]
   (let [transformer #(some->> % inner-text (re-find #".*var slides.*"))]
@@ -73,11 +83,11 @@
 ;; Scraping API
 
 (defn- metadata [id]
-  (let [md-keys [:id :link :poster :keywords :summary :title :authors :date
-                 :length :video :slides :times]
+  (let [md-keys [:id :link :poster :keywords :summary :title :authors
+                 :record-date :publish-date :length :video :slides :times]
         md-vals (juxt (constantly id) (constantly (base-url id)) poster
-                      keywords summary title authors date length video slides
-                      times)]
+                      keywords summary title authors record-date publish-date
+                      length video slides times)]
     (debug "Fetching presentation" id)
     (->> (base-url id)
          dom
@@ -114,8 +124,6 @@
 
 (defn -main [& args]
   (info "Starting catcher")
-  (case (first args)
-    "once" )
   (if (= (first args) "once")
     (do (info "Running once")
         (cache-updates))

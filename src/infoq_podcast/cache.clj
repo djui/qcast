@@ -12,11 +12,11 @@
 (defn- pre-process [row]
   (-> row
       (update-in [:data] db/from-edn)
-      (update-in [:date] db/from-inst)))
+      (update-in [:publish_date] db/from-inst)))
 
 (defn- post-process [row]
   (-> row
-      (update-in [:date] db/to-inst)
+      (update-in [:publish_date] db/to-inst)
       (update-in [:data] db/to-edn)))
 
 
@@ -26,14 +26,14 @@
   (info "Initializing cache")
   (db/create-table db-spec :presentations
                    [:id :TEXT "PRIMARY KEY" "NOT NULL"]
-                   [:cdate :DATETIME "DEFAULT CURRENT_TIMESTAMP"]
-                   ;;[:cdate :DATETIME "DEFAULT (datetime ('now','localtime'))"]
-                   [:date :DATETIME "NOT NULL"]
+                   [:creation_date :DATETIME "NOT NULL" "DEFAULT CURRENT_TIMESTAMP"]
+                 ;;[:creation_date :DATETIME "NOT NULL" "DEFAULT (datetime ('now','localtime'))"]
+                   [:publish_date :DATETIME "NOT NULL"]
                    [:data :BLOB "NOT NULL"]))
 
 (defn put [item]
   (try ;; Protect against existing entries
-    (->> {:id (:id item), :date (:date item), :data item}
+    (->> {:id (:id item), :publish_date (:publish-date item), :data item}
          pre-process
          (db/insert db-spec :presentations))
     (catch java.sql.SQLException e
@@ -45,6 +45,6 @@
 (defn latest
   ([] (first (latest 1)))
   ([n]
-                      (db/order-by {:date :desc})
     (map post-process (db/select' db-spec * :presentations
+                                  (db/order-by {:publish_date :desc})
                                   (db/limit n)))))
