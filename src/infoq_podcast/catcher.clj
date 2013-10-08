@@ -6,7 +6,7 @@
             [infoq-podcast.cache :as cache]
             [infoq-podcast.html  :as html :refer :all]
             [infoq-podcast.util  :as util :refer :all]
-            [taoensso.timbre     :as timbre :refer [trace debug info]]))
+            [taoensso.timbre     :as timbre :refer :all])
 
 
 ;;; Internals

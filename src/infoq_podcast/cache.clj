@@ -1,7 +1,7 @@
 (ns infoq-podcast.cache
   (:gen-class)
   (:require [infoq-podcast.db :as db]
-            [taoensso.timbre  :as timbre :refer [trace debug info warn]]))
+            [taoensso.timbre  :as timbre :refer :all]))
 
 
 ;;; Globals

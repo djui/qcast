@@ -2,8 +2,7 @@
   (:require [clj-http.client        :as http]
             [clojure.string         :as string]
             [infoq-podcast.util     :as util :refer [parse-int]]
-            [net.cgrand.enlive-html :as css]
-            [taoensso.timbre        :as timbre :refer [trace debug info]])
+            [net.cgrand.enlive-html :as css])
   (:refer-clojure :exclude [meta]))
 
 

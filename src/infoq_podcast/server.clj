@@ -7,7 +7,7 @@
             [infoq-podcast.feed.rss :as rss]
             [infoq-podcast.util     :as util :refer [parse-int]]
             [org.httpkit.server     :as http]
-            [taoensso.timbre        :as timbre :refer [trace debug info]]))
+            [taoensso.timbre        :as timbre :refer :all]))
 
 
 ;;; Internals
