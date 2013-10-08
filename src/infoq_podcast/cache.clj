@@ -27,7 +27,6 @@
   (db/create-table db-spec :presentations
                    [:id :TEXT "PRIMARY KEY" "NOT NULL"]
                    [:creation_date :DATETIME "NOT NULL" "DEFAULT CURRENT_TIMESTAMP"]
-                 ;;[:creation_date :DATETIME "NOT NULL" "DEFAULT (datetime ('now','localtime'))"]
                    [:publish_date :DATETIME "NOT NULL"]
                    [:data :BLOB "NOT NULL"]))
 
