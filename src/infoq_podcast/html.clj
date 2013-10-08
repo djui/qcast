@@ -33,24 +33,31 @@
   (let [header (:headers (HEAD url))
         length (parse-int (get header "content-length"))
         type (get header "content-type")]
-    [length type]))
+    [url length type]))
 
 (defn dom [url]
   (-> (GET url) :body css/html-resource))
 
-(defn select-all [selector transformer dom]
-  (map transformer (css/select dom selector)))
+(defn select-all
+  ([selector dom] (select-all selector identity dom))
+  ([selector transformer dom] (select-all selector transformer identity dom))
+  ([selector transformer filter dom]
+    (->> (css/select dom selector) (map transformer) filter)))
 
-(defn select [selector transformer dom]
-  (-> (css/select dom selector) first transformer))
+(defn select
+  ([selector dom] (select selector identity dom))
+  ([selector transformer dom]
+    (-> (css/select dom selector) first transformer)))
 
-(defn attr [name]
-  #(get-in % [:attrs name]))
+(defn attr [name dom]
+  (get-in dom [:attrs name]))
 
 (defn meta
   ([key dom] (meta :name key dom))
-  ([key value dom]
-     (select [:head [:meta (css/attr= key value)]] (attr :content) dom)))
+  ([key value dom] (meta key value identity dom))
+  ([key value transformer dom]
+    (let [transformer' #(->> % (attr :content) transformer)]
+      (select [:head [:meta (css/attr= key value)]] transformer' dom))))
 
 (defn inner-text
   ([node] (inner-text 0 node))

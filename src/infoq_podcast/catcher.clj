@@ -7,6 +7,7 @@
             [infoq-podcast.html  :as html :refer :all]
             [infoq-podcast.util  :as util :refer :all]
             [taoensso.timbre     :as timbre :refer :all])
+  (:refer-clojure :exclude [meta]))
 
 
 ;;; Internals
@@ -18,15 +19,14 @@
 ;; Scraping Internals
 
 (defn- poster [dom]
-  (base-url (meta :property "og:image" dom)))
-
-(defn- split-keywords [s]
-  (let [[lowercase-kw & uppercase-kw] (string/split s #",")
-        lowercase-kw (string/split lowercase-kw #" ")]
-    (concat lowercase-kw uppercase-kw)))
+  (meta :property "og:image" base-url dom))
 
 (defn- keywords [dom]
-  (split-keywords (meta "keywords" dom)))
+  (letfn [(split-keywords [s]
+            (let [[lowercase-kw & uppercase-kw] (string/split s #",")
+                  lowercase-kw (string/split lowercase-kw #" ")]
+              (concat lowercase-kw uppercase-kw)))]
+    (meta :name "keywords" split-keywords dom)))
 
 (defn- summary [dom]
   (meta "description" dom))
@@ -35,16 +35,16 @@
   (select [:head :title] inner-text dom))
 
 (defn- authors [dom]
-  (let [elem (select [:.author_general :> :a] inner-text dom)]
-    (string/split elem #"\s*(and|,)\s*")))
+  (let [transformer #(some-> % inner-text (string/split #"\s*(and|,)\s*"))]
+    (select [:.author_general :> :a] transformer dom)))
 
 (defn- length [dom]
-  (select [:.videolength2] #(-> % inner-text util/interval->sec) dom))
+  (let [transformer #(some-> % inner-text util/interval->sec)]
+    (select [:.videolength2] transformer dom)))
 
 (defn- video [dom]
-  (let [url (select [:#video :> :source] (attr :src) dom)
-        [length type] (content-header url)]
-    [url length type]))
+  (let [transformer #(some->> % (attr :src) content-header)]
+    (select [:#video :> :source] transformer dom)))
 
 (defn- record-date [dom]
   (let [transformer #(some->> % (attr :src)
@@ -61,23 +61,19 @@
     (select [:.author_general] transformer dom)))
 
 (defn- slides [dom]
-  (let [transformer #(some->> % inner-text (re-find #".*var slides.*"))]
-    (->> (select-all [:script] transformer dom)
-         (some identity)
-         (re-seq #"'(.+?)'")
-         (map second)
-         (map base-url))))
+  (let [transformer #(some->> % inner-text (re-find #"var slides.*"))
+        filter #(some->> % (some identity) (re-seq #"'(.+?)'")
+                         (map (comp base-url second)))]
+    (select-all [:script] transformer filter dom)))
 
 (defn- times [dom]
-  (let [transformer #(some->> % inner-text (re-find #".*var TIMES.*"))]
-    (->> (select-all [:script] transformer dom)
-         (some identity)
-         (re-seq #"(\d+?),")
-         (map second)
-         (map parse-int))))
+  (let [transformer #(some->> % inner-text (re-find #"TIMES.*"))
+        filter #(some->> % (some identity) (re-seq #"(\d+?),")
+                         (map (comp parse-int second)))]
+    (select-all [:script] transformer filter dom)))
 
 (defn- overview-ids [dom]
-  (select-all [:.news_type_video :> :a] (attr :href) dom))
+  (select-all [:.news_type_video :> :a] #(attr :href %) dom))
 
 
 ;; Scraping API
