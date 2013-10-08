@@ -1,9 +1,10 @@
 (ns infoq-podcast.catcher
   (:gen-class)
-  (:require [clojure.string      :as string]
+  (:require [clj-time.format     :as time]
+            [clojure.string      :as string]
             [infoq-podcast.cache :as cache]
-            [infoq-podcast.html  :as html]
-            [infoq-podcast.util  :as util]
+            [infoq-podcast.html  :as html :refer :all]
+            [infoq-podcast.util  :as util :refer :all]
             [taoensso.timbre     :as timbre :refer [trace debug info]]))
 
 
@@ -15,12 +16,8 @@
 
 ;; Scraping Internals
 
-(defn- resource-url [path]
-  (base-url path))
-
 (defn- poster [dom]
-  (-> (html/meta :property "og:image" dom)
-      resource-url))
+  (base-url (meta :property "og:image" dom)))
 
 (defn- split-keywords [s]
   (let [[lowercase-kw & uppercase-kw] (string/split s #",")
@@ -28,33 +25,24 @@
     (concat lowercase-kw uppercase-kw)))
 
 (defn- keywords [dom]
-  (-> (html/meta "keywords" dom)
-      split-keywords))
+  (split-keywords (meta "keywords" dom)))
 
 (defn- summary [dom]
-  (html/meta "description" dom))
+  (meta "description" dom))
 
 (defn- title [dom]
-  (html/select [:head :title]
-               html/inner-text
-               dom))
+  (select [:head :title] inner-text dom))
 
 (defn- authors [dom]
-  (-> (html/select [:.author_general :> :a]
-                   html/inner-text
-                   dom)
-      (string/split #"\s*(and|,)\s*")))
+  (let [elem (select [:.author_general :> :a] inner-text dom)]
+    (string/split elem #"\s*(and|,)\s*")))
 
 (defn- length [dom]
-  (html/select [:.videolength2]
-               #(-> % html/inner-text util/interval->sec)
-               dom))
+  (select [:.videolength2] #(-> % inner-text util/interval->sec) dom))
 
 (defn- video [dom]
-  (let [url (html/select [:#video :> :source]
-                         (html/attr :src)
-                         dom)
-        [length type] (html/content-header url)]
+  (let [url (select [:#video :> :source] (attr :src) dom)
+        [length type] (content-header url)]
     [url length type]))
 
 (defn- date [dom]
@@ -63,23 +51,23 @@
                dom))
 
 (defn- slides [dom]
-  (let [mapper #(some->> % html/inner-text (re-find #".*var slides.*"))]
-    (->> (html/select-all [:script] mapper dom)
-         util/first-true
+  (let [transformer #(some->> % inner-text (re-find #".*var slides.*"))]
+    (->> (select-all [:script] transformer dom)
+         (some identity)
          (re-seq #"'(.+?)'")
          (map second)
-         (map resource-url))))
+         (map base-url))))
 
 (defn- times [dom]
-  (let [mapper #(some->> % html/inner-text (re-find #".*var TIMES.*"))]
-    (->> (html/select-all [:script] mapper dom)
-         util/first-true
+  (let [transformer #(some->> % inner-text (re-find #".*var TIMES.*"))]
+    (->> (select-all [:script] transformer dom)
+         (some identity)
          (re-seq #"(\d+?),")
          (map second)
-         (map util/parse-int))))
+         (map parse-int))))
 
 (defn- overview-ids [dom]
-  (html/select-all [:.news_type_video :> :a] (html/attr :href) dom))
+  (select-all [:.news_type_video :> :a] (attr :href) dom))
 
 
 ;; Scraping API
@@ -92,7 +80,7 @@
                       times)]
     (debug "Fetching presentation" id)
     (->> (base-url id)
-         html/dom
+         dom
          md-vals
          (zipmap md-keys))))
 
@@ -100,7 +88,7 @@
   ([] (latest 0))
   ([marker]
      (debug "Fetching overview from index" marker)
-     (let [dom (-> (base-url "/presentations/" marker) html/dom)
+     (let [dom (dom (base-url "/presentations/" marker))
            items (overview-ids dom)]
        (lazy-cat items (latest (+ marker (count items)))))))
 
@@ -132,4 +120,4 @@
     (do (info "Running once")
         (cache-updates))
     (do (info "Running periodically")
-        (util/interspaced (util/minutes) cache-updates))))
+        (interspaced (minutes) cache-updates))))

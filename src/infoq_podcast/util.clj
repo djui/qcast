@@ -1,18 +1,13 @@
 (ns infoq-podcast.util
-  (:import [java.text.SimpleDateFormat])
   (:require [clojure.string :as string]))
 
 
 ;;; API
 
-
 ;; Core
 
 (defn parse-int [s]
-  (. Integer parseInt s))
-
-(defn first-true [coll]
-  (some identity coll))
+  (Integer/parseInt s))
 
 
 ;; Time
@@ -48,10 +43,6 @@
 (defn days
   ([] (days 1))
   ([n] (* n (hours 24))))
-
-(defn parse-date [s]
-  (let [format (java.text.SimpleDateFormat. "MMM dd, yyyy")]
-    (.parse format s)))
 
 (defn interval->sec [s]
   (let [units (map parse-int (string/split s #":"))]

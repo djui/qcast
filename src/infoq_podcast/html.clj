@@ -1,7 +1,7 @@
 (ns infoq-podcast.html
   (:require [clj-http.client        :as http]
             [clojure.string         :as string]
-            [infoq-podcast.util     :as util]
+            [infoq-podcast.util     :as util :refer [parse-int]]
             [net.cgrand.enlive-html :as css]
             [taoensso.timbre        :as timbre :refer [trace debug info]])
   (:refer-clojure :exclude [meta]))
@@ -9,7 +9,7 @@
 
 ;;; Globals
 
-(def ios-user-agent
+(def ^:private ios-user-agent
   (str "Mozilla/5.0 (iPhone; CPU iPhone OS 7_0 like Mac OS X) "
        "AppleWebKit/537.51.1 (KHTML, like Gecko) "
        "Version/7.0 "
@@ -31,19 +31,19 @@
 ;;; API
 
 (defn content-header [url]
-  (let [header (-> (HEAD url) :headers)
-        length (util/parse-int (get header "content-length"))
+  (let [header (:headers (HEAD url))
+        length (parse-int (get header "content-length"))
         type (get header "content-type")]
     [length type]))
 
 (defn dom [url]
   (-> (GET url) :body css/html-resource))
 
-(defn select-all [selector mapper dom]
-  (->> (css/select dom selector) (map mapper)))
+(defn select-all [selector transformer dom]
+  (map transformer (css/select dom selector)))
 
-(defn select [selector mapper dom]
-  (-> (css/select dom selector) first mapper))
+(defn select [selector transformer dom]
+  (-> (css/select dom selector) first transformer))
 
 (defn attr [name]
   #(get-in % [:attrs name]))

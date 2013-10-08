@@ -40,14 +40,11 @@
       (warn "Presentation already exists" item))))
 
 (defn lookup [id]
-  (->> (db/select' db-spec :presentations
-                   (db/where {:id id}))
-       (map post-process)))
+  (map post-process (db/select' db-spec :presentations (db/where {:id id}))))
 
 (defn latest
   ([] (first (latest 1)))
   ([n]
-     (->> (db/select' db-spec * :presentations
                       (db/order-by {:date :desc})
-                      (db/limit n))
-          (map post-process))))
+    (map post-process (db/select' db-spec * :presentations
+                                  (db/limit n)))))
