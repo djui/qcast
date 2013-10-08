@@ -52,6 +52,8 @@
 (defn attr [name dom]
   (get-in dom [:attrs name]))
 
+(def attr= css/attr=)
+
 (defn meta
   ([key dom] (meta :name key dom))
   ([key value dom] (meta key value identity dom))

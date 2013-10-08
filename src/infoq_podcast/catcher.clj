@@ -42,6 +42,14 @@
   (let [transformer #(some-> % inner-text util/interval->sec)]
     (select [:.videolength2] transformer dom)))
 
+(defn- pdf [dom]
+  (let [transformer #(some->> % (attr :value) (base-url "/"))]
+    (select [:#pdfForm :> [:input (attr= :name "filename")]] transformer dom)))
+
+(defn- audio [dom]
+  (let [transformer #(some->> % (attr :value) (base-url "/"))]
+    (select [:#mp3Form :> [:input (attr= :name "filename")]] transformer dom)))
+
 (defn- video [dom]
   (let [transformer #(some->> % (attr :src) content-header)]
     (select [:#video :> :source] transformer dom)))
@@ -80,10 +88,11 @@
 
 (defn- metadata [id]
   (let [md-keys [:id :link :poster :keywords :summary :title :authors
-                 :record-date :publish-date :length :video :slides :times]
+                 :record-date :publish-date :length :pdf :audio :video :slides
+                 :times]
         md-vals (juxt (constantly id) (constantly (base-url id)) poster
                       keywords summary title authors record-date publish-date
-                      length video slides times)]
+                      length pdf audio video slides times)]
     (debug "Fetching presentation" id)
     (->> (base-url id)
          dom
