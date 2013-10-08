@@ -14,19 +14,18 @@
 
 (defn interspaced
   "Repeatedly execute task-fn following a t ms sleep. If arg is given, pass arg
-  to the initial execution and its result to subsequent executions."
+  to the initial execution and its result to subsequent executions. This is
+  usually best wrapped in a Future."
   ([t task-fn]
-     (future
-       (loop []
-         (task-fn)
-         (Thread/sleep t)
-         (recur))))
+     (loop []
+       (task-fn)
+       (Thread/sleep t)
+       (recur)))
   ([t task-fn arg]
-     (future
-       (loop [arg' arg]
-         (let [res (task-fn arg')]
-           (Thread/sleep t)
-           (recur res))))))
+     (loop [_arg arg]
+       (let [res (task-fn _arg)]
+         (Thread/sleep t)
+         (recur res)))))
 
 (defn seconds
   ([] (seconds 1))
