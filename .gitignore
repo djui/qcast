@@ -1,10 +1,12 @@
 /target
 /classes
 /checkouts
+/.idea
 /.lein-*
 /.nrepl-port
 *.jar
 *.class
+infoq_podcast.iml
 pom.xml
 pom.xml.asc
 sqlite.db
