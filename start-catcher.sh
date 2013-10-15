@@ -1,3 +1,3 @@
 #!/bin/sh -e
 
-lein run with-profile production -m infoq-podcast.catcher
+lein with-profile production run -m infoq-podcast.catcher

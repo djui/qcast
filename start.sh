@@ -1,3 +1,3 @@
 #!/bin/sh -e
 
-lein run with-profile production
+lein with-profile production run
