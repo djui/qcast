@@ -105,7 +105,8 @@
      (debug "Fetching overview from index" marker)
      (let [dom (dom (base-url "/presentations/" marker))
            items (overview-ids dom)]
-       (lazy-cat items (latest (+ marker (count items)))))))
+       (when items ;; Stop either on error or when reached last overview page
+         (lazy-cat items (latest (+ marker (count items))))))))
 
 
 (defn- cache-updates
