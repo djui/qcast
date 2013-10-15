@@ -16,4 +16,5 @@
                  [org.clojure.contrib/djui "1.9"]
                  [org.clojure/clojure "1.5.1"]
                  [org.clojure/java.jdbc "0.3.0-alpha5"]
-                 [org.xerial/sqlite-jdbc "3.7.2"]])
+                 [org.xerial/sqlite-jdbc "3.7.2"]]
+  :profiles {:production {}})
