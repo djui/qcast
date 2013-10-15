@@ -33,7 +33,8 @@
                                        "development"))
                  (rss/image (base-url "/styles/i/logo-big.jpg") "InfoQ" (base-url))
                  (rss/language "en-US")
-                 (rss/generator "InfoQ-Feed-Generator/1.0")]
+                 (rss/generator "InfoQ-Feed-Generator/1.0")
+                 (rss/pub-date (:date (first items)))]
         extensions [:atom :itunes :feedburner :simple-chapters :content :history]
         feed (rss/feed channel items extensions)]
     feed))
