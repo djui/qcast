@@ -31,8 +31,7 @@
                  (rss/description (str "Facilitating the spread of knowledge "
                                        "and innovation in enterprise software "
                                        "development"))
-                 (rss/image (base-url "/styles/i/logo-big.jpg")
-                            "InfoQ Presentations" (base-url))
+                 (rss/image (base-url "/styles/i/logo-big.jpg") "InfoQ" (base-url))
                  (rss/language "en-US")
                  (rss/generator "InfoQ-Feed-Generator/1.0")]
         extensions [:atom :itunes :feedburner :simple-chapters :content :history]
