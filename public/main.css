@@ -24,6 +24,7 @@ body, html {
 }
 
 #wall {
+  background-image: url(img/wall.jpg);
   overflow: hidden;
   position: absolute;
   z-index: 1;
@@ -43,20 +44,20 @@ body, html {
 
 @keyframes scroll {
   from { background-position-x: 0; }
- to { background-position-x: 1365px; }
+  to { background-position-x: 1380px; }
 }
 
 @-webkit-keyframes scroll {
   from { background-position-x: 0; }
-  to { background-position-x: 1365px; }
+  to { background-position-x: 1380px; }
 }
 
 @-moz-keyframes scroll {
   from { background-position-x: 0; }
-  to { background-position-x: 1365px; }
+  to { background-position-x: 1380px; }
 }
 
 @-o-keyframes scroll {
   from { background-position-x: 0; }
- to { background-position-x: 1365px; }
+  to { background-position-x: 1380px; }
 }

@@ -39,24 +39,15 @@
         feed (rss/feed channel items extensions)]
     feed))
 
-(defn- index [req]
-  (str "<html>"
-       "<head>"
-       "  <title>InfoQ Presentations Podcast</title>"
-       "</head>"
-       "<body>"
-       "  <h1>InfoQ Presentation podcast</h1>"
-       "  <a href=\"http://donots.local:8090/feed\">Subscribe</a><br/>"
-       "</body>"
-       "</html>"))
+;;(defn- index [req] )
 
 
 ;;; Main
 
 (defroutes app-routes
-  (GET "/" [] index)
+  ;; (GET "/" [] index)
   (GET "/feed" [] serve-feed)
-  (route/files "/static/")
+  (route/files "/")
   (route/not-found "Not found"))
 
 (defn -main []
