@@ -1,12 +1,12 @@
-(ns infoq-podcast.catcher
+(ns qcast.catcher
   (:gen-class)
-  (:require [clj-time.coerce     :as time-coerce]
-            [clj-time.format     :as time]
-            [clojure.string      :as string]
-            [infoq-podcast.cache :as cache]
-            [infoq-podcast.html  :as html :refer :all]
-            [infoq-podcast.util  :as util :refer :all]
-            [taoensso.timbre     :as timbre :refer :all])
+  (:require [clj-time.coerce :as time-coerce]
+            [clj-time.format :as time]
+            [clojure.string  :as string]
+            [qcast.cache     :as cache]
+            [qcast.html      :as html :refer :all]
+            [qcast.util      :as util :refer :all]
+            [taoensso.timbre :as timbre :refer :all])
   (:refer-clojure :exclude [meta]))
 
 

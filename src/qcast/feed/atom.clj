@@ -1,4 +1,4 @@
-(ns infoq-podcast.feed.atom)
+(ns qcast.feed.atom)
 
 
 ;;; Globals

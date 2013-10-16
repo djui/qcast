@@ -1,7 +1,7 @@
-(ns infoq-podcast.cache
+(ns qcast.cache
   (:gen-class)
-  (:require [infoq-podcast.db :as db]
-            [taoensso.timbre  :as timbre :refer :all]))
+  (:require [qcast.db        :as db]
+            [taoensso.timbre :as timbre :refer :all]))
 
 
 ;;; Globals

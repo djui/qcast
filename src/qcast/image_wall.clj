@@ -1,4 +1,4 @@
-(ns infoq-podcast.image-wall
+(ns qcast.image-wall
   (:import java.awt.Color
            java.awt.image.BufferedImage
            javax.imageio.ImageIO)

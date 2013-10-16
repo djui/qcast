@@ -7,7 +7,7 @@
 /.nrepl-port
 *.jar
 *.class
-infoq_podcast.iml
+qcast.iml
 pom.xml
 pom.xml.asc
 sqlite.db

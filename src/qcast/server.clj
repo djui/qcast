@@ -1,13 +1,13 @@
-(ns infoq-podcast.server
+(ns qcast.server
   (:gen-class)
-  (:require [compojure.core         :as compojure :refer [defroutes GET]]
-            [compojure.handler      :as handler]
-            [compojure.route        :as route]
-            [infoq-podcast.cache    :as cache]
-            [infoq-podcast.feed.rss :as rss]
-            [infoq-podcast.util     :as util :refer [parse-int]]
-            [org.httpkit.server     :as http]
-            [taoensso.timbre        :as timbre :refer :all]))
+  (:require [compojure.core     :as compojure :refer [defroutes GET]]
+            [compojure.handler  :as handler]
+            [compojure.route    :as route]
+            [qcast.cache        :as cache]
+            [qcast.feed.rss     :as rss]
+            [qcast.util         :as util :refer [parse-int]]
+            [org.httpkit.server :as http]
+            [taoensso.timbre    :as timbre :refer :all]))
 
 
 ;;; Internals
@@ -27,7 +27,7 @@
   (let [base-url #(apply str "http://www.infoq.com" %&)
         entries (cache/latest 50)
         items (map (comp prepare-item :data) entries)
-        channel [(rss/title "InfoQ Presentations")
+        channel [(rss/title "QCast - InfoQ Presentation Podcast")
                  (rss/link (base-url))
                  (rss/description (str "Facilitating the spread of knowledge "
                                        "and innovation in enterprise software "

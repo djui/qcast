@@ -1,4 +1,4 @@
-# InfoQ podcast
+# QCast - InfoQ presentation podcast
 
 A podcast feed for InfoQ presentations.
 
@@ -10,15 +10,15 @@ Either using Leiningen:
 
 Or using Java:
 
-    $ java -jar infoq-podcast-0.1.0-standalone.jar
+    $ java -jar qcast-0.1.0-standalone.jar
 
 ## Usage
 
 The Overview page can be reached at:
-[http://infoq-podcast.herokuapp.com/](remote) or
+[http://qcast.herokuapp.com/](remote) or
 [http://localhost:8080/](local).
 
-The Feed can be reached at: [http://infoq-podcast.herokuapp.com/feed](remote)
+The Feed can be reached at: [http://qcast.herokuapp.com/feed](remote)
  or [http://localhost:8080/feed](local).
 
 ## Components

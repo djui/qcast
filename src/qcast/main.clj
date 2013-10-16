@@ -1,9 +1,9 @@
-(ns infoq-podcast.main
+(ns qcast.main
   (:gen-class)
   (:import [java.sql SQLException])
-  (:require [infoq-podcast.cache   :as cache]
-            [infoq-podcast.catcher :as catcher]
-            [infoq-podcast.server  :as server]))
+  (:require [qcast.cache   :as cache]
+            [qcast.catcher :as catcher]
+            [qcast.server  :as server]))
 
 
 ;;; Main

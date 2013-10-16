@@ -1,4 +1,4 @@
-(ns infoq-podcast.feed.rss
+(ns qcast.feed.rss
   (:import [java.text.SimpleDateFormat])
   (:require [clojure.string :as string]
             [hiccup.core    :as hiccup]

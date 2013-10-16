@@ -1,4 +1,4 @@
-(ns infoq-podcast.util
+(ns qcast.util
   (:require [clojure.string :as string]))
 
 

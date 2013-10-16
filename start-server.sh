@@ -1,3 +1,3 @@
 #!/bin/sh -e
 
-lein with-profile production run -m infoq-podcast.server
+lein with-profile production run -m qcast.server

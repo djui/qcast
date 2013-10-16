@@ -1,6 +1,4 @@
-(ns ^{:doc "Simple wrapper around JDBC."
-      :author "Uwe Dauernheim <uwe@dauernheim.net>"}
-  infoq-podcast.db
+(ns qcast.db
   (:require [clj-time.coerce       :as time]
             [clojure.edn           :as edn]
             [clojure.java.jdbc     :as jdbc]

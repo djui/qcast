@@ -1,7 +1,7 @@
-(ns infoq-podcast.html
+(ns qcast.html
   (:require [clj-http.client        :as http]
             [clojure.string         :as string]
-            [infoq-podcast.util     :as util :refer [parse-int]]
+            [qcast.util             :as util :refer [parse-int]]
             [net.cgrand.enlive-html :as css])
   (:refer-clojure :exclude [meta]))
 
