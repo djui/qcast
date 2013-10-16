@@ -40,13 +40,10 @@
         feed (rss/feed channel items extensions)]
     feed))
 
-;;(defn- index [req] )
-
 
 ;;; Main
 
 (defroutes app-routes
-  ;; (GET "/" [] index)
   (GET "/feed" [] serve-feed)
   (route/files "/")
   (route/not-found "Not found"))

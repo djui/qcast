@@ -134,4 +134,4 @@
     (do (info "Running once")
         (cache-updates))
     (do (info "Running periodically")
-        (logged-future (interspaced (minutes) cache-updates)))))
+        (logged-future (interspaced (minutes 30) cache-updates)))))
