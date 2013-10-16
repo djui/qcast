@@ -6,6 +6,7 @@
   :min-lein-version "2.0.0"
   :uberjar-name "qcast-standalone.jar"
   :main qcast.main
+  :aot :all
   :dependencies [[clj-http "0.7.7"]
                  [clj-time "0.6.0"]
                  [com.taoensso/timbre "2.6.2"]

@@ -10,7 +10,8 @@ Either using Leiningen:
 
 Or using Java:
 
-    $ java -jar qcast-0.1.0-standalone.jar
+    $ lein uberjar
+    $ java -jar qcast-standalone.jar
 
 ## Usage
 
