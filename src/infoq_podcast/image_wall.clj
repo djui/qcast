@@ -9,7 +9,7 @@
 
 (defn- posters []
   (let [is-jpg? #(and (.isFile %) (.endsWith (.getName %) ".jpg"))]
-    (->> "public/img/presentations"
+    (->> "public/img/posters"
          io/file
          file-seq
          (filter is-jpg?))))
