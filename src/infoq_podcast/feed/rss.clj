@@ -1,7 +1,7 @@
 (ns infoq-podcast.feed.rss
   (:import [java.text.SimpleDateFormat])
   (:require [clojure.string :as string]
-            [hiccup.core :as hiccup]
+            [hiccup.core    :as hiccup]
             [hiccup.page :refer [xml-declaration]]
             [hiccup.util :refer [escape-html]]))
 

@@ -18,14 +18,15 @@
      (rss/link link)
      (rss/description (:summary p))
      (rss/author "info@infoq.com") ;; (string/join ", " (:authors p))
-     (rss/pub-date (:date p))
+     (rss/pub-date (:publish-date p))
      (rss/guid link)
      (apply rss/enclosure (:video p))
      (apply rss/category (:keywords p))]))
 
 (defn- serve-feed [req]
   (let [base-url #(apply str "http://www.infoq.com" %&)
-        items (map (comp prepare-item :data) (cache/latest 50))
+        entries (cache/latest 50)
+        items (map (comp prepare-item :data) entries)
         channel [(rss/title "InfoQ Presentations")
                  (rss/link (base-url))
                  (rss/description (str "Facilitating the spread of knowledge "
@@ -34,7 +35,7 @@
                  (rss/image (base-url "/styles/i/logo-big.jpg") "InfoQ" (base-url))
                  (rss/language "en-US")
                  (rss/generator "InfoQ-Feed-Generator/1.0")
-                 (rss/pub-date (:date (first items)))]
+                 (rss/pub-date (get-in (first entries) [:data :publish-date]))]
         extensions [:atom :itunes :feedburner :simple-chapters :content :history]
         feed (rss/feed channel items extensions)]
     feed))
