@@ -15,10 +15,10 @@ Or using Java:
 ## Usage
 
 The Overview page can be reached at:
-[http://qcast.herokuapp.com/](remote) or
+[http://infoqcast.herokuapp.com/](remote) or
 [http://localhost:8080/](local).
 
-The Feed can be reached at: [http://qcast.herokuapp.com/feed](remote)
+The Feed can be reached at: [http://infoqcast.herokuapp.com/feed](remote)
  or [http://localhost:8080/feed](local).
 
 ## Components
