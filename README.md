@@ -6,6 +6,10 @@ A podcast feed for InfoQ presentations.
 
 Either using Leiningen:
 
+    $ ./start.sh
+
+or
+
     $ lein run
 
 Or using Java:
