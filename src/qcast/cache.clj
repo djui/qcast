@@ -20,7 +20,7 @@
       (update-in [:data] db/to-edn)))
 
 
-;;; API
+;;; Interface
 
 (defn init []
   (info "Initializing cache")

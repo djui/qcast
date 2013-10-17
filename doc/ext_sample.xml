@@ -1,0 +1,973 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:psc="http://podlove.org/simple-chapters" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:fh="http://purl.org/syndication/history/1.0" xmlns:feedburner="http://rssnamespace.org/feedburner/ext/1.0" version="2.0">
+    <channel>
+        <title>Newz of the World</title>
+        <link>http://newz-of-the-world.com</link>
+        <description>Tim and Mark talk about The Newz (TM)</description>
+        <lastBuildDate>Fri, 27 Sep 2013 10:04:36 +0000</lastBuildDate>
+        <atom:link rel="alternate" type="application/rss+xml" title="Newz of the World (MP3)" href="http://newz-of-the-world.com/feed/mp3/" />
+        <atom:link rel="alternate" type="application/rss+xml" title="Newz of the World (Vorbis)" href="http://newz-of-the-world.com/feed/oga/" />
+        <atom:link rel="next" href="http://newz-of-the-world.com/feed/m4a/?paged=2" />
+        <atom:link rel="first" href="http://newz-of-the-world.com/feed/m4a/" />
+        <atom:link rel="last" href="http://newz-of-the-world.com/feed/m4a/?paged=4" />
+        <language>en-US</language>
+        <atom:link rel="payment" title="Flattr this!" href="https://flattr.com/submit/auto?user_id=243&amp;url=http%3A%2F%2Fnewz-of-the-world.com%2F&amp;language=en_US&amp;category=audio&amp;title=Newz+of+the+World&amp;description=Tim+and+Mark+talk+about+The+Newz+%28TM%29&amp;tags=podcast%2C+newz%2C+news%2C+mark+fonseca+rendeiro%2C+bicyclemark%2C+tim+pritlove%2C+metaebene" type="text/html" />
+        <generator>Podlove Podcast Publisher v1.8.8-alpha</generator>
+        <itunes:author>Metaebene Personal Media - Tim Pritlove</itunes:author>
+        <itunes:summary>Newz of the World is a weekly show about world news. Mark Fonseca Rendeiro and Tim Pritlove come together to present interesting reports and discuss their aspects and possible consequences. Newz of the world wants to be an alternative window to the common media flow and cherry picks interesting developments for you.</itunes:summary>
+        <itunes:category text="News &amp; Politics" />
+        <itunes:category text="Society &amp; Culture" />
+        <itunes:category text="Government &amp; Organizations" />
+        <itunes:owner>
+            <itunes:name>Tim Pritlove</itunes:name>
+            <itunes:email>newz@metaebene.me</itunes:email>
+        </itunes:owner>
+        <itunes:image href="http://meta.metaebene.me/media/newz/newz-icon-600x600.jpg" />
+        <itunes:subtitle>Mark and Tim take a look at the newz for you</itunes:subtitle>
+        <itunes:keywords>podcast, newz, news, world news, timpritlove, bicyclemark, berlin, amsterdam</itunes:keywords>
+        <itunes:block>no</itunes:block>
+        <itunes:explicit>no</itunes:explicit>
+        <atom10:link xmlns:atom10="http://www.w3.org/2005/Atom" rel="self" type="application/rss+xml" href="http://feeds.feedburner.com/newz-of-the-world" />
+        <feedburner:info uri="newz-of-the-world" />
+        <atom10:link xmlns:atom10="http://www.w3.org/2005/Atom" rel="hub" href="http://pubsubhubbub.appspot.com/" />
+        <atom10:link xmlns:atom10="http://www.w3.org/2005/Atom" rel="hub" href="http://metaebene.superfeedr.com/" />
+        <item>
+            <title>NEWZ062 Presidents Are Overrated</title>
+            <link>http://feedproxy.google.com/~r/newz-of-the-world/~3/It_MiZqcRYI/</link>
+            <pubDate>Fri, 27 Sep 2013 09:54:20 +0000</pubDate>
+            <guid isPermaLink="false">podlove-2013-09-27t09:19:47+00:00-f7c6321ccc578a1</guid>
+            <description><![CDATA[Today we begin by taking the plunge into German politics following the latest election. Then we look at the well dressed friendly new president of Iran. In Sudan oil prices and budget problems are causing mass protests. While in Myanmar the kids are getting more and more digital. NYC's air is cleaner than ever. NEWZ Source this week: The Bangkok Post.]]></description>
+            <atom:link rel="payment" title="Flattr this!" href="https://flattr.com/submit/auto?user_id=243&amp;url=http%3A%2F%2Fnewz-of-the-world.com%2Fnewz062-presidents-are-overrated%2F&amp;language=en_GB&amp;category=audio&amp;title=NEWZ062+Presidents+Are+Overrated&amp;description=Today+we+begin+by+taking+the+plunge+into+German+politics+following+the+latest+election.+Then+we+look+at+the+well+dressed+friendly+new+president+of+Iran.+In+Sudan+oil+prices...&amp;tags=podcast%2C+newz%2C+news%2C+mark+fonseca+rendeiro%2C+bicyclemark%2C+tim+pritlove%2C+metaebene" type="text/html" />
+            <psc:chapters version="1.2">
+                <psc:chapter start="00:00:00.000" title="Intro" />
+                <psc:chapter start="00:00:13.750" title="Prologue" />
+                <psc:chapter start="00:02:06.000" title="German Election Results and Consequences" />
+                <psc:chapter start="00:23:32.229" title="Rouhani CNN Interview" />
+                <psc:chapter start="00:32:36.000" title="Sudan's Arab Spring" />
+                <psc:chapter start="00:36:49.500" title="The Digitalization of Myanmar" />
+                <psc:chapter start="00:42:50.589" title="New York City's Air, Cleanest in 50 Years" />
+                <psc:chapter start="00:49:54.625" title="NEWZ Source: The Bangkok Post" />
+                <psc:chapter start="00:51:26.625" title="Epilogue" />
+            </psc:chapters>
+            <atom:link rel="http://podlove.org/deep-link" href="http://newz-of-the-world.com/newz062-presidents-are-overrated/#" />
+            <itunes:duration>00:52:45</itunes:duration>
+            <itunes:author>Metaebene Personal Media - Tim Pritlove</itunes:author>
+            <itunes:subtitle>German Elections; Rouhani Interview; Sudan Protests; Digital Myanmar; NYC Air; Bangkok Post</itunes:subtitle>
+            <itunes:summary>Today we begin by taking the plunge into German politics following the latest election. Then we look at the well dressed friendly new president of Iran. In Sudan oil prices and budget problems are causing mass protests. While in Myanmar the kids are getting more and more digital. NYC's air is cleaner than ever. NEWZ Source this week: The Bangkok Post.</itunes:summary>
+            <itunes:image href="http://meta.metaebene.me/media/newz/newz062-presidents-are-overrated.jpg" />
+            <content:encoded><![CDATA[<p><a target="_blank" href="http://meta.metaebene.me/media/newz/newz062-presidents-are-overrated.jpg"><img style="float: right; padding: 5px; margin: 5px; margin-left: 20px; border-style: solid; border-width: 1px; border-color: black;" src="http://meta.metaebene.me/media/newz/newz062-presidents-are-overrated.jpg" alt="Episode image for NEWZ062 Presidents Are Overrated" width="200" height="200" /></a>Today we begin by taking the plunge into German politics following the latest election. Then we look at the well dressed friendly new president of Iran. In Sudan oil prices and budget problems are causing mass protests. While in Myanmar the kids are getting more and more digital. NYC's air is cleaner than ever. NEWZ Source this week: The Bangkok Post. </p>
+			<p><br />
+			</p>
+			<p><strong>Topics:</strong> German Elections; Rouhani Interview; Sudan Protests; Digital Myanmar; NYC Air; Bangkok Post<br />
+			<span class="podlove-duration"><strong>Duration:</strong> 00:52:45</span><br/><span class="podlove-contributors"><strong>Team:</strong> <span class="podlove-contributors"><span class="contributor"><img alt='' src='http://1.gravatar.com/avatar/5c111db9ca417a89176812f3ab3c4aef?s=18&amp;d=http%3A%2F%2F1.gravatar.com%2Favatar%2Fad516503a11cd5ca435acc9bb6523536%3Fs%3D18&amp;r=G' class='avatar avatar-18 photo' height='18' width='18' /> Mark Fonseca Rendeiro</span>, <span class="contributor"><img alt='' src='http://1.gravatar.com/avatar/97391367796db965d19e63b690e72b3d?s=18&amp;d=http%3A%2F%2F1.gravatar.com%2Favatar%2Fad516503a11cd5ca435acc9bb6523536%3Fs%3D18&amp;r=G' class='avatar avatar-18 photo' height='18' width='18' /> Tim Pritlove</span></span></span></p>
+			<p>Links:</p>
+			<ul>
+			<li><a href="http://www.spiegel.de/international/germany/cdu-campaign-promises-over-tax-increases-in-doubt-a-924729.html" target="_blank">German Election Consequences</a></li>
+			<li><a href="http://amanpour.blogs.cnn.com/2013/09/25/transcript-amanpour-rouhani-interview/" target="_blank">CNN Rouhani Interview</a></li>
+			<li><a href="http://english.ahram.org.eg/NewsContent/2/8/82534/World/Region/Sudans-Arab-Spring-Public-anger-rises-against-Bash.aspx" target="_blank">Mass Protests in Sudan Against Government</a></li>
+			<li><a href="http://www.bangkokpost.com/news/investigation/370899/myanmar-revolution-will-be-digitised" target="_blank">Myanmar, the Revolution Will Be Digitized</a></li>
+			<li><a href="http://www.nytimes.com/2013/09/27/nyregion/new-yorks-air-is-cleanest-in-50-years-survey-finds.html" target="_blank">New York City, Cleanest Air in 50 Years</a> (<a href="http://www.flickr.com/photos/nycmayorsoffice/9954939455/" target="_blank">Map 1</a>, <a href="http://www.flickr.com/photos/nycmayorsoffice/9954941085/in/photostream/" target="_blank">Map 2</a>)</li>
+			<li>NEWZ Source: <a href="http://www.bangkokpost.com/" target="_blank">Bangkok Post</a></li>
+			<li>Episode Image: <a href="http://www.flickr.com/photos/eyair/88569323/">May I have a mic please</a> by <a href="http://www.flickr.com/photos/eyair">eyair</a></li>
+			</ul>
+			<p><a href="http://newz-of-the-world.com/?flattrss_redirect&amp;id=1256&amp;md5=46b2b178f58696c08e0721ba727eed80" title="Flattr" target="_blank"><img src="http://newz-of-the-world.com/wp-content/plugins/flattr/img/flattr-badge-large.png" alt="flattr this!"/></a></p><img src="http://feeds.feedburner.com/~r/newz-of-the-world/~4/It_MiZqcRYI" height="1" width="1"/>]]></content:encoded>
+            <feedburner:origLink>http://newz-of-the-world.com/newz062-presidents-are-overrated/</feedburner:origLink>
+            <enclosure url="http://feedproxy.google.com/~r/newz-of-the-world/~5/ludyOIEVmO4/newz062-presidents-are-overrated.m4a" length="23543879" type="audio/mp4" />
+            <feedburner:origEnclosureLink>http://meta.metaebene.me/media/newz/newz062-presidents-are-overrated.m4a</feedburner:origEnclosureLink>
+        </item>
+        <item>
+            <title>NEWZ061 Dope on the Table</title>
+            <link>http://feedproxy.google.com/~r/newz-of-the-world/~3/TGIUUJPIvjI/</link>
+            <pubDate>Wed, 18 Sep 2013 10:46:56 +0000</pubDate>
+            <guid isPermaLink="false">podlove-2013-09-18t09:44:03+00:00-b7ac79aad5ff771</guid>
+            <description><![CDATA[This week we review the Syria situation once more now that the UN has published its report on the use of chemical weapons. In our ongoing series on elections we talk about the impressive outcome for the current leader of Rwanda. Mark discusses aspects of a longer article about the effects of US military aid on Colombia. We look at the situation of Thai rubber farmers with dwindling rubber prices on the worlds markets and on the effects the spending cuts on the greek health care system. Last but not least we look this mysterious sovereign wealth fund of wealthy Norway and provide another NEWZ source for you: In These Times.]]></description>
+            <atom:link rel="payment" title="Flattr this!" href="https://flattr.com/submit/auto?user_id=243&amp;url=http%3A%2F%2Fnewz-of-the-world.com%2Fnewz061-dope-on-the-table%2F&amp;language=en_GB&amp;category=audio&amp;title=NEWZ061+Dope+on+the+Table&amp;description=This+week+we+review+the+Syria+situation+once+more+now+that+the+UN+has+published+its+report+on+the+use+of+chemical+weapons.+In+our+ongoing+series+on+elections+we...&amp;tags=bicyclemark%2Cmark+fonseca+rendeiro%2Cmetaebene%2Cnews%2Cnewz%2Cpodcast%2Ctim+pritlove%2Cpodcast%2C+newz%2C+news%2C+mark+fonseca+rendeiro%2C+bicyclemark%2C+tim+pritlove%2C+metaebene" type="text/html" />
+            <psc:chapters version="1.2">
+                <psc:chapter start="00:00:00.000" title="Intro" />
+                <psc:chapter start="00:00:14.000" title="Prologue" />
+                <psc:chapter start="00:01:48.000" title="Chemical Weapons Attacks Confirmed by UN" />
+                <psc:chapter start="00:15:16.672" title="Parliamentary Elections in Rwanda - Kagame Wins Again" />
+                <psc:chapter start="00:21:27.229" title="Article: The Humanitarian Crisis Resulting from US Military Aid in Colombia" />
+                <psc:chapter start="00:27:41.031" title="As global rubber prices plummet, Rubber farmers in Thailand Protest and Blockade!" />
+                <psc:chapter start="00:32:01.063" title="New Round of Required Greek Cuts Slams Healthcare System" />
+                <psc:chapter start="00:38:27.328" title="Understanding Norway's Sovereign Wealth Fund" />
+                <psc:chapter start="00:43:38.000" title="NEWZ Source: In These Times" />
+                <psc:chapter start="00:46:40.693" title="Epilogue" />
+            </psc:chapters>
+            <atom:link rel="http://podlove.org/deep-link" href="http://newz-of-the-world.com/newz061-dope-on-the-table/#" />
+            <itunes:duration>00:49:54</itunes:duration>
+            <itunes:author>Metaebene Personal Media - Tim Pritlove</itunes:author>
+            <itunes:subtitle>UN and Syria — Rwanda Elections — US Military Aid in Colombia — Rubber Farmes in Thailand — Health Care in Greece — Norway</itunes:subtitle>
+            <itunes:summary>This week we review the Syria situation once more now that the UN has published its report on the use of chemical weapons. In our ongoing series on elections we talk about the impressive outcome for the current leader of Rwanda. Mark discusses aspects of a longer article about the effects of US military aid on Colombia. We look at the situation of Thai rubber farmers with dwindling rubber prices on the worlds markets and on the effects the spending cuts on the greek health care system. Last but not least we look this mysterious sovereign wealth fund of wealthy Norway and provide another NEWZ source for you: In These Times.</itunes:summary>
+            <itunes:image href="http://meta.metaebene.me/media/newz/newz061-dope-on-the-table.jpg" />
+            <content:encoded><![CDATA[<p><a target="_blank" href="http://meta.metaebene.me/media/newz/newz061-dope-on-the-table.jpg"><img style="float: right; padding: 5px; margin: 5px; margin-left: 20px; border-style: solid; border-width: 1px; border-color: black;" src="http://meta.metaebene.me/media/newz/newz061-dope-on-the-table.jpg" alt="Episode image for NEWZ061 Dope on the Table" width="200" height="200" /></a>This week we review the Syria situation once more now that the UN has published its report on the use of chemical weapons. In our ongoing series on elections we talk about the impressive outcome for the current leader of Rwanda. Mark discusses aspects of a longer article about the effects of US military aid on Colombia. We look at the situation of Thai rubber farmers with dwindling rubber prices on the worlds markets and on the effects the spending cuts on the greek health care system. Last but not least we look this mysterious sovereign wealth fund of wealthy Norway and provide another NEWZ source for you: In These Times.</p>
+			<p><br />
+			</p>
+			<p><strong>Topics:</strong> UN and Syria — Rwanda Elections — US Military Aid in Colombia — Rubber Farmes in Thailand — Health Care in Greece — Norway<br />
+			<span class="podlove-duration"><strong>Duration:</strong> 00:49:54</span><br/><span class="podlove-contributors"><strong>Team:</strong> <span class="podlove-contributors"><span class="contributor"><img alt='' src='http://1.gravatar.com/avatar/5c111db9ca417a89176812f3ab3c4aef?s=18&amp;d=http%3A%2F%2F1.gravatar.com%2Favatar%2Fad516503a11cd5ca435acc9bb6523536%3Fs%3D18&amp;r=G' class='avatar avatar-18 photo' height='18' width='18' /> Mark Fonseca Rendeiro</span>, <span class="contributor"><img alt='' src='http://1.gravatar.com/avatar/97391367796db965d19e63b690e72b3d?s=18&amp;d=http%3A%2F%2F1.gravatar.com%2Favatar%2Fad516503a11cd5ca435acc9bb6523536%3Fs%3D18&amp;r=G' class='avatar avatar-18 photo' height='18' width='18' /> Tim Pritlove</span></span></span></p>
+			<p>Links:</p>
+			<ul>
+			<li><a href="http://www.cbc.ca/news/world/syria-chemical-attacks-large-scale-un-says-1.1855620" target="_blank">Chemical Weapons Attacks Confirmed By UN</a></li>
+			<li><a href="http://toys.usvsth3m.com/damascus/" target="_blank">Where is Damascus?</a></li>
+			<li><a href="http://www.france24.com/en/20130917-rwanda-kagame-ruling-rpf-landslide-parliamentary-election-win" target="_blank">Kagame Party Wins Again in Latest Rwandan Election</a></li>
+			<li><a href="http://inthesetimes.com/article/15475/us_military_aid_and_colombias_human_rights_crisis" target="_blank">US Military Aid and the Human Rights Crisis in Colombia</a></li>
+			<li><a href="http://globalvoicesonline.org/2013/09/15/thai-rubber-farmers-continue-protest-despite-government-subsidy-plan/" target="_blank">Thai Government Scrambles to Appease Angry Rubber Farmers</a></li>
+			<li><a href="http://www.ekathimerini.com/4dcgi/_w_articles_wsite1_1_15/09/2013_518748" target="_blank">New Round of Cuts in Greece Target Health Care</a></li>
+			<li><a href="http://www.economist.com/news/business/21586268-changes-norways-gigantic-sovereign-wealth-fund-will-be-felt-around-world-more-money" target="_blank">Understanding Norway&#8217;s Sovereign Wealth Fund</a></li>
+			<li><a href="http://en.wikipedia.org/wiki/German_federal_election,_2013" target="_blank">German Federal Election 2013</a></li>
+			<li>NEWZ Source: <a href="http://inthesetimes.com" target="_blank">In These Times </a></li>
+			</ul>
+			<p>&nbsp;</p>
+			<p>&nbsp;</p>
+			<p><a href="http://newz-of-the-world.com/?flattrss_redirect&amp;id=1244&amp;md5=ff4a7c8f4e535d2965e16bced05ddf9e" title="Flattr" target="_blank"><img src="http://newz-of-the-world.com/wp-content/plugins/flattr/img/flattr-badge-large.png" alt="flattr this!"/></a></p><img src="http://feeds.feedburner.com/~r/newz-of-the-world/~4/TGIUUJPIvjI" height="1" width="1"/>]]></content:encoded>
+            <feedburner:origLink>http://newz-of-the-world.com/newz061-dope-on-the-table/</feedburner:origLink>
+            <enclosure url="http://feedproxy.google.com/~r/newz-of-the-world/~5/C6bCIGMnKjA/newz061-dope-on-the-table.m4a" length="22279587" type="audio/mp4" />
+            <feedburner:origEnclosureLink>http://meta.metaebene.me/media/newz/newz061-dope-on-the-table.m4a</feedburner:origEnclosureLink>
+        </item>
+        <item>
+            <title>NEWZ060 Political Pub Quiz</title>
+            <link>http://feedproxy.google.com/~r/newz-of-the-world/~3/Kr0jYyXIT48/</link>
+            <pubDate>Tue, 10 Sep 2013 13:50:17 +0000</pubDate>
+            <guid isPermaLink="false">podlove-2013-09-10t12:52:55+00:00-037251d58ac0c0c</guid>
+            <description><![CDATA[The mostly human team of Newz of the World has intrepidly clicked and filed the most exciting pieces of journalism and is ready to present it to you,  dear listener. We are starting of with the always popular reporting on the popular vote which has been cast in Australia, Norway and Moscow (among others) and we of course also share our views, insights and questions about the most recent diplomatic turns in the crisis around the war in Syria. 
+			After pointing to the recent fate of a journalist personally known to Mark, we point you to some excellent entertainment provided by South Africa's latest news channel that specializes in "sunshine journalism" and disfunctional presentation skills. As an alternative not only for South Africans we also mention the latest extension to the Al Jazeera network, the "Al Jazeera America" channel that focuses on the US public.]]></description>
+            <atom:link rel="payment" title="Flattr this!" href="https://flattr.com/submit/auto?user_id=243&amp;url=http%3A%2F%2Fnewz-of-the-world.com%2Fnewz060-political-pub-quiz%2F&amp;language=en_GB&amp;category=audio&amp;title=NEWZ060+Political+Pub+Quiz&amp;description=The+mostly+human+team+of+Newz+of+the+World+has+intrepidly+clicked+and+filed+the+most+exciting+pieces+of+journalism+and+is+ready+to+present+it+to+you%2C+dear+listener....&amp;tags=bicyclemark%2Cmark+fonseca+rendeiro%2Cmetaebene%2Cnews%2Cnewz%2Cpodcast%2Ctim+pritlove%2Cpodcast%2C+newz%2C+news%2C+mark+fonseca+rendeiro%2C+bicyclemark%2C+tim+pritlove%2C+metaebene" type="text/html" />
+            <psc:chapters version="1.2">
+                <psc:chapter start="00:00:00.000" title="Intro" />
+                <psc:chapter start="00:00:14.000" title="Prologue" />
+                <psc:chapter start="00:01:25.000" title="Australian Election Results" />
+                <psc:chapter start="00:07:32.885" title="Norwegian Election Results" />
+                <psc:chapter start="00:13:32.453" title="Opposition candidate rejects Moscow Mayoral Election Results" />
+                <psc:chapter start="00:20:42.609" title="New Russian offer to Syria Crisis" />
+                <psc:chapter start="00:34:01.750" title="Photographers Rescued at Sea in Australia" />
+                <psc:chapter start="00:37:57.750" title="Gas Discovery in Egypt" />
+                <psc:chapter start="00:39:30.370" title="New South African News Network Does Sunshine Journalism" />
+                <psc:chapter start="00:42:03.620" title="Al Jazeera America Begins Broadcasting" />
+                <psc:chapter start="00:48:28.365" title="NEWZ Source: Moscow Times" />
+                <psc:chapter start="00:50:36.870" title="Epilogue" />
+            </psc:chapters>
+            <atom:link rel="http://podlove.org/deep-link" href="http://newz-of-the-world.com/newz060-political-pub-quiz/#" />
+            <itunes:duration>00:51:55</itunes:duration>
+            <itunes:author>Metaebene Personal Media - Tim Pritlove</itunes:author>
+            <itunes:subtitle>Elections in Australia, Norway, Moscow — Syria Crisis — Journalists rescued — New news channels in South Africa, US — Moscow Times</itunes:subtitle>
+            <itunes:summary>The mostly human team of Newz of the World has intrepidly clicked and filed the most exciting pieces of journalism and is ready to present it to you,  dear listener. We are starting of with the always popular reporting on the popular vote which has been cast in Australia, Norway and Moscow (among others) and we of course also share our views, insights and questions about the most recent diplomatic turns in the crisis around the war in Syria. 
+			After pointing to the recent fate of a journalist personally known to Mark, we point you to some excellent entertainment provided by South Africa's latest news channel that specializes in "sunshine journalism" and disfunctional presentation skills. As an alternative not only for South Africans we also mention the latest extension to the Al Jazeera network, the "Al Jazeera America" channel that focuses on the US public.</itunes:summary>
+            <itunes:image href="http://meta.metaebene.me/media/newz/newz060-political-pub-quiz.jpg" />
+            <content:encoded><![CDATA[<p><a target="_blank" href="http://meta.metaebene.me/media/newz/newz060-political-pub-quiz.jpg"><img style="float: right; padding: 5px; margin: 5px; margin-left: 20px; border-style: solid; border-width: 1px; border-color: black;" src="http://meta.metaebene.me/media/newz/newz060-political-pub-quiz.jpg" alt="Episode image for NEWZ060 Political Pub Quiz" width="200" height="200" /></a>The mostly human team of Newz of the World has intrepidly clicked and filed the most exciting pieces of journalism and is ready to present it to you,  dear listener. We are starting of with the always popular reporting on the popular vote which has been cast in Australia, Norway and Moscow (among others) and we of course also share our views, insights and questions about the most recent diplomatic turns in the crisis around the war in Syria. <br />
+			<br />
+			After pointing to the recent fate of a journalist personally known to Mark, we point you to some excellent entertainment provided by South Africa's latest news channel that specializes in "sunshine journalism" and disfunctional presentation skills. As an alternative not only for South Africans we also mention the latest extension to the Al Jazeera network, the "Al Jazeera America" channel that focuses on the US public.</p>
+			<p><br />
+			</p>
+			<p><strong>Topics:</strong> Elections in Australia, Norway, Moscow — Syria Crisis — Journalists rescued — New news channels in South Africa, US — Moscow Times<br />
+			<span class="podlove-duration"><strong>Duration:</strong> 00:51:55</span><br/><span class="podlove-contributors"><strong>Team:</strong> <span class="podlove-contributors"><span class="contributor"><img alt='' src='http://1.gravatar.com/avatar/5c111db9ca417a89176812f3ab3c4aef?s=18&amp;d=http%3A%2F%2F1.gravatar.com%2Favatar%2Fad516503a11cd5ca435acc9bb6523536%3Fs%3D18&amp;r=G' class='avatar avatar-18 photo' height='18' width='18' /> Mark Fonseca Rendeiro</span>, <span class="contributor"><img alt='' src='http://1.gravatar.com/avatar/97391367796db965d19e63b690e72b3d?s=18&amp;d=http%3A%2F%2F1.gravatar.com%2Favatar%2Fad516503a11cd5ca435acc9bb6523536%3Fs%3D18&amp;r=G' class='avatar avatar-18 photo' height='18' width='18' /> Tim Pritlove</span></span></span></p>
+			<p>Links:</p>
+			<ul>
+			<li><a href="http://en.wikipedia.org/wiki/Australian_federal_election,_2013" target="_blank">Australian Federal Election Results</a></li>
+			<li><a href="http://www.bbc.co.uk/news/world-europe-24014551" target="_blank">Center Right Wins in Norway</a></li>
+			<li><a href="http://www.themoscowtimes.com/news/article/moscow-election-hints-at-new-political-reality/485806.html">Moscow Election Hints at New Political Reality</a></li>
+			<li><a href="http://www.reuters.com/article/2013/09/09/us-syria-crisis-russia-idUSBRE98809D20130909">Russia urges Syria to cede control of chemical arms</a></li>
+			<li><a href="http://www.heraldsun.com.au/news/national/american-journalist-and-photographer-rescued-after-boarding-asylum-boat/story-fni0xqrb-1226715339110">American journalist and photographer rescued after boarding asylum boat</a></li>
+			<li><a href="http://www.joelvanhoudt.com/">Joel van Houdt &#8211; Photojournalist</a></li>
+			<li><a href="http://english.alarabiya.net/en/business/energy/2013/09/09/BP-says-males-significant-Egypt-gas-discovery.html">BP says makes ‘significant’ Egypt gas discovery</a></li>
+			<li><a href="http://www.globalpost.com/dispatch/news/regions/africa/south-africa/130906/south-africa-news-network-jacob-zuma-gupta-sabc">South Africa&#8217;s newest TV network is bringing positive, pro-gov&#8217;t news</a></li>
+			<li><a href="http://www.onthemedia.org/2013/aug/16/">A New Security Standard For Journalists, Al Jazeera America, and More</a></li>
+			<li><a href="http://www.themoscowtimes.com/">The Moscow Times | Russia&#8217;s only daily English-language newspaper</a></li>
+			<li>Episode Image: <a href="http://www.flickr.com/photos/newtown_grafitti/9420179441/">Politics in the Pub, I</a> by <a href="http://www.flickr.com/photos/newtown_grafitti/">Newtown grafitti</a></li>
+			</ul>
+			<p><a href="http://newz-of-the-world.com/?flattrss_redirect&amp;id=1234&amp;md5=1295b4bb3811f4947996e3b2bf76882c" title="Flattr" target="_blank"><img src="http://newz-of-the-world.com/wp-content/plugins/flattr/img/flattr-badge-large.png" alt="flattr this!"/></a></p><img src="http://feeds.feedburner.com/~r/newz-of-the-world/~4/Kr0jYyXIT48" height="1" width="1"/>]]></content:encoded>
+            <feedburner:origLink>http://newz-of-the-world.com/newz060-political-pub-quiz/</feedburner:origLink>
+            <enclosure url="http://feedproxy.google.com/~r/newz-of-the-world/~5/N9ey_UXc2x4/newz060-political-pub-quiz.m4a" length="23173896" type="audio/mp4" />
+            <feedburner:origEnclosureLink>http://meta.metaebene.me/media/newz/newz060-political-pub-quiz.m4a</feedburner:origEnclosureLink>
+        </item>
+        <item>
+            <title>NEWZ059 Fucking for Virginity</title>
+            <link>http://feedproxy.google.com/~r/newz-of-the-world/~3/4DrtKze_wFE/</link>
+            <pubDate>Wed, 04 Sep 2013 10:32:16 +0000</pubDate>
+            <guid isPermaLink="false">podlove-2013-09-04t09:35:30+00:00-02a2b979813882f</guid>
+            <description><![CDATA[This week we begin with an update as Syria intervention is debated in Europe and North America. The UN reports that Zimbabwe will need food aid this winter.  Venezuela, meanwhile, is facing its own food shortages.  In an effort to handle radioactive water in Fukushima, an ice wall will be built. Renewable energy in Germany getting cheaper despite the political debate that rages on.  Report shows that the poorest of Costa Rica actually live some of the longest lives in the world. Dennis Rodman is back in North Korea to hang with the young leader.  Newz Source for this week is Clean Technica, for those who want information about sustainability and alternative energy.]]></description>
+            <atom:link rel="payment" title="Flattr this!" href="https://flattr.com/submit/auto?user_id=243&amp;url=http%3A%2F%2Fnewz-of-the-world.com%2Fnewz059-fucking-for-virginity%2F&amp;language=en_GB&amp;category=audio&amp;title=NEWZ059+Fucking+for+Virginity&amp;description=This+week+we+begin+with+an+update+as+Syria+intervention+is+debated+in+Europe+and+North+America.+The+UN+reports+that+Zimbabwe+will+need+food+aid+this+winter.+Venezuela%2C+meanwhile%2C...&amp;tags=bicyclemark%2Cmark+fonseca+rendeiro%2Cmetaebene%2Cnews%2Cnewz%2Cpodcast%2Ctim+pritlove%2Cpodcast%2C+newz%2C+news%2C+mark+fonseca+rendeiro%2C+bicyclemark%2C+tim+pritlove%2C+metaebene" type="text/html" />
+            <psc:chapters version="1.2">
+                <psc:chapter start="00:00:00.000" title="Intro" />
+                <psc:chapter start="00:00:15.625" title="Prologue" />
+                <psc:chapter start="00:02:00.000" title="Obama looks for support by Congress to attack Syria" />
+                <psc:chapter start="00:12:01.156" title="2 Million Zimbabweans Will Need Food Aid this Winter" />
+                <psc:chapter start="00:16:36.375" title="Venezuela faces Food Shortages" />
+                <psc:chapter start="00:18:52.052" title="Colombia Peasant Strikes" />
+                <psc:chapter start="00:21:50.068" title="Fukushima plant to build an icewall to contain radioactive water" />
+                <psc:chapter start="00:29:28.599" title="Renewable Sources Making Electricity Cheaper in Germany?" />
+                <psc:chapter start="00:36:09.245" title="Biological Reason the Poorest Costa Ricans Live Some of the Longest Lives" />
+                <psc:chapter start="00:38:49.448" title="Dennis Rodman, back in North Korea" />
+                <psc:chapter start="00:43:17.375" title="NEWZ Source: CleanTechnica" />
+                <psc:chapter start="00:45:06.328" title="Epilogue" />
+            </psc:chapters>
+            <atom:link rel="http://podlove.org/deep-link" href="http://newz-of-the-world.com/newz059-fucking-for-virginity/#" />
+            <itunes:duration>00:45:39</itunes:duration>
+            <itunes:author>Metaebene Personal Media - Tim Pritlove</itunes:author>
+            <itunes:subtitle>Obama Syria; Zimbabwe Food; Venezuela Shortage; Strikes in Colombia; Fukushima Ice Wall; Energy in Germany; Life Expectancy Costa Rica; Rodman North Korea; Clean Technica</itunes:subtitle>
+            <itunes:summary>This week we begin with an update as Syria intervention is debated in Europe and North America. The UN reports that Zimbabwe will need food aid this winter.  Venezuela, meanwhile, is facing its own food shortages.  In an effort to handle radioactive water in Fukushima, an ice wall will be built. Renewable energy in Germany getting cheaper despite the political debate that rages on.  Report shows that the poorest of Costa Rica actually live some of the longest lives in the world. Dennis Rodman is back in North Korea to hang with the young leader.  Newz Source for this week is Clean Technica, for those who want information about sustainability and alternative energy.</itunes:summary>
+            <itunes:image href="http://meta.metaebene.me/media/newz/newz059-fucking-for-virginity.jpg" />
+            <content:encoded><![CDATA[<p><a target="_blank" href="http://meta.metaebene.me/media/newz/newz059-fucking-for-virginity.jpg"><img style="float: right; padding: 5px; margin: 5px; margin-left: 20px; border-style: solid; border-width: 1px; border-color: black;" src="http://meta.metaebene.me/media/newz/newz059-fucking-for-virginity.jpg" alt="Episode image for NEWZ059 Fucking for Virginity" width="200" height="200" /></a>This week we begin with an update as Syria intervention is debated in Europe and North America. The UN reports that Zimbabwe will need food aid this winter.  Venezuela, meanwhile, is facing its own food shortages.  In an effort to handle radioactive water in Fukushima, an ice wall will be built. Renewable energy in Germany getting cheaper despite the political debate that rages on.  Report shows that the poorest of Costa Rica actually live some of the longest lives in the world. Dennis Rodman is back in North Korea to hang with the young leader.  Newz Source for this week is Clean Technica, for those who want information about sustainability and alternative energy. </p>
+			<p><br />
+			</p>
+			<p><strong>Topics:</strong> Obama Syria; Zimbabwe Food; Venezuela Shortage; Strikes in Colombia; Fukushima Ice Wall; Energy in Germany; Life Expectancy Costa Rica; Rodman North Korea; Clean Technica<br />
+			<span class="podlove-duration"><strong>Duration:</strong> 00:45:39</span><br/><span class="podlove-contributors"><strong>Team:</strong> <span class="podlove-contributors"><span class="contributor"><img alt='' src='http://1.gravatar.com/avatar/5c111db9ca417a89176812f3ab3c4aef?s=18&amp;d=http%3A%2F%2F1.gravatar.com%2Favatar%2Fad516503a11cd5ca435acc9bb6523536%3Fs%3D18&amp;r=G' class='avatar avatar-18 photo' height='18' width='18' /> Mark Fonseca Rendeiro</span>, <span class="contributor"><img alt='' src='http://1.gravatar.com/avatar/97391367796db965d19e63b690e72b3d?s=18&amp;d=http%3A%2F%2F1.gravatar.com%2Favatar%2Fad516503a11cd5ca435acc9bb6523536%3Fs%3D18&amp;r=G' class='avatar avatar-18 photo' height='18' width='18' /> Tim Pritlove</span></span></span></p>
+			<p>Links:</p>
+			<ul>
+			<li><a href="http://www.washingtonpost.com/world/national-security/obama-says-he-is-confident-of-congressional-backing-for-strike-on-syria/2013/09/03/aeee7e60-149e-11e3-a100-66fa8fd9a50c_story_1.html" target="_blank">Obama Confident He Will Get Syria Backing</a></li>
+			<li><a href="http://www.un.org/apps/news/story.asp?NewsID=45756" target="_blank">2.2 Million Zimbabweans Will Need Food Aid </a></li>
+			<li><a href="http://www.bbc.co.uk/news/world-latin-america-23885377" target="_blank">Food Shortage in Venezuela</a></li>
+			<li><a href="http://globalvoicesonline.org/2013/09/02/colombia-starts-new-week-amid-agrarian-strike/" target="_blank">Agricultural Strikes in Colombia</a></li>
+			<li><a href="http://www.newscientist.com/article/dn24147-japan-will-build-wall-of-ice-to-stem-fukushima-leak.html" target="_blank">Fukushima to Build Ice Wall for Radioactive Water</a></li>
+			<li><a href="http://cleantechnica.com/2013/09/03/renewable-reducing-electricity-prices-in-germany/" target="_blank">Cost of Renewable Energy Falling in Germany</a></li>
+			<li><a href="http://www.nature.com/news/poorest-costa-ricans-live-longest-1.13663" target="_blank">Poorest Costa Ricans Living Longest Lives</a></li>
+			<li><a href="http://takingnote.blogs.nytimes.com/2013/09/03/dennis-rodmans-back-in-north-korea/" target="_blank">Dennis Rodman Back in North Korea</a></li>
+			<li>NEWZ Source: <a href="http://cleantechnica.com/" target="_blank">Clean Technica</a></li>
+			<li><em><a href="http://www.flickr.com/photos/oddsock/2516479452/" target="_blank">Photo by Ian Burt / flickr</a></em></li>
+			</ul>
+			<p><a href="http://newz-of-the-world.com/?flattrss_redirect&amp;id=1231&amp;md5=c1dc96cc0fe57cc6b07b4391bdd837ad" title="Flattr" target="_blank"><img src="http://newz-of-the-world.com/wp-content/plugins/flattr/img/flattr-badge-large.png" alt="flattr this!"/></a></p><img src="http://feeds.feedburner.com/~r/newz-of-the-world/~4/4DrtKze_wFE" height="1" width="1"/>]]></content:encoded>
+            <feedburner:origLink>http://newz-of-the-world.com/newz059-fucking-for-virginity/</feedburner:origLink>
+            <enclosure url="http://feedproxy.google.com/~r/newz-of-the-world/~5/nsl2lKtnhac/newz059-fucking-for-virginity.m4a" length="20399412" type="audio/mp4" />
+            <feedburner:origEnclosureLink>http://meta.metaebene.me/media/newz/newz059-fucking-for-virginity.m4a</feedburner:origEnclosureLink>
+        </item>
+        <item>
+            <title>NEWZ058 Fire the Consultants</title>
+            <link>http://feedproxy.google.com/~r/newz-of-the-world/~3/JOecpNdDdso/</link>
+            <pubDate>Wed, 28 Aug 2013 09:52:00 +0000</pubDate>
+            <guid isPermaLink="false">podlove-2013-08-28t09:24:56+00:00-4ed7370678c4145</guid>
+            <description><![CDATA[This week it is a question of if and what kind of intervention will take place in Syria. The French president warns of big trouble in the Central African Republic. Every student in Liberia fails the University entrance exam. Putin in ladies underwear painting is confiscated by police.  Zuckerberg unveils internet.org. And Shafiur Rahman's breathtaking Beggars of Bangladesh photos.  NEWZ Source for this week is an internet classic, slate.com.]]></description>
+            <atom:link rel="payment" title="Flattr this!" href="https://flattr.com/submit/auto?user_id=243&amp;url=http%3A%2F%2Fnewz-of-the-world.com%2Fnewz058-fire-the-consultants%2F&amp;language=en_GB&amp;category=audio&amp;title=NEWZ058+Fire+the+Consultants&amp;description=This+week+it+is+a+question+of+if+and+what+kind+of+intervention+will+take+place+in+Syria.+The+French+president+warns+of+big+trouble+in+the+Central+African+Republic....&amp;tags=bicyclemark%2Cmark+fonseca+rendeiro%2Cmetaebene%2Cnews%2Cnewz%2Cpodcast%2Ctim+pritlove%2Cpodcast%2C+newz%2C+news%2C+mark+fonseca+rendeiro%2C+bicyclemark%2C+tim+pritlove%2C+metaebene" type="text/html" />
+            <psc:chapters version="1.2">
+                <psc:chapter start="00:00:00.000" title="Intro" />
+                <psc:chapter start="00:00:14.375" title="Prologue" />
+                <psc:chapter start="00:01:13.500" title="Syria chemical weapons military action?" />
+                <psc:chapter start="00:13:17.224" title="Francois Hollande says UN must act in Central African Republic" />
+                <psc:chapter start="00:18:25.250" title="In Liberia, all 25,000 applicants have failed Uni entrance exam" />
+                <psc:chapter start="00:22:34.250" title="Russian police seize pic of Putin in ladies underwear" />
+                <psc:chapter start="00:27:39.500" title="Zuckerberg unveils internet.org - is it a trap!?" />
+                <psc:chapter start="00:34:40.000" title="Beggars of Bangladesh Photo Series by Shafuir Rahman" />
+                <psc:chapter start="00:37:41.167" title="NEWZ Source: Slate.com" />
+                <psc:chapter start="00:42:50.771" title="Epilogue" />
+            </psc:chapters>
+            <atom:link rel="http://podlove.org/deep-link" href="http://newz-of-the-world.com/newz058-fire-the-consultants/#" />
+            <itunes:duration>00:44:31</itunes:duration>
+            <itunes:author>Metaebene Personal Media - Tim Pritlove</itunes:author>
+            <itunes:subtitle>Intervention in Syria — CAR in Trouble — Education Liberia — Putin Painting — internet.org — Bangladesh Beggars</itunes:subtitle>
+            <itunes:summary>This week it is a question of if and what kind of intervention will take place in Syria. The French president warns of big trouble in the Central African Republic. Every student in Liberia fails the University entrance exam. Putin in ladies underwear painting is confiscated by police.  Zuckerberg unveils internet.org. And Shafiur Rahman's breathtaking Beggars of Bangladesh photos.  NEWZ Source for this week is an internet classic, slate.com.</itunes:summary>
+            <itunes:image href="http://meta.metaebene.me/media/newz/newz058-fire-the-consultants.jpg" />
+            <content:encoded><![CDATA[<p><a target="_blank" href="http://meta.metaebene.me/media/newz/newz058-fire-the-consultants.jpg"><img style="float: right; padding: 5px; margin: 5px; margin-left: 20px; border-style: solid; border-width: 1px; border-color: black;" src="http://meta.metaebene.me/media/newz/newz058-fire-the-consultants.jpg" alt="Episode image for NEWZ058 Fire the Consultants" width="200" height="200" /></a>This week it is a question of if and what kind of intervention will take place in Syria. The French president warns of big trouble in the Central African Republic. Every student in Liberia fails the University entrance exam. Putin in ladies underwear painting is confiscated by police.  Zuckerberg unveils internet.org. And Shafiur Rahman's breathtaking Beggars of Bangladesh photos.  NEWZ Source for this week is an internet classic, slate.com.</p>
+			<p><br />
+			</p>
+			<p><strong>Topics:</strong> Intervention in Syria — CAR in Trouble — Education Liberia — Putin Painting — internet.org — Bangladesh Beggars<br />
+			<span class="podlove-duration"><strong>Duration:</strong> 00:44:31</span><br/><span class="podlove-contributors"><strong>Team:</strong> <span class="podlove-contributors"><span class="contributor"><img alt='' src='http://1.gravatar.com/avatar/5c111db9ca417a89176812f3ab3c4aef?s=18&amp;d=http%3A%2F%2F1.gravatar.com%2Favatar%2Fad516503a11cd5ca435acc9bb6523536%3Fs%3D18&amp;r=G' class='avatar avatar-18 photo' height='18' width='18' /> Mark Fonseca Rendeiro</span>, <span class="contributor"><img alt='' src='http://1.gravatar.com/avatar/97391367796db965d19e63b690e72b3d?s=18&amp;d=http%3A%2F%2F1.gravatar.com%2Favatar%2Fad516503a11cd5ca435acc9bb6523536%3Fs%3D18&amp;r=G' class='avatar avatar-18 photo' height='18' width='18' /> Tim Pritlove</span></span></span></p>
+			<p>Links:</p>
+			<ul>
+			<li><a href="http://www.cbsnews.com/8301-250_162-57600306/biden-no-doubt-assad-responsible-for-syria-chemical-weapons-attack" target="_blank">Biden Says No Doubt on Chemical Weapons</a></li>
+			<li><a href="http://www.pbs.org/newshour/rundown/2013/08/americans-wary-of-syria-intervention.html" target="_blank">Public Opinion in US Regarding Syria</a></li>
+			<li><a href="http://www.reuters.com/article/2013/08/27/us-france-centralafrica-idUSBRE97Q0SO20130827" target="_blank">Somalization of Central African Republic</a></li>
+			<li><a href="http://www.theguardian.com/world/2013/aug/27/all-candidates-fail-liberia-university-test" target="_blank">Epic Student Fail in Liberia</a></li>
+			<li><a href="http://www.slate.com/blogs/the_slatest/2013/08/27/russian_police_seize_a_painting_of_russian_president_vladimir_putin_wearing.html" target="_blank">Putin in Ladies Underwear Painting Confiscated</a></li>
+			<li><a href="http://www.wired.co.uk/news/archive/2013-08/27/mark-zuckerberg-internet-org" target="_blank">Zuckerberg Unveils Internet.org</a></li>
+			<li><a href="http://banani.sixoranges.net/" target="_blank">Bangladesh Beggars Photo Series by Shafiur Rahman</a></li>
+			<li>NEWZ Source: <a href="http://slate.com" target="_blank">Slate.com</a></li>
+			<li>Episode Image: <a href="http://www.flickr.com/photos/donkeyhotey/7216473832/" target="_blank">Mark Zuckerberg Caricature</a> by <a href="http://www.flickr.com/photos/donkeyhotey/" target="_blank">DonkeyHotey</a></li>
+			</ul>
+			<p><a href="http://newz-of-the-world.com/?flattrss_redirect&amp;id=1225&amp;md5=8df6f7c11d45637e704ff2396a809a9a" title="Flattr" target="_blank"><img src="http://newz-of-the-world.com/wp-content/plugins/flattr/img/flattr-badge-large.png" alt="flattr this!"/></a></p><img src="http://feeds.feedburner.com/~r/newz-of-the-world/~4/JOecpNdDdso" height="1" width="1"/>]]></content:encoded>
+            <feedburner:origLink>http://newz-of-the-world.com/newz058-fire-the-consultants/</feedburner:origLink>
+            <enclosure url="http://feedproxy.google.com/~r/newz-of-the-world/~5/MzABJ2A4Pdk/newz058-fire-the-consultants.m4a" length="19897455" type="audio/mp4" />
+            <feedburner:origEnclosureLink>http://meta.metaebene.me/media/newz/newz058-fire-the-consultants.m4a</feedburner:origEnclosureLink>
+        </item>
+        <item>
+            <title>NEWZ057 It’s Ugly and it is Annoying</title>
+            <link>http://feedproxy.google.com/~r/newz-of-the-world/~3/9nvzRY3djRM/</link>
+            <pubDate>Fri, 23 Aug 2013 10:03:25 +0000</pubDate>
+            <guid isPermaLink="false">podlove-2013-08-23t09:21:49+00:00-7c0b88ad4fa14e0</guid>
+            <description><![CDATA[This week we start off with the massive story of possible chemical weapons use in Syria. From there we go over who benefits from US Military Aid to Egypt. South Sudan faces their biggest crisis ever as a very young nation. In Poland the plan is to build two illegal coal power plants. While over in Russia a man has outsmarted the bank by writing his own terms of service. Our NEWZ Source of the week is the oldest think tank in Washington DC. Rounding off today we get into the messy world of encryption and email.]]></description>
+            <atom:link rel="payment" title="Flattr this!" href="https://flattr.com/submit/auto?user_id=243&amp;url=http%3A%2F%2Fnewz-of-the-world.com%2Fnewz057-its-ugly-and-it-is-annoying%2F&amp;language=en_GB&amp;category=audio&amp;title=NEWZ057+It%26%238217%3Bs+Ugly+and+it+is+Annoying&amp;description=This+week+we+start+off+with+the+massive+story+of+possible+chemical+weapons+use+in+Syria.+From+there+we+go+over+who+benefits+from+US+Military+Aid+to+Egypt.+South...&amp;tags=bicyclemark%2Cchemical+weapons%2Cegypt%2Cmark+fonseca+rendeiro%2Cmetaebene%2Cnews%2Cnewz%2Cpodcast%2Crussia%2Csouth+sudan%2Csyria%2Ctim+pritlove%2Cusa%2Cwar%2Cpodcast%2C+newz%2C+news%2C+mark+fonseca+rendeiro%2C+bicyclemark%2C+tim+pritlove%2C+metaebene" type="text/html" />
+            <psc:chapters version="1.2">
+                <psc:chapter start="00:00:00.000" title="Intro" />
+                <psc:chapter start="00:00:15.083" title="Prologue" />
+                <psc:chapter start="00:03:43.750" title="Syrian Government Uses Chemical Weapons in Damascus" />
+                <psc:chapter start="00:11:51.125" title="Companies that Benefit from US Aid to Egypt" />
+                <psc:chapter start="00:20:44.052" title="South Sudan on the Verge of Collapse?" />
+                <psc:chapter start="00:24:50.682" title="Poland pushes ahead with plan for coal power plants in violation of EU law" />
+                <psc:chapter start="00:28:31.375" title="Russian Man Outsmarts Bank By Adding his own Fine Print to the Contract" />
+                <psc:chapter start="00:32:48.750" title="NEWZ Source: The Brookings Institute" />
+                <psc:chapter start="00:35:45.000" title="Epilogue" />
+            </psc:chapters>
+            <atom:link rel="http://podlove.org/deep-link" href="http://newz-of-the-world.com/newz057-its-ugly-and-it-is-annoying/#" />
+            <itunes:duration>00:44:24</itunes:duration>
+            <itunes:author>Metaebene Personal Media - Tim Pritlove</itunes:author>
+            <itunes:subtitle>Chemical Weapons; US Military Aid; South Sudan; Poland Plants; Russian Bank Terms; Brookings; Lavabit; Silent Circle</itunes:subtitle>
+            <itunes:summary>This week we start off with the massive story of possible chemical weapons use in Syria. From there we go over who benefits from US Military Aid to Egypt. South Sudan faces their biggest crisis ever as a very young nation. In Poland the plan is to build two illegal coal power plants. While over in Russia a man has outsmarted the bank by writing his own terms of service. Our NEWZ Source of the week is the oldest think tank in Washington DC. Rounding off today we get into the messy world of encryption and email.</itunes:summary>
+            <itunes:image href="http://meta.metaebene.me/media/newz/newz057-its-ugly-and-it-is-annoying.jpg" />
+            <content:encoded><![CDATA[<p><a target="_blank" href="http://meta.metaebene.me/media/newz/newz057-its-ugly-and-it-is-annoying.jpg"><img style="float: right; padding: 5px; margin: 5px; margin-left: 20px; border-style: solid; border-width: 1px; border-color: black;" src="http://meta.metaebene.me/media/newz/newz057-its-ugly-and-it-is-annoying.jpg" alt="Episode image for NEWZ057 It&#8217;s Ugly and it is Annoying" width="200" height="200" /></a>This week we start off with the massive story of possible chemical weapons use in Syria. From there we go over who benefits from US Military Aid to Egypt. South Sudan faces their biggest crisis ever as a very young nation. In Poland the plan is to build two illegal coal power plants. While over in Russia a man has outsmarted the bank by writing his own terms of service. Our NEWZ Source of the week is the oldest think tank in Washington DC. Rounding off today we get into the messy world of encryption and email. </p>
+			<p><br />
+			</p>
+			<p><strong>Topics:</strong> Chemical Weapons; US Military Aid; South Sudan; Poland Plants; Russian Bank Terms; Brookings; Lavabit; Silent Circle<br />
+			<span class="podlove-duration"><strong>Duration:</strong> 00:44:24</span><br/><span class="podlove-contributors"><strong>Team:</strong> <span class="podlove-contributors"><span class="contributor"><img alt='' src='http://1.gravatar.com/avatar/5c111db9ca417a89176812f3ab3c4aef?s=18&amp;d=http%3A%2F%2F1.gravatar.com%2Favatar%2Fad516503a11cd5ca435acc9bb6523536%3Fs%3D18&amp;r=G' class='avatar avatar-18 photo' height='18' width='18' /> Mark Fonseca Rendeiro</span>, <span class="contributor"><img alt='' src='http://1.gravatar.com/avatar/97391367796db965d19e63b690e72b3d?s=18&amp;d=http%3A%2F%2F1.gravatar.com%2Favatar%2Fad516503a11cd5ca435acc9bb6523536%3Fs%3D18&amp;r=G' class='avatar avatar-18 photo' height='18' width='18' /> Tim Pritlove</span></span></span></p>
+			<p>Links:</p>
+			<ul>
+			<li><a href="http://www.bbc.co.uk/news/world-middle-east-23777201" target="_blank">Syrian Government Accused of Using Chemical Weapons</a></li>
+			<li><a href="http://www.globalpost.com/dispatch/news/regions/americas/united-states/130816/top-10-american-corporations-egypt-military-us-aid" target="_blank">Companies that Benefit from US Aid to Egypt</a></li>
+			<li><a href="http://www.brookings.edu/blogs/up-front/posts/2013/08/20-south-sudan-kimenyi" target="_blank">Is South Sudan on the Verge of Collapse</a></li>
+			<li><a href="http://www.euractiv.com/energy/poland-collision-course-brussels-news-529895" target="_blank">Poland Pushes Ahead with Illegal Coal Plants</a></li>
+			<li><a href="http://rt.com/business/man-outsmarts-banks-wins-court-221/" target="_blank">Russian Man Outsmarts Bank&#8217;s Terms of Service</a></li>
+			<li>NEWZ Source: <a href="http://www.brookings.edu/" target="_blank">Brookings Institute</a></li>
+			<li><a href="http://www.groklaw.net/article.php?story=20130818120421175" target="_blank">Groklaw and Lavabit Story</a></li>
+			<li><a href="http://download.2600.com/mediadownload/www.2600.com/offthehook/mp3files/2013/off_the_hook__20130814-128.mp3">Off the Hook Featuring Silent Circle</a></li>
+			</ul>
+			<p><em>Image courtesy of <a href="http://www.flickr.com/photos/29143375@N05/4729228634/">Justin Scott Campbell / flickr</a></em></p>
+			<p><a href="http://newz-of-the-world.com/?flattrss_redirect&amp;id=1217&amp;md5=101c16d037a086a3f564e2b3bf153369" title="Flattr" target="_blank"><img src="http://newz-of-the-world.com/wp-content/plugins/flattr/img/flattr-badge-large.png" alt="flattr this!"/></a></p><img src="http://feeds.feedburner.com/~r/newz-of-the-world/~4/9nvzRY3djRM" height="1" width="1"/>]]></content:encoded>
+            <feedburner:origLink>http://newz-of-the-world.com/newz057-its-ugly-and-it-is-annoying/</feedburner:origLink>
+            <enclosure url="http://feedproxy.google.com/~r/newz-of-the-world/~5/xuFOf_mgrK0/newz057-its-ugly-and-it-is-annoying.m4a" length="19845771" type="audio/mp4" />
+            <feedburner:origEnclosureLink>http://meta.metaebene.me/media/newz/newz057-its-ugly-and-it-is-annoying.m4a</feedburner:origEnclosureLink>
+        </item>
+        <item>
+            <title>NEWZ056 Become a Bullet</title>
+            <link>http://feedproxy.google.com/~r/newz-of-the-world/~3/VBrjqqYIF74/</link>
+            <pubDate>Tue, 13 Aug 2013 09:53:12 +0000</pubDate>
+            <guid isPermaLink="false">podlove-2013-08-13t08:46:27+00:00-a13cbb9567a1f9a</guid>
+            <description><![CDATA[We're back after a lovely hacker camp experience with a quick rundown of the event.  The big news this morning is out of Mali where presidential election results are in.  Last week two Turkish pilots were kidnapped in Beirut in connection with the Syrian conflict.  The US Attorney general has announced a big plan to reform prisons and sentencing. Cannabis policies in the US and elsewhere in the world continue to open up.  Hollande says no fracking for France as long as he is in charge. Australian politicians say Papua New Guinea is a dangerous gateway for refugees. And finally, Elon Musk has a rapid transit solution for California.]]></description>
+            <atom:link rel="payment" title="Flattr this!" href="https://flattr.com/submit/auto?user_id=243&amp;url=http%3A%2F%2Fnewz-of-the-world.com%2Fnewz056-become-a-bullet%2F&amp;language=en_GB&amp;category=audio&amp;title=NEWZ056+Become+a+Bullet&amp;description=We%27re+back+after+a+lovely+hacker+camp+experience+with+a+quick+rundown+of+the+event.+The+big+news+this+morning+is+out+of+Mali+where+presidential+election+results+are+in....&amp;tags=bicyclemark%2Cmark+fonseca+rendeiro%2Cmetaebene%2Cnews%2Cnewz%2Cpodcast%2Ctim+pritlove%2Cpodcast%2C+newz%2C+news%2C+mark+fonseca+rendeiro%2C+bicyclemark%2C+tim+pritlove%2C+metaebene" type="text/html" />
+            <psc:chapters version="1.2">
+                <psc:chapter start="00:00:00.000" title="Intro" />
+                <psc:chapter start="00:01:11.073" title="Prologue" />
+                <psc:chapter start="00:11:31.047" title="Cisse admits defeat against rival Keita in Mali election" />
+                <psc:chapter start="00:16:18.484" title="Turkish Pilots Kidnapped in Beirut" />
+                <psc:chapter start="00:23:08.542" title="Prison Reform in the US Announced" />
+                <psc:chapter start="00:32:28.906" title="The Evolution of the Cannabis issue in the US" />
+                <psc:chapter start="00:43:29.875" title="President Hollande says No Fracking while he is president" />
+                <psc:chapter start="00:47:54.177" title="Australian Government Going Refugee Wild" />
+                <psc:chapter start="00:53:37.500" title="Elon Musk shares transportation invention Hyperloop with public" />
+                <psc:chapter start="01:07:36.500" title="Epilogue" />
+            </psc:chapters>
+            <atom:link rel="http://podlove.org/deep-link" href="http://newz-of-the-world.com/newz056-become-a-bullet/#" />
+            <itunes:duration>01:08:30</itunes:duration>
+            <itunes:author>Metaebene Personal Media - Tim Pritlove</itunes:author>
+            <itunes:subtitle>OHM, Mali, Turkish Kidnapping, US Prisons, Reefer, Fracking, Australia Refugees, Hyperloop</itunes:subtitle>
+            <itunes:summary>We're back after a lovely hacker camp experience with a quick rundown of the event.  The big news this morning is out of Mali where presidential election results are in.  Last week two Turkish pilots were kidnapped in Beirut in connection with the Syrian conflict.  The US Attorney general has announced a big plan to reform prisons and sentencing. Cannabis policies in the US and elsewhere in the world continue to open up.  Hollande says no fracking for France as long as he is in charge. Australian politicians say Papua New Guinea is a dangerous gateway for refugees. And finally, Elon Musk has a rapid transit solution for California.</itunes:summary>
+            <itunes:image href="http://meta.metaebene.me/media/newz/newz056-become-a-bullet.jpg" />
+            <content:encoded><![CDATA[<p><a target="_blank" href="http://meta.metaebene.me/media/newz/newz056-become-a-bullet.jpg"><img style="float: right; padding: 5px; margin: 5px; margin-left: 20px; border-style: solid; border-width: 1px; border-color: black;" src="http://meta.metaebene.me/media/newz/newz056-become-a-bullet.jpg" alt="Episode image for NEWZ056 Become a Bullet" width="200" height="200" /></a>We're back after a lovely hacker camp experience with a quick rundown of the event.  The big news this morning is out of Mali where presidential election results are in.  Last week two Turkish pilots were kidnapped in Beirut in connection with the Syrian conflict.  The US Attorney general has announced a big plan to reform prisons and sentencing. Cannabis policies in the US and elsewhere in the world continue to open up.  Hollande says no fracking for France as long as he is in charge. Australian politicians say Papua New Guinea is a dangerous gateway for refugees. And finally, Elon Musk has a rapid transit solution for California.  </p>
+			<p><br />
+			</p>
+			<p><strong>Topics:</strong> OHM, Mali, Turkish Kidnapping, US Prisons, Reefer, Fracking, Australia Refugees, Hyperloop<br />
+			<span class="podlove-duration"><strong>Duration:</strong> 01:08:30</span><br/><span class="podlove-contributors"><strong>Team:</strong> <span class="podlove-contributors"><span class="contributor"><img alt='' src='http://1.gravatar.com/avatar/5c111db9ca417a89176812f3ab3c4aef?s=18&amp;d=http%3A%2F%2F1.gravatar.com%2Favatar%2Fad516503a11cd5ca435acc9bb6523536%3Fs%3D18&amp;r=G' class='avatar avatar-18 photo' height='18' width='18' /> Mark Fonseca Rendeiro</span>, <span class="contributor"><img alt='' src='http://1.gravatar.com/avatar/97391367796db965d19e63b690e72b3d?s=18&amp;d=http%3A%2F%2F1.gravatar.com%2Favatar%2Fad516503a11cd5ca435acc9bb6523536%3Fs%3D18&amp;r=G' class='avatar avatar-18 photo' height='18' width='18' /> Tim Pritlove</span></span></span></p>
+			<p>Links:</p>
+			<ul>
+			<li><a href="https://ohm2013.org/site/" target="_blank">OHM 2013 </a></li>
+			<li><a href="http://www.france24.com/en/20130812-keita-ibk-leads-partial-results-mali-presidential-run-off" target="_blank">Keita beats Cisse in Mali Election </a></li>
+			<li><a href="http://www.bloomberg.com/news/2013-08-09/beirut-gunmen-kidnap-two-turkish-airlines-crew-members-from-bus.html" target="_blank">Turkish Airline Pilots Kidnapped in Beirut</a></li>
+			<li><a href="http://www.theguardian.com/news/datablog/2013/jul/25/syrian-refugee-crisis-in-numbers-updated" target="_blank">Syrian Refugees Statistics</a></li>
+			<li><a href="http://www.aljazeera.com/news/americas/2013/08/201381217244533902.html" target="_blank">US Attorney General Announces Prison Reform</a></li>
+			<li><a href="http://www.hightimes.com/read/dawn-reefer-madness" target="_blank">The Dawn of Reefer Madness</a></li>
+			<li><a href="http://www.upi.com/Business_News/Energy-Resources/2013/07/15/France-says-no-to-fracking/UPI-80991373887789/" target="_blank">Hollande Says No Fracking While He is President</a></li>
+			<li><a href="http://www.abc.net.au/news/2013-08-13/an-mayor-says-torres-strait-a-doorway-into-australia-for-asylum/4884062" target="_blank">Australian Politicians Claim Papua New Guinea is a Dangerous Refugee Gateway</a></li>
+			<li><a href="http://www.bbc.co.uk/news/world-asia-23645736" target="_blank">Candidate Quits After Islam Gaffe </a></li>
+			<li><a href="http://arstechnica.com/business/2013/08/hyperloop-a-theoretical-760-mph-transit-system-made-of-sun-air-and-magnets/" target="_blank">Musk Lays Out a Quick Plan for Hyperloop Transport System</a></li>
+			<li><a href="http://en.wikipedia.org/wiki/Transrapid" target="_blank">Transrapid System</a></li>
+			</ul>
+			<p><a href="http://newz-of-the-world.com/?flattrss_redirect&amp;id=1210&amp;md5=cb496a9c6ad78afb7bc3133f9795270c" title="Flattr" target="_blank"><img src="http://newz-of-the-world.com/wp-content/plugins/flattr/img/flattr-badge-large.png" alt="flattr this!"/></a></p><img src="http://feeds.feedburner.com/~r/newz-of-the-world/~4/VBrjqqYIF74" height="1" width="1"/>]]></content:encoded>
+            <feedburner:origLink>http://newz-of-the-world.com/newz056-become-a-bullet/</feedburner:origLink>
+            <enclosure url="http://feedproxy.google.com/~r/newz-of-the-world/~5/zBATyhvjOC0/newz056-become-a-bullet.m4a" length="30528738" type="audio/mp4" />
+            <feedburner:origEnclosureLink>http://meta.metaebene.me/media/newz/newz056-become-a-bullet.m4a</feedburner:origEnclosureLink>
+        </item>
+        <item>
+            <title>NEWZ055 Elevator Music in the Lobby</title>
+            <link>http://feedproxy.google.com/~r/newz-of-the-world/~3/Y7Ex9DaNXjs/</link>
+            <pubDate>Fri, 12 Jul 2013 13:50:57 +0000</pubDate>
+            <guid isPermaLink="false">podlove-2013-07-12t12:41:32+00:00-075beac029671f0</guid>
+            <description><![CDATA[This week in the aftermath of the Quebec train accident the energy debate gets louder in North America.  In Qatar the Taliban office seems to be closed as peace negotiations with the Afghan government are also stalled.  Former French President Sarkozy is on facebook asking for donations to save his UMP party.  The Russian Security Service is budgeting tens of thousands of dollars for typewriters.  A Saudi Arabian ballistic missile site shows capabilities for reaching Israel or Iran. And lastly this week, the Chinese government is accusing GlaxoSmithKline of bribery to keep drug prices high. This week's NEWZ Source is an old standby for military news, Jane's.]]></description>
+            <atom:link rel="payment" title="Flattr this!" href="https://flattr.com/submit/auto?user_id=243&amp;url=http%3A%2F%2Fnewz-of-the-world.com%2Fnewz055-elevator-music-in-the-lobby%2F&amp;language=en_GB&amp;category=audio&amp;title=NEWZ055+Elevator+Music+in+the+Lobby&amp;description=This+week+in+the+aftermath+of+the+Quebec+train+accident+the+energy+debate+gets+louder+in+North+America.+In+Qatar+the+Taliban+office+seems+to+be+closed+as+peace+negotiations...&amp;tags=bicyclemark%2Cmark+fonseca+rendeiro%2Cmetaebene%2Cnews%2Cnewz%2Cpodcast%2Ctim+pritlove%2Cpodcast%2C+newz%2C+news%2C+mark+fonseca+rendeiro%2C+bicyclemark%2C+tim+pritlove%2C+metaebene" type="text/html" />
+            <psc:chapters version="1.2">
+                <psc:chapter start="00:00:00.000" title="Intro" />
+                <psc:chapter start="00:00:13.984" title="Prologue" />
+                <psc:chapter start="00:01:18.609" title="Quebec Train Accident Sparks Louder Debate About Oil Pipelines and Fracking" />
+                <psc:chapter start="00:08:18.083" title="Taliban May Have Closed Their Office in Doha as Peace Talks Stall" />
+                <psc:chapter start="00:13:19.073" title="Sarkozy Turns to Crowdfunding to try and save broke Party" />
+                <psc:chapter start="00:18:36.984" title="Russian Security Service Invests in Typewriters As Part of Anti-Leaks Efforts" />
+                <psc:chapter start="00:23:48.594" title="New Saudi Missile Program May Target Iran and Israel" />
+                <psc:chapter start="00:28:06.604" title="GlaxoSmithKline Accused of Bribing Chinese Officials" />
+                <psc:chapter start="00:33:21.734" title="NEWZ Source: Jane's" />
+                <psc:chapter start="00:36:01.563" title="Epilogue" />
+            </psc:chapters>
+            <atom:link rel="http://podlove.org/deep-link" href="http://newz-of-the-world.com/newz055-elevator-music-in-the-lobby/#" />
+            <itunes:duration>00:37:12</itunes:duration>
+            <itunes:author>Metaebene Personal Media - Tim Pritlove</itunes:author>
+            <itunes:subtitle>Quebec Train, Taliban Office, Sarkozy Crowdfund, Russian Typewriters, Saudi Missiles, Glaxo Bribes, Jane's</itunes:subtitle>
+            <itunes:summary>This week in the aftermath of the Quebec train accident the energy debate gets louder in North America.  In Qatar the Taliban office seems to be closed as peace negotiations with the Afghan government are also stalled.  Former French President Sarkozy is on facebook asking for donations to save his UMP party.  The Russian Security Service is budgeting tens of thousands of dollars for typewriters.  A Saudi Arabian ballistic missile site shows capabilities for reaching Israel or Iran. And lastly this week, the Chinese government is accusing GlaxoSmithKline of bribery to keep drug prices high. This week's NEWZ Source is an old standby for military news, Jane's.</itunes:summary>
+            <itunes:image href="http://meta.metaebene.me/media/newz/newz055-elevator-music-in-the-lobby.jpg" />
+            <content:encoded><![CDATA[<p><a target="_blank" href="http://meta.metaebene.me/media/newz/newz055-elevator-music-in-the-lobby.jpg"><img style="float: right; padding: 5px; margin: 5px; margin-left: 20px; border-style: solid; border-width: 1px; border-color: black;" src="http://meta.metaebene.me/media/newz/newz055-elevator-music-in-the-lobby.jpg" alt="Episode image for NEWZ055 Elevator Music in the Lobby" width="200" height="200" /></a>This week in the aftermath of the Quebec train accident the energy debate gets louder in North America.  In Qatar the Taliban office seems to be closed as peace negotiations with the Afghan government are also stalled.  Former French President Sarkozy is on facebook asking for donations to save his UMP party.  The Russian Security Service is budgeting tens of thousands of dollars for typewriters.  A Saudi Arabian ballistic missile site shows capabilities for reaching Israel or Iran. And lastly this week, the Chinese government is accusing GlaxoSmithKline of bribery to keep drug prices high. This week's NEWZ Source is an old standby for military news, Jane's.  </p>
+			<p><br />
+			</p>
+			<p><strong>Topics:</strong> Quebec Train, Taliban Office, Sarkozy Crowdfund, Russian Typewriters, Saudi Missiles, Glaxo Bribes, Jane's<br />
+			<span class="podlove-duration"><strong>Duration:</strong> 00:37:12</span><br/><span class="podlove-contributors"><strong>Team:</strong> <span class="podlove-contributors"><span class="contributor"><img alt='' src='http://1.gravatar.com/avatar/5c111db9ca417a89176812f3ab3c4aef?s=18&amp;d=http%3A%2F%2F1.gravatar.com%2Favatar%2Fad516503a11cd5ca435acc9bb6523536%3Fs%3D18&amp;r=G' class='avatar avatar-18 photo' height='18' width='18' /> Mark Fonseca Rendeiro</span>, <span class="contributor"><img alt='' src='http://1.gravatar.com/avatar/97391367796db965d19e63b690e72b3d?s=18&amp;d=http%3A%2F%2F1.gravatar.com%2Favatar%2Fad516503a11cd5ca435acc9bb6523536%3Fs%3D18&amp;r=G' class='avatar avatar-18 photo' height='18' width='18' /> Tim Pritlove</span></span></span></p>
+			<p>Links:</p>
+			<ul>
+			<li><a href="http://www.globalpost.com/dispatch/news/regions/americas/canada/130711/quebec-wreck-oil-train-keystone-shale-gas-fracking" target="_blank">Quebec Train Accident Re-Ignites Energy Debate</a></li>
+			<li><a href="http://www.bbc.co.uk/news/world-asia-23274081" target="_blank">Taliban Peace Talks Stall as Doha Office Closes</a></li>
+			<li><a href="http://online.wsj.com/article/SB10001424127887324260204578585891279378384.html" target="_blank">Sarkozy Appeals to the Public to Help Save Party</a></li>
+			<li><a href="http://www.globalpost.com/dispatch/news/afp/130711/kremlin-turns-back-typewriters-avoid-leaks" target="_blank">Russian Security Service Seeks Typewriters as Anti-Leak Tools</a></li>
+			<li><a href="http://www.upi.com/Top_News/Special/2013/07/11/Janes-Saudis-may-be-targeting-Iran-Israel-with-new-missile-program/UPI-56401373550749/" target="_blank">Saudi Missile Program Could Reach Israel or Iran</a></li>
+			<li><a href="http://money.cnn.com/2013/07/11/news/glaxosmithkline-china-bribery/index.html" target="_blank">Chinese Government Accuses GlaxoSmithKline of Bribery</a></li>
+			<li>NEWZ Source: <a href="http://www.janes.com/" target="_blank">Jane&#8217;s Information Group</a></li>
+			<li>Episode Image: <a href="http://www.flickr.com/photos/mickangel/6297629167">Office Lobby</a> my <a href="http://www.flickr.com/photos/mickangel/">mickangel</a></li>
+			</ul>
+			<p><a href="http://newz-of-the-world.com/?flattrss_redirect&amp;id=1197&amp;md5=b7d8470e9c7221800981ffefad691148" title="Flattr" target="_blank"><img src="http://newz-of-the-world.com/wp-content/plugins/flattr/img/flattr-badge-large.png" alt="flattr this!"/></a></p><img src="http://feeds.feedburner.com/~r/newz-of-the-world/~4/Y7Ex9DaNXjs" height="1" width="1"/>]]></content:encoded>
+            <feedburner:origLink>http://newz-of-the-world.com/newz055-elevator-music-in-the-lobby/</feedburner:origLink>
+            <enclosure url="http://feedproxy.google.com/~r/newz-of-the-world/~5/fPwiHECIN5U/newz055-elevator-music-in-the-lobby.m4a" length="16668818" type="audio/mp4" />
+            <feedburner:origEnclosureLink>http://meta.metaebene.me/media/newz/newz055-elevator-music-in-the-lobby.m4a</feedburner:origEnclosureLink>
+        </item>
+        <item>
+            <title>NEWZ054 Russian Roulette in the Skies</title>
+            <link>http://feedproxy.google.com/~r/newz-of-the-world/~3/eBHe7N3HpDo/</link>
+            <pubDate>Thu, 04 Jul 2013 10:31:13 +0000</pubDate>
+            <guid isPermaLink="false">podlove-2013-07-04t09:39:59+00:00-bcb966cfd540c61</guid>
+            <description><![CDATA[Today's NEWZ of the World comes to you on the first morning of a new government in Egypt as Morsi is removed by the military. While in Europe the big news has been Snowden's flight plans and the NSA's EU spying practices. In Turkey a court has ruled to stop the development plans for Gezi park. Over in Iraq there has been a wave of violent attacks this week, some of the worst in recent history. And finally, in space news, the Russian Proton-M rocket crashed during takeoff calling into question the future of the Russian space program.  This week's NEWZ Source is the Columbia Journalism Review.]]></description>
+            <atom:link rel="payment" title="Flattr this!" href="https://flattr.com/submit/auto?user_id=243&amp;url=http%3A%2F%2Fnewz-of-the-world.com%2Fnewz054-russian-roulette-in-the-skies%2F&amp;language=en_GB&amp;category=audio&amp;title=NEWZ054+Russian+Roulette+in+the+Skies&amp;description=Today%27s+NEWZ+of+the+World+comes+to+you+on+the+first+morning+of+a+new+government+in+Egypt+as+Morsi+is+removed+by+the+military.+While+in+Europe+the+big...&amp;tags=Bolivia%2CEdward+Snowden%2Cegypt%2CEvo+Morales%2Cfrance%2Cgermany%2CGezi+Park%2CIraq%2Citaly%2Cportugal%2CRoskosmos%2Crussia%2CSpain%2Cturkey%2Cusa%2Cpodcast%2C+newz%2C+news%2C+mark+fonseca+rendeiro%2C+bicyclemark%2C+tim+pritlove%2C+metaebene" type="text/html" />
+            <psc:chapters version="1.2">
+                <psc:chapter start="00:00:00.000" title="Introduction" />
+                <psc:chapter start="00:00:14.016" title="Prologue" />
+                <psc:chapter start="00:01:02.214" title="Morsi ousted by military after 48 hour deadline" />
+                <psc:chapter start="00:16:27.766" title="Snowden update: NSA Spying on EU Nations" />
+                <psc:chapter start="00:30:05.516" title="Turkish Court Blocks Gezi Park Project" />
+                <psc:chapter start="00:33:49.516" title="Portuguese Finance Minister and Foreign Minister Resign, Sick of Austerity" />
+                <psc:chapter start="00:41:27.771" title="Wave of Attacks in Iraq " />
+                <psc:chapter start="00:45:35.359" title="Russian Proton-M fails at launch and crashes into spaceport" />
+                <psc:chapter start="00:56:01.328" title="NEWZ Source: Columbia Journalism Review" />
+                <psc:chapter start="00:59:30.766" title="Epilogue" />
+            </psc:chapters>
+            <atom:link rel="http://podlove.org/deep-link" href="http://newz-of-the-world.com/newz054-russian-roulette-in-the-skies/#" />
+            <itunes:duration>01:00:36</itunes:duration>
+            <itunes:author>Metaebene Personal Media - Tim Pritlove</itunes:author>
+            <itunes:subtitle>Egyptian President - Spying EU - Gezi Park - Portuguese Government - Iraq Violence - Russian Space - CJR</itunes:subtitle>
+            <itunes:summary>Today's NEWZ of the World comes to you on the first morning of a new government in Egypt as Morsi is removed by the military. While in Europe the big news has been Snowden's flight plans and the NSA's EU spying practices. In Turkey a court has ruled to stop the development plans for Gezi park. Over in Iraq there has been a wave of violent attacks this week, some of the worst in recent history. And finally, in space news, the Russian Proton-M rocket crashed during takeoff calling into question the future of the Russian space program.  This week's NEWZ Source is the Columbia Journalism Review.</itunes:summary>
+            <itunes:image href="http://meta.metaebene.me/media/newz/newz054-russian-roulette-in-the-skies.jpg" />
+            <content:encoded><![CDATA[<p><a target="_blank" href="http://meta.metaebene.me/media/newz/newz054-russian-roulette-in-the-skies.jpg"><img style="float: right; padding: 5px; margin: 5px; margin-left: 20px; border-style: solid; border-width: 1px; border-color: black;" src="http://meta.metaebene.me/media/newz/newz054-russian-roulette-in-the-skies.jpg" alt="Episode image for NEWZ054 Russian Roulette in the Skies" width="200" height="200" /></a>Today's NEWZ of the World comes to you on the first morning of a new government in Egypt as Morsi is removed by the military. While in Europe the big news has been Snowden's flight plans and the NSA's EU spying practices. In Turkey a court has ruled to stop the development plans for Gezi park. Over in Iraq there has been a wave of violent attacks this week, some of the worst in recent history. And finally, in space news, the Russian Proton-M rocket crashed during takeoff calling into question the future of the Russian space program.  This week's NEWZ Source is the Columbia Journalism Review.  </p>
+			<p><br />
+			</p>
+			<p><strong>Topics:</strong> Egyptian President - Spying EU - Gezi Park - Portuguese Government - Iraq Violence - Russian Space - CJR<br />
+			<span class="podlove-duration"><strong>Duration:</strong> 01:00:36</span><br/><span class="podlove-contributors"><strong>Team:</strong> <span class="podlove-contributors"><span class="contributor"><img alt='' src='http://1.gravatar.com/avatar/5c111db9ca417a89176812f3ab3c4aef?s=18&amp;d=http%3A%2F%2F1.gravatar.com%2Favatar%2Fad516503a11cd5ca435acc9bb6523536%3Fs%3D18&amp;r=G' class='avatar avatar-18 photo' height='18' width='18' /> Mark Fonseca Rendeiro</span>, <span class="contributor"><img alt='' src='http://1.gravatar.com/avatar/97391367796db965d19e63b690e72b3d?s=18&amp;d=http%3A%2F%2F1.gravatar.com%2Favatar%2Fad516503a11cd5ca435acc9bb6523536%3Fs%3D18&amp;r=G' class='avatar avatar-18 photo' height='18' width='18' /> Tim Pritlove</span></span></span></p>
+			<p>Links:</p>
+			<ul>
+			<li><a href="http://english.ahram.org.eg/NewsContent/1/64/75614/Egypt/Politics-/The-rise-and-fall-of-an-Egyptian-president.aspx" target="_blank">The Rise and Fall of the Egyptian President</a></li>
+			<li><a href="http://www.theglobeandmail.com/news/world/future-of-us-eu-trade-talks-in-limbo-amid-spying-allegations/article12943838/" target="_blank">US-EU Trade Deal At Risk Following Spying </a><a href="http://www.theglobeandmail.com/news/world/future-of-us-eu-trade-talks-in-limbo-amid-spying-allegations/article12943838/" target="_blank">Allegations</a></li>
+			<li><a href="http://www.guardian.co.uk/world/2013/jul/03/bolivian-president-evo-morales-austria-plane" target="_blank">Bolivian Officials Accuse France, Italy, Spain and Portugal of Blocking President&#8217;s Plane</a></li>
+			<li><a href="http://www.france24.com/en/20130703-turkey-court-blocks-park-project-triggered-protests-gezi-taksim-erdogan" target="_blank">Turkish Court Stops Gezi Park Project</a></li>
+			<li><a href="http://online.wsj.com/article/SB10001424127887323936404578581633586274300.html" target="_blank">Portuguese Ministers Resign, PM Vows to Carry on</a></li>
+			<li><a href="http://www.hurriyetdailynews.com/iraq-attacks-death-toll-rises-to-57.aspx?pageID=238&amp;nID=49930&amp;NewsCatID=352" target="_blank">Wave of Attacks Continues in Iraq</a></li>
+			<li><a href="http://www.nasaspaceflight.com/2013/07/proton-m-launch-three-glonass/" target="_blank">Russian Proton-M Rocket Fails to Launch and Crashes Into Spaceport</a></li>
+			<li>NEWZ Source: <a href="http://cjr.org" target="_blank">Columbia Journalism Review</a></li>
+			</ul>
+			<p><a href="http://newz-of-the-world.com/?flattrss_redirect&amp;id=1186&amp;md5=5d0b6ada275d08d4610fc461bf78b5f5" title="Flattr" target="_blank"><img src="http://newz-of-the-world.com/wp-content/plugins/flattr/img/flattr-badge-large.png" alt="flattr this!"/></a></p><img src="http://feeds.feedburner.com/~r/newz-of-the-world/~4/eBHe7N3HpDo" height="1" width="1"/>]]></content:encoded>
+            <feedburner:origLink>http://newz-of-the-world.com/newz054-russian-roulette-in-the-skies/</feedburner:origLink>
+            <enclosure url="http://feedproxy.google.com/~r/newz-of-the-world/~5/9QPHgnz_1zI/newz054-russian-roulette-in-the-skies.m4a" length="27022325" type="audio/mp4" />
+            <feedburner:origEnclosureLink>http://meta.metaebene.me/media/newz/newz054-russian-roulette-in-the-skies.m4a</feedburner:origEnclosureLink>
+        </item>
+        <item>
+            <title>NEWZ053 You Can’t Grow Gold</title>
+            <link>http://feedproxy.google.com/~r/newz-of-the-world/~3/7bj2pP56vHY/</link>
+            <pubDate>Fri, 28 Jun 2013 14:47:13 +0000</pubDate>
+            <guid isPermaLink="false">podlove-2013-06-28t14:11:48+00:00-c81bc6e3a2c55f1</guid>
+            <description><![CDATA[After an unexpectedly long pause of four weeks we are back! Did we miss anything? Oh yeah, a hell of a lot. And so begins the long road of playing catch up with the NEWZ.
+			So we talk about the whistleblower case of Edward Snowden and the newly erupting diplomatic war between the US and Ecuador. We also cover (in review) the events at Gezi Park in Istanbul where the turkish society is shouting for freedom from a repressive culture put out by prime minister Recep Tayyip Erdo?an. We also track the path of resistance to Brazil where an outpouring of protests is obviously making much more of an impression to the government than in Turkey.
+			We also look at Latvia that is about to join the Euro and Croatia that is about to join the EU. In Colombia the FARC is still alive and turning to Gold instead of drugs to fund their activities. Finally the US is making a bold move towards allowing gay marriages across the country due to a new ruling of the Supreme Court.
+			Finally we present you our latest NEWZ source: the Breuel blog.]]></description>
+            <atom:link rel="payment" title="Flattr this!" href="https://flattr.com/submit/auto?user_id=243&amp;url=http%3A%2F%2Fnewz-of-the-world.com%2Fnewz053-you-cant-grow-gold%2F&amp;language=en_GB&amp;category=audio&amp;title=NEWZ053+You+Can%26%238217%3Bt+Grow+Gold&amp;description=After+an+unexpectedly+long+pause+of+four+weeks+we+are+back%21+Did+we+miss+anything%3F+Oh+yeah%2C+a+hell+of+a+lot.+And+so+begins+the+long+road+of+playing...&amp;tags=podcast%2C+newz%2C+news%2C+mark+fonseca+rendeiro%2C+bicyclemark%2C+tim+pritlove%2C+metaebene" type="text/html" />
+            <psc:chapters version="1.2">
+                <psc:chapter start="00:00:00.000" title="Intro" />
+                <psc:chapter start="00:00:13.750" title="Prologue" />
+                <psc:chapter start="00:02:03.276" title="This leak has a name, his name is Edward Snowden" />
+                <psc:chapter start="00:14:43.323" title="Turkish people take to the streets, mass protest is born" />
+                <psc:chapter start="00:21:51.375" title="Mass Protests in Brazil Continue" />
+                <psc:chapter start="00:30:47.094" title="Latvia to join the Euro and Croatia to join the EU" />
+                <psc:chapter start="00:35:54.797" title="Illegal Gold Mining more profitable than cocaine for colombian rebels" />
+                <psc:chapter start="00:39:42.625" title="More Syria Related Fighting in Lebanon" />
+                <psc:chapter start="00:42:15.396" title="Defense of Marriage Act and Prop 8 are struck down" />
+                <psc:chapter start="00:47:43.625" title="NEWZ Source: Breugel Blog" />
+                <psc:chapter start="00:50:03.750" title="Epilogue" />
+            </psc:chapters>
+            <atom:link rel="http://podlove.org/deep-link" href="http://newz-of-the-world.com/newz053-you-cant-grow-gold/#" />
+            <itunes:duration>00:51:57</itunes:duration>
+            <itunes:author>Metaebene Personal Media - Tim Pritlove</itunes:author>
+            <itunes:subtitle>Snowden — Turkey — Latvia &amp; Croatia — Colombia — Syria &amp; Lebanon — Gay Marriage in the US — Bruegel blog</itunes:subtitle>
+            <itunes:summary>After an unexpectedly long pause of four weeks we are back! Did we miss anything? Oh yeah, a hell of a lot. And so begins the long road of playing catch up with the NEWZ.
+			So we talk about the whistleblower case of Edward Snowden and the newly erupting diplomatic war between the US and Ecuador. We also cover (in review) the events at Gezi Park in Istanbul where the turkish society is shouting for freedom from a repressive culture put out by prime minister Recep Tayyip Erdo?an. We also track the path of resistance to Brazil where an outpouring of protests is obviously making much more of an impression to the government than in Turkey.
+			We also look at Latvia that is about to join the Euro and Croatia that is about to join the EU. In Colombia the FARC is still alive and turning to Gold instead of drugs to fund their activities. Finally the US is making a bold move towards allowing gay marriages across the country due to a new ruling of the Supreme Court.
+			Finally we present you our latest NEWZ source: the Breuel blog.</itunes:summary>
+            <itunes:image href="http://meta.metaebene.me/media/newz/newz053-you-cant-grow-gold.jpg" />
+            <content:encoded><![CDATA[<p><a target="_blank" href="http://meta.metaebene.me/media/newz/newz053-you-cant-grow-gold.jpg"><img style="float: right; padding: 5px; margin: 5px; margin-left: 20px; border-style: solid; border-width: 1px; border-color: black;" src="http://meta.metaebene.me/media/newz/newz053-you-cant-grow-gold.jpg" alt="Episode image for NEWZ053 You Can&#8217;t Grow Gold" width="200" height="200" /></a>After an unexpectedly long pause of four weeks we are back! Did we miss anything? Oh yeah, a hell of a lot. And so begins the long road of playing catch up with the NEWZ.<br />
+			<br />
+			So we talk about the whistleblower case of Edward Snowden and the newly erupting diplomatic war between the US and Ecuador. We also cover (in review) the events at Gezi Park in Istanbul where the turkish society is shouting for freedom from a repressive culture put out by prime minister Recep Tayyip Erdo?an. We also track the path of resistance to Brazil where an outpouring of protests is obviously making much more of an impression to the government than in Turkey.<br />
+			<br />
+			We also look at Latvia that is about to join the Euro and Croatia that is about to join the EU. In Colombia the FARC is still alive and turning to Gold instead of drugs to fund their activities. Finally the US is making a bold move towards allowing gay marriages across the country due to a new ruling of the Supreme Court.<br />
+			<br />
+			Finally we present you our latest NEWZ source: the Breuel blog.</p>
+			<p><br />
+			</p>
+			<p><strong>Topics:</strong> Snowden — Turkey — Latvia & Croatia — Colombia — Syria & Lebanon — Gay Marriage in the US — Bruegel blog<br />
+			<span class="podlove-duration"><strong>Duration:</strong> 00:51:57</span><br/><span class="podlove-contributors"><strong>Team:</strong> <span class="podlove-contributors"><span class="contributor"><img alt='' src='http://1.gravatar.com/avatar/5c111db9ca417a89176812f3ab3c4aef?s=18&amp;d=http%3A%2F%2F1.gravatar.com%2Favatar%2Fad516503a11cd5ca435acc9bb6523536%3Fs%3D18&amp;r=G' class='avatar avatar-18 photo' height='18' width='18' /> Mark Fonseca Rendeiro</span>, <span class="contributor"><img alt='' src='http://1.gravatar.com/avatar/97391367796db965d19e63b690e72b3d?s=18&amp;d=http%3A%2F%2F1.gravatar.com%2Favatar%2Fad516503a11cd5ca435acc9bb6523536%3Fs%3D18&amp;r=G' class='avatar avatar-18 photo' height='18' width='18' /> Tim Pritlove</span></span></span></p>
+			<ul>
+			<li><a href="http://www.alternet.org/whistleblower">Meet the Whistleblower Responsible for the Massive NSA Leak | Alternet</a></li>
+			<li><a href="http://www.nytimes.com/2013/06/28/world/snowden.html">Obama Seeks to Play Down Snowden’s Import &#8211; NYTimes.com</a></li>
+			<li><a href="http://www.globalpost.com/dispatch/news/regions/europe/turkey/130606/turkey-protests-increased-calm-istanbul-clashes-rize-and-">Turkey protests: Istanbul calm, but clashes in Rize and Adana | GlobalPost</a></li>
+			<li><a href="http://en.wikipedia.org/wiki/2013_protests_in_Brazil">2013 protests in Brazil &#8211; Wikipedia, the free encyclopedia</a></li>
+			<li><a href="http://rendezvous.blogs.nytimes.com/2013/06/04/latvia-is-ready-to-jump-aboard-euro-zone/">Latvia Is Ready to Jump Aboard Euro Zone &#8211; NYTimes.com</a></li>
+			<li><a href="http://en.wikipedia.org/wiki/Accession_of_Croatia_to_the_European_Union">Accession of Croatia to the European Union &#8211; Wikipedia, the free encyclopedia</a></li>
+			<li><a href="http://www.mining.com/illegal-gold-mining-profits-for-rebels-in-colombia-five-times-larger-than-cocaine-68592/">Illegal gold mining profits for rebels in Colombia five times larger than cocaine | MINING.com</a><a href="http://www.bbc.co.uk/news/world-middle-east-23067765">BBC News &#8211; Syria war exerts growing strain on Lebanon tinderbox</a></li>
+			<li><a href="http://www.latimes.com/news/nationworld/nation/la-na-court-gay-marriage-20130627,0,1691314.story">Supreme Court rulings mark bold advance for gay marriage &#8211; latimes.com</a></li>
+			<li><a href="http://www.bruegel.org/blog/">NEWZ Source: Breugel blog</a></li>
+			</ul>
+			<p><a href="http://newz-of-the-world.com/?flattrss_redirect&amp;id=1176&amp;md5=c49690e696613479d8f72961309cd3d5" title="Flattr" target="_blank"><img src="http://newz-of-the-world.com/wp-content/plugins/flattr/img/flattr-badge-large.png" alt="flattr this!"/></a></p><img src="http://feeds.feedburner.com/~r/newz-of-the-world/~4/7bj2pP56vHY" height="1" width="1"/>]]></content:encoded>
+            <feedburner:origLink>http://newz-of-the-world.com/newz053-you-cant-grow-gold/</feedburner:origLink>
+            <enclosure url="http://feedproxy.google.com/~r/newz-of-the-world/~5/GOnvwp_PzCU/newz053-you-cant-grow-gold.m4a" length="23183903" type="audio/mp4" />
+            <feedburner:origEnclosureLink>http://meta.metaebene.me/media/newz/newz053-you-cant-grow-gold.m4a</feedburner:origEnclosureLink>
+        </item>
+        <item>
+            <title>NEWZ052 Violation of Common Sense</title>
+            <link>http://feedproxy.google.com/~r/newz-of-the-world/~3/n9EL9-jqklA/</link>
+            <pubDate>Wed, 29 May 2013 10:01:25 +0000</pubDate>
+            <guid isPermaLink="false">podlove-2013-05-29t09:24:32+00:00-d825a548b6bb673</guid>
+            <description><![CDATA[On today's edition of Newz of the World we begin in Lebanon where Syrian war related violence broke out this week. In related news, the EU embargo on supplying weapons to the Syrian rebels has now ended. Over the weekend there was a worldwide protest against Monsanto, with a particularly large turn out in Mexico where people around the country and demanding the government halt the expansion of GMO corn use.
+			Concern has been expressed by Egypt and Sudan as Ethiopia pushes forward with its Millennium dam project that will divert at least part of the Nile's flow.  Just as it seemed former Guatemalan leader Rios Montt was convicted of genocide, the Constitutional Court as overturned the verdict and ordered a do-over.
+			In the world if Vine videos the DMCA has been issuing take-down notices to the 6 second video application insisting those with concert footage are copyright infringements. This week's Newz source is the Latin American Monitor, an initiative of the Christian Science Monitor.]]></description>
+            <atom:link rel="payment" title="Flattr this!" href="https://flattr.com/submit/auto?user_id=243&amp;url=http%3A%2F%2Fnewz-of-the-world.com%2Fnewz052%2F&amp;language=en_GB&amp;category=audio&amp;title=NEWZ052+Violation+of+Common+Sense&amp;description=On+today%27s+edition+of+Newz+of+the+World+we+begin+in+Lebanon+where+Syrian+war+related+violence+broke+out+this+week.+In+related+news%2C+the+EU+embargo+on+supplying+weapons...&amp;tags=corn%2CGenetics%2Cguatemala%2Clebanon%2Cmexico%2Ctwitter%2CVine%2Cpodcast%2C+newz%2C+news%2C+mark+fonseca+rendeiro%2C+bicyclemark%2C+tim+pritlove%2C+metaebene" type="text/html" />
+            <psc:chapters version="1.2">
+                <psc:chapter start="00:00:00.000" title="Intro" />
+                <psc:chapter start="00:00:12.000" title="Prologue" />
+                <psc:chapter start="00:01:36.625" title="Lebanon: Syrian War Spills Over" />
+                <psc:chapter start="00:10:42.052" title="Mexico: Corn Protest" />
+                <psc:chapter start="00:16:48.604" title="Ethiopia: Diverts Nile for Dams" />
+                <psc:chapter start="00:22:23.672" title="Guatemala Update: Rios Monte trial takes a weird turn as it will have to be re-done" />
+                <psc:chapter start="00:25:53.875" title="Are Vine Videos subject to copyright infringement?" />
+                <psc:chapter start="00:32:39.849" title="NEWZ Sources: Latin American Monitor" href="http://www.csmonitor.com/World/Americas/Latin-America-Monitor" />
+                <psc:chapter start="00:37:11.401" title="Epilogue" />
+            </psc:chapters>
+            <atom:link rel="http://podlove.org/deep-link" href="http://newz-of-the-world.com/newz052/#" />
+            <itunes:duration>00:38:23</itunes:duration>
+            <itunes:author>Metaebene Personal Media - Tim Pritlove</itunes:author>
+            <itunes:subtitle>Fighting in Lebanon — Corn in Mexico — Ethiopian Dam — Guatemalan Court Decision — Vine Video Copyright — LA Monitor</itunes:subtitle>
+            <itunes:summary>On today's edition of Newz of the World we begin in Lebanon where Syrian war related violence broke out this week. In related news, the EU embargo on supplying weapons to the Syrian rebels has now ended. Over the weekend there was a worldwide protest against Monsanto, with a particularly large turn out in Mexico where people around the country and demanding the government halt the expansion of GMO corn use.
+			Concern has been expressed by Egypt and Sudan as Ethiopia pushes forward with its Millennium dam project that will divert at least part of the Nile's flow.  Just as it seemed former Guatemalan leader Rios Montt was convicted of genocide, the Constitutional Court as overturned the verdict and ordered a do-over.
+			In the world if Vine videos the DMCA has been issuing take-down notices to the 6 second video application insisting those with concert footage are copyright infringements. This week's Newz source is the Latin American Monitor, an initiative of the Christian Science Monitor.</itunes:summary>
+            <itunes:image href="http://meta.metaebene.me/media/newz/newz052-violation-of-common-sense.jpg" />
+            <content:encoded><![CDATA[<p><a target="_blank" href="http://meta.metaebene.me/media/newz/newz052-violation-of-common-sense.jpg"><img style="float: right; padding: 5px; margin: 5px; margin-left: 20px; border-style: solid; border-width: 1px; border-color: black;" src="http://meta.metaebene.me/media/newz/newz052-violation-of-common-sense.jpg" alt="Episode image for NEWZ052 Violation of Common Sense" width="200" height="200" /></a>On today's edition of Newz of the World we begin in Lebanon where Syrian war related violence broke out this week. In related news, the EU embargo on supplying weapons to the Syrian rebels has now ended. Over the weekend there was a worldwide protest against Monsanto, with a particularly large turn out in Mexico where people around the country and demanding the government halt the expansion of GMO corn use.<br />
+			<br />
+			Concern has been expressed by Egypt and Sudan as Ethiopia pushes forward with its Millennium dam project that will divert at least part of the Nile's flow.  Just as it seemed former Guatemalan leader Rios Montt was convicted of genocide, the Constitutional Court as overturned the verdict and ordered a do-over.<br />
+			<br />
+			In the world if Vine videos the DMCA has been issuing take-down notices to the 6 second video application insisting those with concert footage are copyright infringements. This week's Newz source is the Latin American Monitor, an initiative of the Christian Science Monitor.</p>
+			<p><br />
+			</p>
+			<p><strong>Topics:</strong> Fighting in Lebanon — Corn in Mexico — Ethiopian Dam — Guatemalan Court Decision — Vine Video Copyright — LA Monitor<br />
+			<span class="podlove-duration"><strong>Duration:</strong> 00:38:23</span><br/><span class="podlove-contributors"><strong>Team:</strong> <span class="podlove-contributors"><span class="contributor"><img alt='' src='http://1.gravatar.com/avatar/5c111db9ca417a89176812f3ab3c4aef?s=18&amp;d=http%3A%2F%2F1.gravatar.com%2Favatar%2Fad516503a11cd5ca435acc9bb6523536%3Fs%3D18&amp;r=G' class='avatar avatar-18 photo' height='18' width='18' /> Mark Fonseca Rendeiro</span>, <span class="contributor"><img alt='' src='http://1.gravatar.com/avatar/97391367796db965d19e63b690e72b3d?s=18&amp;d=http%3A%2F%2F1.gravatar.com%2Favatar%2Fad516503a11cd5ca435acc9bb6523536%3Fs%3D18&amp;r=G' class='avatar avatar-18 photo' height='18' width='18' /> Tim Pritlove</span></span></span></p>
+			<p>Links:</p>
+			<ul>
+			<li><a href="http://www.voanews.com/content/lebanon-syria-fighting/1669995.html">Syria Related Fighting In Lebanon </a></li>
+			<li><a href="http://www.euractiv.com/global-europe/eu-divisions-allow-britain-franc-news-528073">EU Arms Embargo on Syrian Rebels Ends</a></li>
+			<li><a href="http://www.csmonitor.com/World/Americas/Latin-America-Monitor/2013/0516/People-of-corn-protest-GMO-strain-in-Mexico" target="_blank">Corn Protest in Mexico </a></li>
+			<li><a href="http://www.bbc.co.uk/news/world-africa-22696623" target="_blank">Ethiopia Diverts Nile for Dam Project</a></li>
+			<li><a href="http://www.miamiherald.com/2013/05/24/3415188/reversal-of-rios-montt-verdict.html" target="_blank">Guatemalan Constitutional Court Overturns Rios Montt Verdict</a></li>
+			<li><a href="http://www.project-disco.org/intellectual-property/040913-can-you-infringe-copyright-in-six-seconds/" target="_blank">Vine Videos: Can You Infringe on Copyright in 6 Seconds?</a></li>
+			<li>Newz Source: <a href="http://www.csmonitor.com/World/Americas/Latin-America-Monitor" target="_blank">Latin American Monitor</a></li>
+			<li>Episode Image: <a href="http://www.flickr.com/photos/yjv/5376141776/">Making of Videoclip #4 iPhone video recording</a> by <a href="http://www.flickr.com/photos/yjv/">yago1.com Yago Veith &#8211; Switzerland</a></li>
+			</ul>
+			<p><a href="http://newz-of-the-world.com/?flattrss_redirect&amp;id=1111&amp;md5=5a4ee98146cbb734f539fb10a09279f6" title="Flattr" target="_blank"><img src="http://newz-of-the-world.com/wp-content/plugins/flattr/img/flattr-badge-large.png" alt="flattr this!"/></a></p><img src="http://feeds.feedburner.com/~r/newz-of-the-world/~4/n9EL9-jqklA" height="1" width="1"/>]]></content:encoded>
+            <feedburner:origLink>http://newz-of-the-world.com/newz052/</feedburner:origLink>
+            <enclosure url="http://feedproxy.google.com/~r/newz-of-the-world/~5/qRkVrBHvyCc/newz052-violation-of-common-sense.m4a" length="17132950" type="audio/mp4" />
+            <feedburner:origEnclosureLink>http://meta.metaebene.me/media/newz/newz052-violation-of-common-sense.m4a</feedburner:origEnclosureLink>
+        </item>
+        <item>
+            <title>NEWZ051 Second in the Terrorist Olympics</title>
+            <link>http://feedproxy.google.com/~r/newz-of-the-world/~3/hntMJ2ddtas/</link>
+            <pubDate>Wed, 22 May 2013 09:47:06 +0000</pubDate>
+            <guid isPermaLink="false">podlove-2013-05-22t09:04:42+00:00-ea80da28d333d72</guid>
+            <description><![CDATA[This week we look at Saudi Arabia's big plunge into nuclear energy.  UN releases first undersea mining guidelines for licenses to be issued in 2016.  Nigerian president declares operations against Boko Haram a success. Motherboard story reveals who makes money on private prisons in the US and how they are tied to pension funds.  This week's NEWZ source: Motherboard by Vice Magazine.]]></description>
+            <atom:link rel="payment" title="Flattr this!" href="https://flattr.com/submit/auto?user_id=243&amp;url=http%3A%2F%2Fnewz-of-the-world.com%2Fnewz051%2F&amp;language=en_GB&amp;category=audio&amp;title=NEWZ051+Second+in+the+Terrorist+Olympics&amp;description=This+week+we+look+at+Saudi+Arabia%27s+big+plunge+into+nuclear+energy.+UN+releases+first+undersea+mining+guidelines+for+licenses+to+be+issued+in+2016.+Nigerian+president+declares+operations+against...&amp;tags=iran%2Cnigeria%2CPrisons%2CSaudia+Arabia%2CUndersea+Mining%2Cusa%2Cpodcast%2C+newz%2C+news%2C+mark+fonseca+rendeiro%2C+bicyclemark%2C+tim+pritlove%2C+metaebene" type="text/html" />
+            <psc:chapters version="1.2">
+                <psc:chapter start="00:00:00.000" title="Intro" />
+                <psc:chapter start="00:00:13.875" title="Prologue" />
+                <psc:chapter start="00:01:46.641" title="Nuclear Saudi Arabia" />
+                <psc:chapter start="00:10:08.000" title="Undersea Mining only 3 Years Away According to New UN regulations" />
+                <psc:chapter start="00:20:50.250" title="Nigerian President Says Battle Against Boko Haram is a success" />
+                <psc:chapter start="00:26:36.911" title="Iran's Guardian Council Bars Hashemi Rafsanjani and Rahim Machaei" />
+                <psc:chapter start="00:31:56.750" title="American Pensions Tied to Prison Companies" />
+                <psc:chapter start="00:39:44.500" title="NEWZ Source: Motherboard by Vice" />
+                <psc:chapter start="00:42:59.849" title="Epilogue" />
+            </psc:chapters>
+            <atom:link rel="http://podlove.org/deep-link" href="http://newz-of-the-world.com/newz051/#" />
+            <itunes:duration>00:43:52</itunes:duration>
+            <itunes:author>Metaebene Personal Media - Tim Pritlove</itunes:author>
+            <itunes:subtitle>Saudi Nuclear Plans; Undersea Mining; Boko Haram Nigeria; Candidates Rejected in Iran; Pension Plans American Prisons; Motherboard</itunes:subtitle>
+            <itunes:summary>This week we look at Saudi Arabia's big plunge into nuclear energy.  UN releases first undersea mining guidelines for licenses to be issued in 2016.  Nigerian president declares operations against Boko Haram a success. Motherboard story reveals who makes money on private prisons in the US and how they are tied to pension funds.  This week's NEWZ source: Motherboard by Vice Magazine.</itunes:summary>
+            <itunes:image href="http://meta.metaebene.me/media/newz/newz051-second-in-the-terrorist-olympics.jpg" />
+            <content:encoded><![CDATA[<p><a target="_blank" href="http://meta.metaebene.me/media/newz/newz051-second-in-the-terrorist-olympics.jpg"><img style="float: right; padding: 5px; margin: 5px; margin-left: 20px; border-style: solid; border-width: 1px; border-color: black;" src="http://meta.metaebene.me/media/newz/newz051-second-in-the-terrorist-olympics.jpg" alt="Episode image for NEWZ051 Second in the Terrorist Olympics" width="200" height="200" /></a>This week we look at Saudi Arabia's big plunge into nuclear energy.  UN releases first undersea mining guidelines for licenses to be issued in 2016.  Nigerian president declares operations against Boko Haram a success. Motherboard story reveals who makes money on private prisons in the US and how they are tied to pension funds.  This week's NEWZ source: Motherboard by Vice Magazine. </p>
+			<p><br />
+			</p>
+			<p><strong>Topics:</strong> Saudi Nuclear Plans; Undersea Mining; Boko Haram Nigeria; Candidates Rejected in Iran; Pension Plans American Prisons; Motherboard<br />
+			<span class="podlove-duration"><strong>Duration:</strong> 00:43:52</span><br/><span class="podlove-contributors"><strong>Team:</strong> <span class="podlove-contributors"><span class="contributor"><img alt='' src='http://1.gravatar.com/avatar/5c111db9ca417a89176812f3ab3c4aef?s=18&amp;d=http%3A%2F%2F1.gravatar.com%2Favatar%2Fad516503a11cd5ca435acc9bb6523536%3Fs%3D18&amp;r=G' class='avatar avatar-18 photo' height='18' width='18' /> Mark Fonseca Rendeiro</span>, <span class="contributor"><img alt='' src='http://1.gravatar.com/avatar/97391367796db965d19e63b690e72b3d?s=18&amp;d=http%3A%2F%2F1.gravatar.com%2Favatar%2Fad516503a11cd5ca435acc9bb6523536%3Fs%3D18&amp;r=G' class='avatar avatar-18 photo' height='18' width='18' /> Tim Pritlove</span></span></span></p>
+			<p>Links:</p>
+			<ul>
+			<li><a href="http://uk.reuters.com/article/2013/04/23/uk-saudi-nuclear-idUKLNE93M00M20130423" target="_blank">Saudi Arabia&#8217;s Nuclear Ambitions for 2022</a></li>
+			<li><a href="http://www.bbc.co.uk/news/science-environment-22546875" target="_blank">UN Releases First Undersea Mining Plan</a></li>
+			<li><a href="http://www.aljazeera.com/news/africa/2013/05/201351883623530563.html" target="_blank">Nigerian President Calls Operation Against Boko Haram A Success</a></li>
+			<li><a href="http://www.riskmap.aon.co.uk/Terrorism_Risk_Map.aspx" target="_blank">Terrorism Risk Map</a></li>
+			<li><a href="http://english.alarabiya.net/en/News/middle-east/2013/05/21/Reports-Iran-bars-2-top-figures-from-June-ballot.html" target="_blank">Iran&#8217;s Guardian Council Rejects Rafsanjani</a></li>
+			<li><a href="http://motherboard.vice.com/blog/nasdaq-data-reveals-whos-getting-rich-off-the-prison-industrial-complex" target="_blank">American Pensions Tied to Prison Companies</a></li>
+			<li>NEWZ Sources: <a href="http://motherboard.vice.com/about" target="_blank">Motherboard</a></li>
+			<li>Recommended Listening: <a href="http://citizenreporter.org/2013/05/ahmad-and-karam-a-syrian-message-for-the-world/" target="_blank">Mark&#8217;s Latest Podcast Featuring Syrian Reporters</a></li>
+			<li>Episode Image: <a href="http://www.flickr.com/photos/expertinfantry/5433130174/">2010 Best Ranger Competition-3</a> by <a href="http://www.flickr.com/photos/expertinfantry/">Expert Infantry</a></li>
+			</ul>
+			<p><a href="http://newz-of-the-world.com/?flattrss_redirect&amp;id=1087&amp;md5=add427da4cf8d118473b28cd52fdc6e4" title="Flattr" target="_blank"><img src="http://newz-of-the-world.com/wp-content/plugins/flattr/img/flattr-badge-large.png" alt="flattr this!"/></a></p><img src="http://feeds.feedburner.com/~r/newz-of-the-world/~4/hntMJ2ddtas" height="1" width="1"/>]]></content:encoded>
+            <feedburner:origLink>http://newz-of-the-world.com/newz051/</feedburner:origLink>
+            <enclosure url="http://feedproxy.google.com/~r/newz-of-the-world/~5/t2pstP19Ruw/newz051-second-in-the-terrorist-olympics.m4a" length="19561228" type="audio/mp4" />
+            <feedburner:origEnclosureLink>http://meta.metaebene.me/media/newz/newz051-second-in-the-terrorist-olympics.m4a</feedburner:origEnclosureLink>
+        </item>
+        <item>
+            <title>NEWZ050 The Berlusconi Effect</title>
+            <link>http://feedproxy.google.com/~r/newz-of-the-world/~3/ei0_XrOaWbs/</link>
+            <pubDate>Wed, 15 May 2013 14:22:19 +0000</pubDate>
+            <guid isPermaLink="false">podlove-2013-05-15t13:36:18+00:00-2cbcdf21acfcba9</guid>
+            <description><![CDATA[After a few weeks off Tim and Mark are reviewing some of the major stories that we missed recently starting with the factory collapse in Bangladesh that killed 1100 people.  In Libya there have been various protests against the government and militias related to a new law regarding former Qaddafi government workers.   The US continues to debate getting involved in Syria and what their involvement should be.  Over in Pakistan the latest elections have brought back the once ousted Nawaz Sharif as president. Iceland's latest votes have kicked out the center left, brought on the center right, and set back hopes of a new constitution.  In keeping with politics, Flattr and Piratebay cofounder (and friend of this show) Peter Sunde has announced he will run for European Parliament in 2014 as a member of the Pirate Party in Finland. Our NEWZ Source for this week is a very old and very useful scientific research magazine - NATURE.]]></description>
+            <atom:link rel="payment" title="Flattr this!" href="https://flattr.com/submit/auto?user_id=243&amp;url=http%3A%2F%2Fnewz-of-the-world.com%2Fnewz050%2F&amp;language=en_GB&amp;category=audio&amp;title=NEWZ050+The+Berlusconi+Effect&amp;description=After+a+few+weeks+off+Tim+and+Mark+are+reviewing+some+of+the+major+stories+that+we+missed+recently+starting+with+the+factory+collapse+in+Bangladesh+that+killed+1100+people....&amp;tags=Bangladesh%2Celections%2CIceland%2Clibya%2Cpakistan%2CPeter+Sunde%2Csyria%2Cusa%2Cpodcast%2C+newz%2C+news%2C+mark+fonseca+rendeiro%2C+bicyclemark%2C+tim+pritlove%2C+metaebene" type="text/html" />
+            <psc:chapters version="1.2">
+                <psc:chapter start="00:00:00.000" title="Intro" />
+                <psc:chapter start="00:00:13.875" title="Prologue" />
+                <psc:chapter start="00:03:39.870" title="Bangladesh garment factory Collapse kills 1100" />
+                <psc:chapter start="00:14:33.396" title="Increasing Clashes and Violence in Libya" />
+                <psc:chapter start="00:21:33.359" title="Big debates about what the US should do when it comes to Syria" />
+                <psc:chapter start="00:36:22.625" title="Pakistan Elections - Back to the Future" />
+                <psc:chapter start="00:40:26.068" title="Icelandic Elections Roundup" />
+                <psc:chapter start="00:46:29.125" title="Peter Sunde to Run for European Parliament 2014 for the Finnish Pirate Party" />
+                <psc:chapter start="00:52:46.224" title="NEWZ Sources: Nature Magazine" />
+                <psc:chapter start="00:55:59.188" title="Epilogue" />
+            </psc:chapters>
+            <atom:link rel="http://podlove.org/deep-link" href="http://newz-of-the-world.com/newz050/#" />
+            <itunes:duration>00:56:42</itunes:duration>
+            <itunes:author>Metaebene Personal Media - Tim Pritlove</itunes:author>
+            <itunes:subtitle>Bangladesh Factory Accident; Libyan Unrest; US-Syria Debate; Pakistan Elections; Iceland Elections; Peter Sunde Announcement; Nature Magazine</itunes:subtitle>
+            <itunes:summary>After a few weeks off Tim and Mark are reviewing some of the major stories that we missed recently starting with the factory collapse in Bangladesh that killed 1100 people.  In Libya there have been various protests against the government and militias related to a new law regarding former Qaddafi government workers.   The US continues to debate getting involved in Syria and what their involvement should be.  Over in Pakistan the latest elections have brought back the once ousted Nawaz Sharif as president. Iceland's latest votes have kicked out the center left, brought on the center right, and set back hopes of a new constitution.  In keeping with politics, Flattr and Piratebay cofounder (and friend of this show) Peter Sunde has announced he will run for European Parliament in 2014 as a member of the Pirate Party in Finland. Our NEWZ Source for this week is a very old and very useful scientific research magazine - NATURE.</itunes:summary>
+            <itunes:image href="http://meta.metaebene.me/media/newz/newz050-the-berlusconi-effect.jpg" />
+            <content:encoded><![CDATA[<p><a target="_blank" href="http://meta.metaebene.me/media/newz/newz050-the-berlusconi-effect.jpg"><img style="float: right; padding: 5px; margin: 5px; margin-left: 20px; border-style: solid; border-width: 1px; border-color: black;" src="http://meta.metaebene.me/media/newz/newz050-the-berlusconi-effect.jpg" alt="Episode image for NEWZ050 The Berlusconi Effect" width="200" height="200" /></a>After a few weeks off Tim and Mark are reviewing some of the major stories that we missed recently starting with the factory collapse in Bangladesh that killed 1100 people.  In Libya there have been various protests against the government and militias related to a new law regarding former Qaddafi government workers.   The US continues to debate getting involved in Syria and what their involvement should be.  Over in Pakistan the latest elections have brought back the once ousted Nawaz Sharif as president. Iceland's latest votes have kicked out the center left, brought on the center right, and set back hopes of a new constitution.  In keeping with politics, Flattr and Piratebay cofounder (and friend of this show) Peter Sunde has announced he will run for European Parliament in 2014 as a member of the Pirate Party in Finland. Our NEWZ Source for this week is a very old and very useful scientific research magazine - NATURE.  </p>
+			<p><br />
+			</p>
+			<p><strong>Topics:</strong> Bangladesh Factory Accident; Libyan Unrest; US-Syria Debate; Pakistan Elections; Iceland Elections; Peter Sunde Announcement; Nature Magazine<br />
+			<span class="podlove-duration"><strong>Duration:</strong> 00:56:42</span><br/><span class="podlove-contributors"><strong>Team:</strong> <span class="podlove-contributors"><span class="contributor"><img alt='' src='http://1.gravatar.com/avatar/5c111db9ca417a89176812f3ab3c4aef?s=18&amp;d=http%3A%2F%2F1.gravatar.com%2Favatar%2Fad516503a11cd5ca435acc9bb6523536%3Fs%3D18&amp;r=G' class='avatar avatar-18 photo' height='18' width='18' /> Mark Fonseca Rendeiro</span>, <span class="contributor"><img alt='' src='http://1.gravatar.com/avatar/97391367796db965d19e63b690e72b3d?s=18&amp;d=http%3A%2F%2F1.gravatar.com%2Favatar%2Fad516503a11cd5ca435acc9bb6523536%3Fs%3D18&amp;r=G' class='avatar avatar-18 photo' height='18' width='18' /> Tim Pritlove</span></span></span></p>
+			<p>Links:</p>
+			<ul>
+			<li><a href="http://www.bbc.co.uk/news/world-asia-22526786" target="_blank">Bangladesh Factory Collapse Kills 1100</a></li>
+			<li><a href="http://english.alarabiya.net/en/News/middle-east/2013/05/10/Libya-activists-protest-militias-Islamists.html" target="_blank">Libyans Protest Militias and Government</a></li>
+			<li><a href="http://www.newyorker.com/reporting/2013/05/13/130513fa_fact_filkins" target="_blank">The US Involvement in Syria Debate</a></li>
+			<li><a href="http://www.aljazeera.com/indepth/spotlight/pakistan-elections/" target="_blank">Pakistan Elections Bring Sharif Back to Power</a></li>
+			<li><a href="http://www.economist.com/news/europe/21577107-voters-return-parties-led-iceland-its-economic-meltdown-right-back" target="_blank">Iceland Shifts in Recent Elections</a></li>
+			<li><a href="https://torrentfreak.com/pirate-bay-cofounder-to-run-for-european-parliament-130514/" target="_blank">Peter Sunde to Run for European Parliament in 2014</a></li>
+			<li>NEWZ Sources: <a href="http://nature.com" target="_blank">Nature Magazine</a></li>
+			<li>Episode Image: <a href="http://www.flickr.com/photos/webethere/8688536606/">Political Poster</a> by <a href="http://www.flickr.com/photos/webethere/">Carol Mitchell</a></li>
+			</ul>
+			<p><a href="http://newz-of-the-world.com/?flattrss_redirect&amp;id=1068&amp;md5=3c10adfaf3cef913cb24e9e5189d3a8a" title="Flattr" target="_blank"><img src="http://newz-of-the-world.com/wp-content/plugins/flattr/img/flattr-badge-large.png" alt="flattr this!"/></a></p><img src="http://feeds.feedburner.com/~r/newz-of-the-world/~4/ei0_XrOaWbs" height="1" width="1"/>]]></content:encoded>
+            <feedburner:origLink>http://newz-of-the-world.com/newz050/</feedburner:origLink>
+            <enclosure url="http://feedproxy.google.com/~r/newz-of-the-world/~5/DWjVn-wkBE4/newz050-the-berlusconi-effect.m4a" length="25249813" type="audio/mp4" />
+            <feedburner:origEnclosureLink>http://meta.metaebene.me/media/newz/newz050-the-berlusconi-effect.m4a</feedburner:origEnclosureLink>
+        </item>
+        <item>
+            <title>NEWZ049 These Are Not The Tuaregs You Are Looking For</title>
+            <link>http://feedproxy.google.com/~r/newz-of-the-world/~3/J6nT3E2ZWSE/</link>
+            <pubDate>Fri, 12 Apr 2013 12:37:33 +0000</pubDate>
+            <guid isPermaLink="false">podlove-2013-04-12t11:38:37+00:00-6126c345fc3175d</guid>
+            <description><![CDATA[This week Mark and Tim are looking at various newz around the world: Human Rights Watch has published a report accusing the Syrian government of war crimes. Close by in Lebanon a "power ship" is extending daily power supply of the country by two hours a day. The Malian government announces elections to be held this year. Novartis loses a drug patent case in India. The US supreme court ist about to decide if the Human Genome can be patented at all. Facebook guy Mark Zuckerberg starts a political action group in the US.
+			We close by providing another NEWZ source: opensecrets.org and giving an update on upcoming travels and talks by Mark and Tim.]]></description>
+            <atom:link rel="payment" title="Flattr this!" href="https://flattr.com/submit/auto?user_id=243&amp;url=http%3A%2F%2Fnewz-of-the-world.com%2Fnewz049%2F&amp;language=en_GB&amp;category=audio&amp;title=NEWZ049+These+Are+Not+The+Tuaregs+You+Are+Looking+For&amp;description=This+week+Mark+and+Tim+are+looking+at+various+newz+around+the+world%3A+Human+Rights+Watch+has+published+a+report+accusing+the+Syrian+government+of+war+crimes.+Close+by+in...&amp;tags=drugs%2Celections%2Cindia%2Clebanon%2Cmali%2CMark+Zuckerberg%2CPatents%2Csyria%2Cturkey%2Cusa%2Cpodcast%2C+newz%2C+news%2C+mark+fonseca+rendeiro%2C+bicyclemark%2C+tim+pritlove%2C+metaebene" type="text/html" />
+            <psc:chapters version="1.2">
+                <psc:chapter start="00:00:00.000" title="Intro" />
+                <psc:chapter start="00:00:13.875" title="Prologue" />
+                <psc:chapter start="00:01:21.271" title="Human Rights Watch Says Syrian Regime Guilty of War Crimes" />
+                <psc:chapter start="00:08:10.849" title="Turkish Power Ship Keeping Lights on in Lebanon" />
+                <psc:chapter start="00:13:07.125" title="Malian PM in Gao Promising Elections This Year" />
+                <psc:chapter start="00:17:09.750" title="Generic Drugs Win in India" />
+                <psc:chapter start="00:23:45.281" title="US Supreme Court to Decide if Companies Can Patent Human Genes" />
+                <psc:chapter start="00:29:27.844" title="Zuckerberg Starts A Political Action Group in the US" />
+                <psc:chapter start="00:35:32.375" title="NEWZ Sources: Opensecrets.org" />
+                <psc:chapter start="00:39:27.474" title="Epilogue" />
+            </psc:chapters>
+            <atom:link rel="http://podlove.org/deep-link" href="http://newz-of-the-world.com/newz049/#" />
+            <itunes:duration>00:43:16</itunes:duration>
+            <itunes:author>Metaebene Personal Media - Tim Pritlove</itunes:author>
+            <itunes:subtitle>Syria War Crimes; Turkish Power Ship in Lebanon; Mali To Hold Elections This Year; Generic Drugs Win in India; US Supreme Court on Human Gene Patens; Zuckerberg Starts A Political Action Group; NEWZ Sources: Opensecrets.org.</itunes:subtitle>
+            <itunes:summary>This week Mark and Tim are looking at various newz around the world: Human Rights Watch has published a report accusing the Syrian government of war crimes. Close by in Lebanon a "power ship" is extending daily power supply of the country by two hours a day. The Malian government announces elections to be held this year. Novartis loses a drug patent case in India. The US supreme court ist about to decide if the Human Genome can be patented at all. Facebook guy Mark Zuckerberg starts a political action group in the US.
+			
+We close by providing another NEWZ source: opensecrets.org and giving an update on upcoming travels and talks by Mark and Tim.</itunes:summary>
+            <itunes:image href="http://meta.metaebene.me/media/newz/newz049-these-are-not-the-tuaregs-you-are-looking-for.jpg" />
+            <content:encoded><![CDATA[<p><a target="_blank" href="http://meta.metaebene.me/media/newz/newz049-these-are-not-the-tuaregs-you-are-looking-for.jpg"><img style="float: right; padding: 5px; margin: 5px; margin-left: 20px; border-style: solid; border-width: 1px; border-color: black;" src="http://meta.metaebene.me/media/newz/newz049-these-are-not-the-tuaregs-you-are-looking-for.jpg" alt="Episode image for NEWZ049 These Are Not The Tuaregs You Are Looking For" width="200" height="200" /></a>This week Mark and Tim are looking at various newz around the world: Human Rights Watch has published a report accusing the Syrian government of war crimes. Close by in Lebanon a "power ship" is extending daily power supply of the country by two hours a day. The Malian government announces elections to be held this year. Novartis loses a drug patent case in India. The US supreme court ist about to decide if the Human Genome can be patented at all. Facebook guy Mark Zuckerberg starts a political action group in the US.<br />
+			<br />
+			We close by providing another NEWZ source: opensecrets.org and giving an update on upcoming travels and talks by Mark and Tim.</p>
+			<p><br />
+			</p>
+			<p><strong>Topics:</strong> Syria War Crimes; Turkish Power Ship in Lebanon; Mali To Hold Elections This Year; Generic Drugs Win in India; US Supreme Court on Human Gene Patens; Zuckerberg Starts A Political Action Group; NEWZ Sources: Opensecrets.org.<br />
+			<span class="podlove-duration"><strong>Duration:</strong> 00:43:16</span><br/><span class="podlove-contributors"><strong>Team:</strong> <span class="podlove-contributors"><span class="contributor"><img alt='' src='http://1.gravatar.com/avatar/5c111db9ca417a89176812f3ab3c4aef?s=18&amp;d=http%3A%2F%2F1.gravatar.com%2Favatar%2Fad516503a11cd5ca435acc9bb6523536%3Fs%3D18&amp;r=G' class='avatar avatar-18 photo' height='18' width='18' /> Mark Fonseca Rendeiro</span>, <span class="contributor"><img alt='' src='http://1.gravatar.com/avatar/97391367796db965d19e63b690e72b3d?s=18&amp;d=http%3A%2F%2F1.gravatar.com%2Favatar%2Fad516503a11cd5ca435acc9bb6523536%3Fs%3D18&amp;r=G' class='avatar avatar-18 photo' height='18' width='18' /> Tim Pritlove</span></span></span></p>
+			<p><strong>Links:</strong></p>
+			<div id="osf_usnid_1052_liststyle"></div>
+			<p><a href="http://newz-of-the-world.com/?flattrss_redirect&amp;id=1052&amp;md5=1763f442858ebb05fffb832d3a803ff5" title="Flattr" target="_blank"><img src="http://newz-of-the-world.com/wp-content/plugins/flattr/img/flattr-badge-large.png" alt="flattr this!"/></a></p><img src="http://feeds.feedburner.com/~r/newz-of-the-world/~4/J6nT3E2ZWSE" height="1" width="1"/>]]></content:encoded>
+            <feedburner:origLink>http://newz-of-the-world.com/newz049/</feedburner:origLink>
+            <enclosure url="http://feedproxy.google.com/~r/newz-of-the-world/~5/z00OaQh6uMY/newz049-these-are-not-the-tuaregs-you-are-looking-for.m4a" length="19329632" type="audio/mp4" />
+            <feedburner:origEnclosureLink>http://meta.metaebene.me/media/newz/newz049-these-are-not-the-tuaregs-you-are-looking-for.m4a</feedburner:origEnclosureLink>
+        </item>
+        <item>
+            <title>NEWZ048 Not A Tourist Accident</title>
+            <link>http://feedproxy.google.com/~r/newz-of-the-world/~3/sVKvso_eAN8/</link>
+            <pubDate>Mon, 01 Apr 2013 13:32:34 +0000</pubDate>
+            <guid isPermaLink="false">podlove-2013-04-01t13:11:27+00:00-14cea0e70e31e70</guid>
+            <description><![CDATA[Unlike the rest of the internet today, we at Newz of the World are sticking with the facts, mostly. Starting with the riots in Myanmar that have killed dozens and displaced tens of thousands.  Meanwhile a very complex list of proposals is being disputed for the Southern European gas pipeline route.  Doctors in the UK say a new health policy that starts today will dismantle the public healthcare system.  Down in Egypt, divers were caught snipping cables in the Mediterranean.  Today's Newz Source is a one stop shop for policy and society news on the European Union level: Euractiv.com.]]></description>
+            <atom:link rel="payment" title="Flattr this!" href="https://flattr.com/submit/auto?user_id=243&amp;url=http%3A%2F%2Fnewz-of-the-world.com%2Fnewz048%2F&amp;language=en_GB&amp;category=audio&amp;title=NEWZ048+Not+A+Tourist+Accident&amp;description=Unlike+the+rest+of+the+internet+today%2C+we+at+Newz+of+the+World+are+sticking+with+the+facts%2C+mostly.+Starting+with+the+riots+in+Myanmar+that+have+killed+dozens+and...&amp;tags=azerbaijan%2Cburma%2Cchina%2Cegypt%2Ceu%2Cgas%2Cgreece%2Chealthcare%2Cmyanmar%2Crussia%2Ctibet%2CUK%2Cpodcast%2C+newz%2C+news%2C+mark+fonseca+rendeiro%2C+bicyclemark%2C+tim+pritlove%2C+metaebene" type="text/html" />
+            <psc:chapters version="1.2">
+                <psc:chapter start="00:00:00.000" title="Intro" />
+                <psc:chapter start="00:00:13.625" title="Prologue" />
+                <psc:chapter start="00:01:47.750" title="Religous Riots in Myanmar" />
+                <psc:chapter start="00:06:15.245" title="Southern European Pipeline Race" />
+                <psc:chapter start="00:12:44.000" title="Landslide in Tibet Buries Miners" />
+                <psc:chapter start="00:14:52.375" title="NHS Adopts Controversial New Plan for UK" />
+                <psc:chapter start="00:18:51.000" title="Divers Damage Undersea Cable in Egypt" />
+                <psc:chapter start="00:23:05.531" title="NEWZ Sources: Euractiv" />
+                <psc:chapter start="00:26:55.375" title="Epilogue" />
+            </psc:chapters>
+            <atom:link rel="http://podlove.org/deep-link" href="http://newz-of-the-world.com/newz048/#" />
+            <itunes:duration>00:28:48</itunes:duration>
+            <itunes:author>Metaebene Personal Media - Tim Pritlove</itunes:author>
+            <itunes:subtitle>Riots Myanmar; Southern European Gas Pipeline Race; Tibet Landslide; Privatization of the NHS; Undersea Cable Damage Egypt; Euractiv.com</itunes:subtitle>
+            <itunes:summary>Unlike the rest of the internet today, we at Newz of the World are sticking with the facts, mostly. Starting with the riots in Myanmar that have killed dozens and displaced tens of thousands.  Meanwhile a very complex list of proposals is being disputed for the Southern European gas pipeline route.  Doctors in the UK say a new health policy that starts today will dismantle the public healthcare system.  Down in Egypt, divers were caught snipping cables in the Mediterranean.  Today's Newz Source is a one stop shop for policy and society news on the European Union level: Euractiv.com.</itunes:summary>
+            <itunes:image href="http://meta.metaebene.me/media/newz/newz048-not-a-tourist-accident.jpg" />
+            <content:encoded><![CDATA[<p><a target="_blank" href="http://meta.metaebene.me/media/newz/newz048-not-a-tourist-accident.jpg"><img style="float: right; padding: 5px; margin: 5px; margin-left: 20px; border-style: solid; border-width: 1px; border-color: black;" src="http://meta.metaebene.me/media/newz/newz048-not-a-tourist-accident.jpg" alt="Episode image for NEWZ048 Not A Tourist Accident" width="200" height="200" /></a>Unlike the rest of the internet today, we at Newz of the World are sticking with the facts, mostly. Starting with the riots in Myanmar that have killed dozens and displaced tens of thousands.  Meanwhile a very complex list of proposals is being disputed for the Southern European gas pipeline route.  Doctors in the UK say a new health policy that starts today will dismantle the public healthcare system.  Down in Egypt, divers were caught snipping cables in the Mediterranean.  Today's Newz Source is a one stop shop for policy and society news on the European Union level: Euractiv.com.  </p>
+			<p><br />
+			</p>
+			<p><strong>Topics:</strong> Riots Myanmar; Southern European Gas Pipeline Race; Tibet Landslide; Privatization of the NHS; Undersea Cable Damage Egypt; Euractiv.com<br />
+			<span class="podlove-duration"><strong>Duration:</strong> 00:28:48</span><br/><span class="podlove-contributors"><strong>Team:</strong> <span class="podlove-contributors"><span class="contributor"><img alt='' src='http://1.gravatar.com/avatar/5c111db9ca417a89176812f3ab3c4aef?s=18&amp;d=http%3A%2F%2F1.gravatar.com%2Favatar%2Fad516503a11cd5ca435acc9bb6523536%3Fs%3D18&amp;r=G' class='avatar avatar-18 photo' height='18' width='18' /> Mark Fonseca Rendeiro</span>, <span class="contributor"><img alt='' src='http://1.gravatar.com/avatar/97391367796db965d19e63b690e72b3d?s=18&amp;d=http%3A%2F%2F1.gravatar.com%2Favatar%2Fad516503a11cd5ca435acc9bb6523536%3Fs%3D18&amp;r=G' class='avatar avatar-18 photo' height='18' width='18' /> Tim Pritlove</span></span></span></p>
+			<p>Links:</p>
+			<ul>
+			<li><a href="http://globalvoicesonline.org/2013/03/24/myanmar-who-is-plotting-the-meikhtila-riot/" target="_blank">Myanmar: Who is Plotting the Riot</a></li>
+			<li><a href="http://www.euractiv.com/energy/communication-crossfire-signals-news-518817" target="_blank">High Tension in Pipeline Race</a></li>
+			<li><a href="http://www.bbc.co.uk/news/world-asia-china-21992525" target="_blank">Tibet Mine Landslide</a></li>
+			<li><a href="http://www.guardian.co.uk/commentisfree/2013/mar/30/health-act-means-death-of-nhs" target="_blank">Doctor Weighs in on NHS Impact of Health and Social Care Act of 2012 </a></li>
+			<li><a href="http://www.reuters.com/article/2013/03/27/net-us-egypt-internet-idUSBRE92Q1AQ20130327" target="_blank">Divers Damage Undersea Cables off the Coast of Egypt</a></li>
+			<li>Newz Source: <a href="http://euractiv.com" target="_blank">Euractiv.com</a></li>
+			<li>Episode Image: <a href="http://www.flickr.com/photos/thefreddyportfolio/4257124144/">Turista de los mares</a> by <a href="http://www.flickr.com/photos/thefreddyportfolio/">The Freddy Portfolio</a></li>
+			</ul>
+			<p><a href="http://newz-of-the-world.com/?flattrss_redirect&amp;id=993&amp;md5=dd65230211dd9bdbc63cc492e1884f12" title="Flattr" target="_blank"><img src="http://newz-of-the-world.com/wp-content/plugins/flattr/img/flattr-badge-large.png" alt="flattr this!"/></a></p><img src="http://feeds.feedburner.com/~r/newz-of-the-world/~4/sVKvso_eAN8" height="1" width="1"/>]]></content:encoded>
+            <feedburner:origLink>http://newz-of-the-world.com/newz048/</feedburner:origLink>
+            <enclosure url="http://feedproxy.google.com/~r/newz-of-the-world/~5/HMVqw0gqIOQ/newz048-not-a-tourist-accident.m4a" length="12884969" type="audio/mp4" />
+            <feedburner:origEnclosureLink>http://meta.metaebene.me/media/newz/newz048-not-a-tourist-accident.m4a</feedburner:origEnclosureLink>
+        </item>
+        <item>
+            <title>NEWZ047 Try To Take Over The World!</title>
+            <link>http://feedproxy.google.com/~r/newz-of-the-world/~3/i-dDUA9MZKk/</link>
+            <pubDate>Tue, 26 Mar 2013 17:59:46 +0000</pubDate>
+            <guid isPermaLink="false">podlove-2013-03-26t16:03:42+00:00-1dd779cb387d2b7</guid>
+            <description><![CDATA[A rebel coup has sent the President of the Central African Republic into exile. While the IMF and the EU agree to a deal to bailout Cyprus.  Old Guatemalan strong man Rios Montt faces a genocide trial for his actions in the 80's. We wonder if even with the new constitution, Robert Mugabe might be President when he is 100 years old. Riot police in Rio carry out more evictions as part of World Cup and Olympic preparations. And our NEWZ source of the day is the mighty Arms Control Wonk.]]></description>
+            <atom:link rel="payment" title="Flattr this!" href="https://flattr.com/submit/auto?user_id=243&amp;url=http%3A%2F%2Fnewz-of-the-world.com%2Fnewz047%2F&amp;language=en_GB&amp;category=audio&amp;title=NEWZ047+Try+To+Take+Over+The+World%21&amp;description=A+rebel+coup+has+sent+the+President+of+the+Central+African+Republic+into+exile.+While+the+IMF+and+the+EU+agree+to+a+deal+to+bailout+Cyprus.+Old+Guatemalan+strong...&amp;tags=AU%2Cbanks%2Cbrazil%2Ccentralafricanrepublic%2Ccyprus%2Cguatemala%2Ctrial%2Cwar%2Czimbabwe%2Cpodcast%2C+newz%2C+news%2C+mark+fonseca+rendeiro%2C+bicyclemark%2C+tim+pritlove%2C+metaebene" type="text/html" />
+            <psc:chapters version="1.2">
+                <psc:chapter start="00:00:00.000" title="Intro" />
+                <psc:chapter start="00:00:13.750" title="Prologue" />
+                <psc:chapter start="00:02:45.375" title="Seleka rebels overthrow president in Central African Republic" />
+                <psc:chapter start="00:12:16.375" title="Cyprus bailout by EU and IMF pisses off many" />
+                <psc:chapter start="00:21:34.000" title="Former Guatemalan Dictator facing trial for genocide and human rights abuses" />
+                <psc:chapter start="00:25:27.130" title="Zimbabweans approve New Constitution" />
+                <psc:chapter start="00:28:38.125" title="Riot Police in Rio Forcefully Remove Indigenous squatters to make way for World Cup plans" />
+                <psc:chapter start="00:35:20.443" title="NEWZ Sources: The Arms Control Wonk" />
+                <psc:chapter start="00:40:33.359" title="Epilogue" />
+            </psc:chapters>
+            <atom:link rel="http://podlove.org/deep-link" href="http://newz-of-the-world.com/newz047/#" />
+            <itunes:duration>00:42:05</itunes:duration>
+            <itunes:author>Metaebene Personal Media - Tim Pritlove</itunes:author>
+            <itunes:subtitle>Central African Republic President Ousted; Cyprus Bailout Deal; Rios Montt on Trial; New Constitution in Zimbabwe; Rio Evicts Indigenous People; Arms Control Wonk</itunes:subtitle>
+            <itunes:summary>A rebel coup has sent the President of the Central African Republic into exile. While the IMF and the EU agree to a deal to bailout Cyprus.  Old Guatemalan strong man Rios Montt faces a genocide trial for his actions in the 80's. We wonder if even with the new constitution, Robert Mugabe might be President when he is 100 years old. Riot police in Rio carry out more evictions as part of World Cup and Olympic preparations. And our NEWZ source of the day is the mighty Arms Control Wonk.</itunes:summary>
+            <itunes:image href="http://meta.metaebene.me/media/newz/newz047-try-to-take-over-the-world.jpg" />
+            <content:encoded><![CDATA[<p><a target="_blank" href="http://meta.metaebene.me/media/newz/newz047-try-to-take-over-the-world.jpg"><img style="float: right; padding: 5px; margin: 5px; margin-left: 20px; border-style: solid; border-width: 1px; border-color: black;" src="http://meta.metaebene.me/media/newz/newz047-try-to-take-over-the-world.jpg" alt="Episode image for NEWZ047 Try To Take Over The World!" width="200" height="200" /></a>A rebel coup has sent the President of the Central African Republic into exile. While the IMF and the EU agree to a deal to bailout Cyprus.  Old Guatemalan strong man Rios Montt faces a genocide trial for his actions in the 80's. We wonder if even with the new constitution, Robert Mugabe might be President when he is 100 years old. Riot police in Rio carry out more evictions as part of World Cup and Olympic preparations. And our NEWZ source of the day is the mighty Arms Control Wonk.  </p>
+			<p><br />
+			</p>
+			<p><strong>Topics:</strong> Central African Republic President Ousted; Cyprus Bailout Deal; Rios Montt on Trial; New Constitution in Zimbabwe; Rio Evicts Indigenous People; Arms Control Wonk<br />
+			<span class="podlove-duration"><strong>Duration:</strong> 00:42:05</span><br/><span class="podlove-contributors"><strong>Team:</strong> <span class="podlove-contributors"><span class="contributor"><img alt='' src='http://1.gravatar.com/avatar/5c111db9ca417a89176812f3ab3c4aef?s=18&amp;d=http%3A%2F%2F1.gravatar.com%2Favatar%2Fad516503a11cd5ca435acc9bb6523536%3Fs%3D18&amp;r=G' class='avatar avatar-18 photo' height='18' width='18' /> Mark Fonseca Rendeiro</span>, <span class="contributor"><img alt='' src='http://1.gravatar.com/avatar/97391367796db965d19e63b690e72b3d?s=18&amp;d=http%3A%2F%2F1.gravatar.com%2Favatar%2Fad516503a11cd5ca435acc9bb6523536%3Fs%3D18&amp;r=G' class='avatar avatar-18 photo' height='18' width='18' /> Tim Pritlove</span></span></span></p>
+			<p>Links:</p>
+			<ul>
+			<li><a href="http://www.cbc.ca/news/world/story/2013/03/26/rebels-central-african-republic.html" target="_blank">Rebel Leader Dissolves Central African Republic Constitution</a></li>
+			<li><a href="http://www.theatlantic.com/international/archive/2013/03/cyprus-bailout-winners-and-losers/274340/" target="_blank">Cyprus Bank Bailout: Winners and Losers</a></li>
+			<li><a href="http://www.newsdaily.com/stories/bre92i03s-us-guatemala-riosmontt/" target="_blank">Trial of Former Guatemalan Dictator Rios Montt Begins</a></li>
+			<li><a href="http://www.dw.de/thumbs-up-for-new-zimbabwean-constitution/a-16684361" target="_blank">Zimbabweans Approve New Constitution</a></li>
+			<li><a href="http://globalvoicesonline.org/2013/03/25/brazil-violently-ousts-indigenous-village-ahead-of-world-cup/" target="_blank">Police in Rio Forcefully Evict Indigenous People for World Cup Construction</a></li>
+			<li><a href="http://www.portalpopulardacopa.org.br/" target="_blank">Human Rights Violations on the Road to the Cup Website</a> (pt only)</li>
+			<li>NEWZ Source: <a href="http://armscontrolwonk.com/" target="_blank">The Arms Control Wonk</a></li>
+			<li>Episode Image by <a href="http://www.flickr.com/photos/duncan/6470428675/" target="_blank">duncan</a></li>
+			</ul>
+			<p><a href="http://newz-of-the-world.com/?flattrss_redirect&amp;id=980&amp;md5=6be65f8d70f48bfe71fb09198c40734c" title="Flattr" target="_blank"><img src="http://newz-of-the-world.com/wp-content/plugins/flattr/img/flattr-badge-large.png" alt="flattr this!"/></a></p><img src="http://feeds.feedburner.com/~r/newz-of-the-world/~4/i-dDUA9MZKk" height="1" width="1"/>]]></content:encoded>
+            <feedburner:origLink>http://newz-of-the-world.com/newz047/</feedburner:origLink>
+            <enclosure url="http://feedproxy.google.com/~r/newz-of-the-world/~5/EoQWvM7oXD0/newz047-try-to-take-over-the-world.m4a" length="18800099" type="audio/mp4" />
+            <feedburner:origEnclosureLink>http://meta.metaebene.me/media/newz/newz047-try-to-take-over-the-world.m4a</feedburner:origEnclosureLink>
+        </item>
+        <item>
+            <title>NEWZ046 Frankie The First From The End of the World</title>
+            <link>http://feedproxy.google.com/~r/newz-of-the-world/~3/Z4SK-2DQDVQ/</link>
+            <pubDate>Thu, 14 Mar 2013 11:26:22 +0000</pubDate>
+            <guid isPermaLink="false">podlove-2013-03-14t11:07:01+00:00-3e159635aa625b1</guid>
+            <description><![CDATA[People in the Vatican City went nuts last night as Pope Frank #1 was unveiled. Meanwhile we catchup on the death of Hugo Chavez and the cult of personality syndrome in Venezuela.  Kenya counted up their ballots and declared a new president, while China skipped the ballots and declared Jinping the new guy in charge.  Dennis Rodman went to North Korea and made many Americans angry (or frustrated as they couldn't understand a word he says).  PRX launches a new media storage system for the internets.  And our featured Newz Source for today is an audio podcast: The World.]]></description>
+            <atom:link rel="payment" title="Flattr this!" href="https://flattr.com/submit/auto?user_id=243&amp;url=http%3A%2F%2Fnewz-of-the-world.com%2Fnewz046%2F&amp;language=en_GB&amp;category=audio&amp;title=NEWZ046+Frankie+The+First+From+The+End+of+the+World&amp;description=People+in+the+Vatican+City+went+nuts+last+night+as+Pope+Frank+%231+was+unveiled.+Meanwhile+we+catchup+on+the+death+of+Hugo+Chavez+and+the+cult+of+personality+syndrome...&amp;tags=argentina%2Cchavez%2Cchina%2Celections%2Ckenya%2Cnorthkorea%2Cpope%2Cpopefrank%2Cus%2Cvenezuela%2Cpodcast%2C+newz%2C+news%2C+mark+fonseca+rendeiro%2C+bicyclemark%2C+tim+pritlove%2C+metaebene" type="text/html" />
+            <psc:chapters version="1.2">
+                <psc:chapter start="00:00:00.000" title="Intro" />
+                <psc:chapter start="00:00:14.750" title="Prologue" />
+                <psc:chapter start="00:01:03.635" title="New Pope: Frankie the First" />
+                <psc:chapter start="00:07:50.245" title="Chavez dies at age 58" />
+                <psc:chapter start="00:19:09.547" title="Kenyan Elections: Uhuru Kenyatta wins" />
+                <psc:chapter start="00:23:01.156" title="North Korea says it will strike US pre-emptively" />
+                <psc:chapter start="00:31:52.068" title="China has a new president Xi Jinping" />
+                <psc:chapter start="00:34:34.484" title="Popup Archive for Media Storage" />
+                <psc:chapter start="00:40:35.901" title="NEWZ sources: PRI's The World" />
+                <psc:chapter start="00:46:46.245" title="Epilogue" />
+            </psc:chapters>
+            <atom:link rel="http://podlove.org/deep-link" href="http://newz-of-the-world.com/newz046/#" />
+            <itunes:duration>00:47:48</itunes:duration>
+            <itunes:author>Metaebene Personal Media - Tim Pritlove</itunes:author>
+            <itunes:subtitle>Pope Francis I elected; Chavez Dies; Kenyatta Wins; Rodman Makes Friends With Un; Jinping Becomes Pres; New Media Storage; The World Podcast</itunes:subtitle>
+            <itunes:summary>People in the Vatican City went nuts last night as Pope Frank #1 was unveiled. Meanwhile we catchup on the death of Hugo Chavez and the cult of personality syndrome in Venezuela.  Kenya counted up their ballots and declared a new president, while China skipped the ballots and declared Jinping the new guy in charge.  Dennis Rodman went to North Korea and made many Americans angry (or frustrated as they couldn't understand a word he says).  PRX launches a new media storage system for the internets.  And our featured Newz Source for today is an audio podcast: The World.</itunes:summary>
+            <itunes:image href="http://meta.metaebene.me/media/newz/newz046-frankie-the-first-from-the-end-of-the-world.jpg" />
+            <content:encoded><![CDATA[<p><a target="_blank" href="http://meta.metaebene.me/media/newz/newz046-frankie-the-first-from-the-end-of-the-world.jpg"><img style="float: right; padding: 5px; margin: 5px; margin-left: 20px; border-style: solid; border-width: 1px; border-color: black;" src="http://meta.metaebene.me/media/newz/newz046-frankie-the-first-from-the-end-of-the-world.jpg" alt="Episode image for NEWZ046 Frankie The First From The End of the World" width="200" height="200" /></a>People in the Vatican City went nuts last night as Pope Frank #1 was unveiled. Meanwhile we catchup on the death of Hugo Chavez and the cult of personality syndrome in Venezuela.  Kenya counted up their ballots and declared a new president, while China skipped the ballots and declared Jinping the new guy in charge.  Dennis Rodman went to North Korea and made many Americans angry (or frustrated as they couldn't understand a word he says).  PRX launches a new media storage system for the internets.  And our featured Newz Source for today is an audio podcast: The World.</p>
+			<p><br />
+			</p>
+			<p><strong>Topics:</strong> Pope Francis I elected; Chavez Dies; Kenyatta Wins; Rodman Makes Friends With Un; Jinping Becomes Pres; New Media Storage; The World Podcast<br />
+			<span class="podlove-duration"><strong>Duration:</strong> 00:47:48</span><br/><span class="podlove-contributors"><strong>Team:</strong> <span class="podlove-contributors"><span class="contributor"><img alt='' src='http://1.gravatar.com/avatar/5c111db9ca417a89176812f3ab3c4aef?s=18&amp;d=http%3A%2F%2F1.gravatar.com%2Favatar%2Fad516503a11cd5ca435acc9bb6523536%3Fs%3D18&amp;r=G' class='avatar avatar-18 photo' height='18' width='18' /> Mark Fonseca Rendeiro</span>, <span class="contributor"><img alt='' src='http://1.gravatar.com/avatar/97391367796db965d19e63b690e72b3d?s=18&amp;d=http%3A%2F%2F1.gravatar.com%2Favatar%2Fad516503a11cd5ca435acc9bb6523536%3Fs%3D18&amp;r=G' class='avatar avatar-18 photo' height='18' width='18' /> Tim Pritlove</span></span></span></p>
+			<p>Links:</p>
+			<ul>
+			<li><a href="http://edition.cnn.com/2013/03/14/world/pope-5-things/index.html" target="_blank">5 Things About Jorge Bergoglio</a></li>
+			<li><a href="http://www.reuters.com/article/2013/03/05/us-venezuela-chavez-idUSBRE92405420130305" target="_blank">Hugo Chavez Dies</a></li>
+			<li><a href="http://www.washingtonpost.com/blogs/worldviews/wp/2013/03/08/a-photographic-guide-of-the-worlds-embalmed-leaders" target="_blank">Photographic Guide to the World&#8217;s Embalmed Leaders</a></li>
+			<li><a href="http://www.capitalfm.co.ke/news/2013/03/yes-uhuru-won-parallel-vote-tally-shows/" target="_blank">Uhuru Kenyatta Elected in Kenya</a></li>
+			<li><a href="http://abcnews.go.com/blogs/politics/2013/03/dennis-rodman-kim-jong-un-wants-president-obama-to-call-him/" target="_blank">Dennis Rodman Visits North Korea</a></li>
+			<li><a href="http://www.theworld.org/2013/03/us-ready-for-north-korean-attack/" target="_blank">North Korea Cancels Peace Treaty with South Korea</a></li>
+			<li><a href="http://www.nytimes.com/aponline/2013/03/13/world/asia/ap-as-china-politics.html" target="_blank">Xi Jinping Becomes New President in China</a></li>
+			<li><a href="http://www.pbs.org/idealab/2013/03/pop-up-archive-and-prx-launch-audio-archiving-service060.html" target="_blank">Popup Archive for Media Storage Unveiled</a></li>
+			<li>Newz Sources: <a href="http://www.theworld.org/about/" target="_blank">PRI&#8217;s The World</a> Podcast</li>
+			</ul>
+			<p><a href="http://newz-of-the-world.com/?flattrss_redirect&amp;id=971&amp;md5=8ccc6ed4912a5226312fa480a27c0893" title="Flattr" target="_blank"><img src="http://newz-of-the-world.com/wp-content/plugins/flattr/img/flattr-badge-large.png" alt="flattr this!"/></a></p><img src="http://feeds.feedburner.com/~r/newz-of-the-world/~4/Z4SK-2DQDVQ" height="1" width="1"/>]]></content:encoded>
+            <feedburner:origLink>http://newz-of-the-world.com/newz046/</feedburner:origLink>
+            <enclosure url="http://feedproxy.google.com/~r/newz-of-the-world/~5/LLj7piq_guE/newz046-frankie-the-first-from-the-end-of-the-world.m4a" length="21348767" type="audio/mp4" />
+            <feedburner:origEnclosureLink>http://meta.metaebene.me/media/newz/newz046-frankie-the-first-from-the-end-of-the-world.m4a</feedburner:origEnclosureLink>
+        </item>
+        <item>
+            <title>NEWZ045 Europe’s Facepalm</title>
+            <link>http://feedproxy.google.com/~r/newz-of-the-world/~3/xlIi0K9TPWQ/</link>
+            <pubDate>Fri, 01 Mar 2013 13:23:00 +0000</pubDate>
+            <guid isPermaLink="false">podlove-2013-03-01t11:59:26+00:00-a2178fa06074438</guid>
+            <description><![CDATA[It is election week on Newz of the World as this week we dive into the anticipated Kenyan general elections that are coming up and the disappointing Italian elections that just occurred.  We also join the US Supreme Court in debating what good DNA sampling can do or not do.  Elsewhere the word from southern Thailand is peace, but what does it mean for people of those three provinces long terrorized by an under-reported war.  And finally India has announced a new fund focusing on safety for women.  Rounding it all off is another edition of Newz Sources where this week we take a look at AllAfrica.com. In conclusion we discuss some possible features of the upcoming Re:publica13 conference in Berlin where we will both be speaking.]]></description>
+            <atom:link rel="payment" title="Flattr this!" href="https://flattr.com/submit/auto?user_id=243&amp;url=http%3A%2F%2Fnewz-of-the-world.com%2Fnewz045%2F&amp;language=en_GB&amp;category=audio&amp;title=NEWZ045+Europe%26%238217%3Bs+Facepalm&amp;description=It+is+election+week+on+Newz+of+the+World+as+this+week+we+dive+into+the+anticipated+Kenyan+general+elections+that+are+coming+up+and+the+disappointing+Italian+elections+that...&amp;tags=africa%2Ccivilrights%2Ccrime%2Cdna%2Celections%2Ceurope%2Chealth%2Cindia%2Citaly%2Ckenya%2Cpolitics%2Crebels%2CThailand%2Cus%2Cwomen%2Cpodcast%2C+newz%2C+news%2C+mark+fonseca+rendeiro%2C+bicyclemark%2C+tim+pritlove%2C+metaebene" type="text/html" />
+            <psc:chapters version="1.2">
+                <psc:chapter start="00:00:00.000" title="Intro" />
+                <psc:chapter start="00:00:15.875" title="Prologue" />
+                <psc:chapter start="00:01:44.760" title="Kenyan Elections Set to Begin" />
+                <psc:chapter start="00:09:36.693" title="US Supreme Court Arguing Over Whether DNA Samples Can be Taken by Police" />
+                <psc:chapter start="00:16:40.203" title="Italian Election Comedy" />
+                <psc:chapter start="00:27:54.875" title="Thailand Signs Peace deal with Muslim Rebels" />
+                <psc:chapter start="00:30:18.328" title="India Puts up Big Money to Improve Safety for Women" />
+                <psc:chapter start="00:36:20.354" title="NEWZ Sources: All Africa.com - All Africa All the Time" />
+                <psc:chapter start="00:42:08.448" title="Epilogue" />
+            </psc:chapters>
+            <atom:link rel="http://podlove.org/deep-link" href="http://newz-of-the-world.com/newz045/#" />
+            <itunes:duration>00:44:04</itunes:duration>
+            <itunes:author>Metaebene Personal Media - Tim Pritlove</itunes:author>
+            <itunes:subtitle>Kenya gears up for elections; US Supreme court debates DNA sampling; Italian election gets confusing; Thai military signs peace deal with rebels; India announces new initiatives for women's safety; Allafrica.com</itunes:subtitle>
+            <itunes:summary>It is election week on Newz of the World as this week we dive into the anticipated Kenyan general elections that are coming up and the disappointing Italian elections that just occurred.  We also join the US Supreme Court in debating what good DNA sampling can do or not do.  Elsewhere the word from southern Thailand is peace, but what does it mean for people of those three provinces long terrorized by an under-reported war.  And finally India has announced a new fund focusing on safety for women.  Rounding it all off is another edition of Newz Sources where this week we take a look at AllAfrica.com. In conclusion we discuss some possible features of the upcoming Re:publica13 conference in Berlin where we will both be speaking.</itunes:summary>
+            <itunes:image href="http://meta.metaebene.me/media/newz/newz045-europes-facepalm.jpg" />
+            <content:encoded><![CDATA[<p><a target="_blank" href="http://meta.metaebene.me/media/newz/newz045-europes-facepalm.jpg"><img style="float: right; padding: 5px; margin: 5px; margin-left: 20px; border-style: solid; border-width: 1px; border-color: black;" src="http://meta.metaebene.me/media/newz/newz045-europes-facepalm.jpg" alt="Episode image for NEWZ045 Europe&#8217;s Facepalm" width="200" height="200" /></a>It is election week on Newz of the World as this week we dive into the anticipated Kenyan general elections that are coming up and the disappointing Italian elections that just occurred.  We also join the US Supreme Court in debating what good DNA sampling can do or not do.  Elsewhere the word from southern Thailand is peace, but what does it mean for people of those three provinces long terrorized by an under-reported war.  And finally India has announced a new fund focusing on safety for women.  Rounding it all off is another edition of Newz Sources where this week we take a look at AllAfrica.com. In conclusion we discuss some possible features of the upcoming Re:publica13 conference in Berlin where we will both be speaking.  </p>
+			<p><br />
+			</p>
+			<p><strong>Topics:</strong> Kenya gears up for elections; US Supreme court debates DNA sampling; Italian election gets confusing; Thai military signs peace deal with rebels; India announces new initiatives for women's safety; Allafrica.com<br />
+			<span class="podlove-duration"><strong>Duration:</strong> 00:44:04</span><br/><span class="podlove-contributors"><strong>Team:</strong> <span class="podlove-contributors"><span class="contributor"><img alt='' src='http://1.gravatar.com/avatar/5c111db9ca417a89176812f3ab3c4aef?s=18&amp;d=http%3A%2F%2F1.gravatar.com%2Favatar%2Fad516503a11cd5ca435acc9bb6523536%3Fs%3D18&amp;r=G' class='avatar avatar-18 photo' height='18' width='18' /> Mark Fonseca Rendeiro</span>, <span class="contributor"><img alt='' src='http://1.gravatar.com/avatar/97391367796db965d19e63b690e72b3d?s=18&amp;d=http%3A%2F%2F1.gravatar.com%2Favatar%2Fad516503a11cd5ca435acc9bb6523536%3Fs%3D18&amp;r=G' class='avatar avatar-18 photo' height='18' width='18' /> Tim Pritlove</span></span></span></p>
+			<p>Links:</p>
+			<ul>
+			<li><a href="http://allafrica.com/stories/201302281415.html" target="_blank">Kenyan Elections Set to Begin</a></li>
+			<li><a href="https://uchaguzi.co.ke/main" target="_blank">Ushahidi Map for Kenyan Elections 2013</a></li>
+			<li><a href="http://www.nytimes.com/2013/02/27/us/supreme-court-hears-arguments-on-dna-sampling.html" target="_blank">US Supreme Court Hearing Arguments for DNA Sampling</a></li>
+			<li><a href="http://en.wikipedia.org/wiki/Italian_general_election,_2013" target="_blank">Italian General Election Results 2013</a></li>
+			<li><a href="http://www.bbc.co.uk/news/world-asia-21616362" target="_blank">Thai Military Signs Peace Deal with Southern Rebels</a></li>
+			<li><a href="http://timesofindia.indiatimes.com/business/budget-2013/union-budget/Union-Budget-2013-Applause-for-Nirbhaya-Fund/articleshow/18739263.cms" target="_blank">India Announces Nirbhaya Fund to Improve Women&#8217;s Safety</a></li>
+			<li><strong>NEWZ SOURCES:</strong> <a href="http://allafrica.com/" target="_blank">Allafrica.com</a> &#8221;All Africa, All the Time.&#8221;</li>
+			</ul>
+			<p><a href="http://newz-of-the-world.com/?flattrss_redirect&amp;id=960&amp;md5=8f7f394fa4eb6bb1eea5ed083d28c521" title="Flattr" target="_blank"><img src="http://newz-of-the-world.com/wp-content/plugins/flattr/img/flattr-badge-large.png" alt="flattr this!"/></a></p><img src="http://feeds.feedburner.com/~r/newz-of-the-world/~4/xlIi0K9TPWQ" height="1" width="1"/>]]></content:encoded>
+            <feedburner:origLink>http://newz-of-the-world.com/newz045/</feedburner:origLink>
+            <enclosure url="http://feedproxy.google.com/~r/newz-of-the-world/~5/FeO_BG-qvc4/newz045-europes-facepalm.m4a" length="19719499" type="audio/mp4" />
+            <feedburner:origEnclosureLink>http://meta.metaebene.me/media/newz/newz045-europes-facepalm.m4a</feedburner:origEnclosureLink>
+        </item>
+        <item>
+            <title>NEWZ044 Non-Aligned Podcast Movement</title>
+            <link>http://feedproxy.google.com/~r/newz-of-the-world/~3/B2O7HwvKGxo/</link>
+            <pubDate>Sun, 24 Feb 2013 11:24:46 +0000</pubDate>
+            <guid isPermaLink="false">podlove-2013-02-24t11:14:21+00:00-5c3bfd0ebbc70a3</guid>
+            <description><![CDATA[This week we look at the reelection of Ecuador's president Rafael Correa and roll the dice if the report on "Blackmailed Gay Clergy" at the Vatican might be related to the Pope's recent resignation. Marks reports from a visit to a refugee church in Amsterdam this week, home to 127 refugees that the Dutch government wants to send home. We also discuss problems with Nuclear waste at Hanford (US) and Asse (Germany) and the general unsolved problems of the remains of Nuclear power production worldwide. We conclude with a brief look at the second anniversary of the Libyan revolution and point to another excellent NEWZ source: Informed Comment by Juan Cole.]]></description>
+            <atom:link rel="payment" title="Flattr this!" href="https://flattr.com/submit/auto?user_id=243&amp;url=http%3A%2F%2Fnewz-of-the-world.com%2Fnewz044%2F&amp;language=en_GB&amp;category=audio&amp;title=NEWZ044+Non-Aligned+Podcast+Movement&amp;description=This+week+we+look+at+the+reelection+of+Ecuador%27s+president+Rafael+Correa+and+roll+the+dice+if+the+report+on+%22Blackmailed+Gay+Clergy%22+at+the+Vatican+might+be+related+to...&amp;tags=drones%2Cecuador%2Celection%2Cgermany%2Cmali%2Cniger%2Cnonaligned%2Cnuclear%2Crefugee%2Cus%2Cwaste%2Cpodcast%2C+newz%2C+news%2C+mark+fonseca+rendeiro%2C+bicyclemark%2C+tim+pritlove%2C+metaebene" type="text/html" />
+            <atom:link rel="http://podlove.org/deep-link" href="http://newz-of-the-world.com/newz044/#" />
+            <itunes:duration>00:46:21</itunes:duration>
+            <itunes:author>Metaebene Personal Media - Tim Pritlove</itunes:author>
+            <itunes:subtitle>Ecuador re-elects Correa; Blackmailed Gay Clergy at Vatican; Vluchtkerk; Nuclear Waste in US and Germany; Informed Comment; Lybia</itunes:subtitle>
+            <itunes:summary>This week we look at the reelection of Ecuador's president Rafael Correa and roll the dice if the report on "Blackmailed Gay Clergy" at the Vatican might be related to the Pope's recent resignation. Marks reports from a visit to a refugee church in Amsterdam this week, home to 127 refugees that the Dutch government wants to send home. We also discuss problems with Nuclear waste at Hanford (US) and Asse (Germany) and the general unsolved problems of the remains of Nuclear power production worldwide. We conclude with a brief look at the second anniversary of the Libyan revolution and point to another excellent NEWZ source: Informed Comment by Juan Cole.</itunes:summary>
+            <itunes:image href="http://meta.metaebene.me/media/newz/newz044-non-aligned-podcast-movement.jpg" />
+            <content:encoded><![CDATA[<p><a target="_blank" href="http://meta.metaebene.me/media/newz/newz044-non-aligned-podcast-movement.jpg"><img style="float: right; padding: 5px; margin: 5px; margin-left: 20px; border-style: solid; border-width: 1px; border-color: black;" src="http://meta.metaebene.me/media/newz/newz044-non-aligned-podcast-movement.jpg" alt="Episode image for NEWZ044 Non-Aligned Podcast Movement" width="200" height="200" /></a>This week we look at the reelection of Ecuador's president Rafael Correa and roll the dice if the report on "Blackmailed Gay Clergy" at the Vatican might be related to the Pope's recent resignation. Marks reports from a visit to a refugee church in Amsterdam this week, home to 127 refugees that the Dutch government wants to send home. We also discuss problems with Nuclear waste at Hanford (US) and Asse (Germany) and the general unsolved problems of the remains of Nuclear power production worldwide. We conclude with a brief look at the second anniversary of the Libyan revolution and point to another excellent NEWZ source: Informed Comment by Juan Cole.</p>
+			<p><br />
+			</p>
+			<p><strong>Topics:</strong> Ecuador re-elects Correa; Blackmailed Gay Clergy at Vatican; Vluchtkerk; Nuclear Waste in US and Germany; Informed Comment; Lybia<br />
+			<span class="podlove-duration"><strong>Duration:</strong> 00:46:21</span><br/><span class="podlove-contributors"><strong>Team:</strong> <span class="podlove-contributors"><span class="contributor"><img alt='' src='http://1.gravatar.com/avatar/5c111db9ca417a89176812f3ab3c4aef?s=18&amp;d=http%3A%2F%2F1.gravatar.com%2Favatar%2Fad516503a11cd5ca435acc9bb6523536%3Fs%3D18&amp;r=G' class='avatar avatar-18 photo' height='18' width='18' /> Mark Fonseca Rendeiro</span>, <span class="contributor"><img alt='' src='http://1.gravatar.com/avatar/97391367796db965d19e63b690e72b3d?s=18&amp;d=http%3A%2F%2F1.gravatar.com%2Favatar%2Fad516503a11cd5ca435acc9bb6523536%3Fs%3D18&amp;r=G' class='avatar avatar-18 photo' height='18' width='18' /> Tim Pritlove</span></span></span></p>
+			<p>Links:</p>
+			<ul>
+			<li><span style="line-height: 15px"><a href="http://www.guardian.co.uk/world/2013/feb/18/ecuador-president-heralds-citizen-revolution">Ecuador&#8217;s President Rafael Correa says citizens will be in charge, not money | World news | guardian.co.uk</a></span></li>
+			<li><a href="http://www.rawstory.com/rs/2013/02/22/report-papal-resignation-linked-to-investigation-into-blackmailed-gay-clergy/">Report: Papal resignation linked to investigation into ‘blackmailed gay clergy’ | The Raw Story</a></li>
+			<li><a href="http://devluchtkerk.nl/home">Geen mens is illegaal &#8211; Vluchtkerk</a></li>
+			<li><a href="http://www.huffingtonpost.com/huff-wires/20130223/us-hanford-leak/">6 leaking tanks are Hanford nuke site&#8217;s latest woe</a></li>
+			<li><a href="http://www.spiegel.de/international/germany/germany-weighs-options-for-handling-nuclear-waste-in-asse-mine-a-884523.html">Germany Weighs Options for Handling Nuclear Waste in Asse Mine &#8211; SPIEGEL ONLINE</a></li>
+			<li><a href="http://www.juancole.com/">Informed Comment: Thoughts on the Middle East, History and Religion</a></li>
+			<li><a href="http://www.youtube.com/watch?v=ixwx_B38678&amp;feature=player_embedded">Marchin&#8217; On in Libya &#8211; YouTube</a></li>
+			<li>Episode Image: <a href="http://www.flickr.com/photos/svale/10753566/">Nuclear Waste</a> by <a href="http://www.flickr.com/photos/svale/">svale</a></li>
+			</ul>
+			<p><a href="http://newz-of-the-world.com/?flattrss_redirect&amp;id=953&amp;md5=1bcf9777118c5e0dde178dae590edd25" title="Flattr" target="_blank"><img src="http://newz-of-the-world.com/wp-content/plugins/flattr/img/flattr-badge-large.png" alt="flattr this!"/></a></p><img src="http://feeds.feedburner.com/~r/newz-of-the-world/~4/B2O7HwvKGxo" height="1" width="1"/>]]></content:encoded>
+            <feedburner:origLink>http://newz-of-the-world.com/newz044/</feedburner:origLink>
+            <enclosure url="http://feedproxy.google.com/~r/newz-of-the-world/~5/kPyEvjvIzak/newz044-non-aligned-podcast-movement.m4a" length="20699174" type="audio/mp4" />
+            <feedburner:origEnclosureLink>http://meta.metaebene.me/media/newz/newz044-non-aligned-podcast-movement.m4a</feedburner:origEnclosureLink>
+        </item>
+        <item>
+            <title>NEWZ043 A New Pope</title>
+            <link>http://feedproxy.google.com/~r/newz-of-the-world/~3/phYIsZkIc7o/</link>
+            <pubDate>Fri, 15 Feb 2013 11:26:54 +0000</pubDate>
+            <guid isPermaLink="false">podlove-2013-02-15t10:48:04+00:00-24ce5f909ad062e</guid>
+            <description><![CDATA[This day we get in touch with all kinds of Higher Powers that reign our earthly being as God decides to let go his direct representative and sends lightning and meteorites to hit earth to make a point. We also look at the assassination of a Tunesian opposition leader that makes clear that Arab Spring revolution is far from over.  Then we look at how companies and governments plan to look at us via social media and we present another Newz Source that delivers exactly what its name implies: breaking news.]]></description>
+            <atom:link rel="payment" title="Flattr this!" href="https://flattr.com/submit/auto?user_id=243&amp;url=http%3A%2F%2Fnewz-of-the-world.com%2Fnewz043%2F&amp;language=en_GB&amp;category=audio&amp;title=NEWZ043+A+New+Pope&amp;description=This+day+we+get+in+touch+with+all+kinds+of+Higher+Powers+that+reign+our+earthly+being+as+God+decides+to+let+go+his+direct+representative+and+sends+lightning+and...&amp;tags=assasination%2Cbrussels%2Ceff%2Ceu%2Cpodcasting%2Cpope%2Crussia%2Csocialmedia%2Cspace%2Cspy%2Ctunisia%2Cpodcast%2C+newz%2C+news%2C+mark+fonseca+rendeiro%2C+bicyclemark%2C+tim+pritlove%2C+metaebene" type="text/html" />
+            <psc:chapters version="1.2">
+                <psc:chapter start="00:00:00.000" title="Intro" />
+                <psc:chapter start="00:00:14.068" title="Prologue" />
+                <psc:chapter start="00:01:41.943" title="Pope Quits His Job" />
+                <psc:chapter start="00:07:57.151" title="Assassination of a popular politician in Tunis leads to mass protests and resignation of PM" />
+                <psc:chapter start="00:15:53.193" title="Liberation blog publishes salary levels within the EU" />
+                <psc:chapter start="00:22:42.349" title="Raytheon's Riot program tracks activists using social media" />
+                <psc:chapter start="00:26:17.286" title="EFF Calls for Action Against Podcasting Patent Troll Threat" />
+                <psc:chapter start="00:32:16.500" title="Asteroid misses Earth, but some unrelated  Meteorites make it to the ground" />
+                <psc:chapter start="00:39:12.500" title="Newz Sources: BreakingNews on Twitter" />
+                <psc:chapter start="00:42:35.750" title="Epilogue" />
+            </psc:chapters>
+            <atom:link rel="http://podlove.org/deep-link" href="http://newz-of-the-world.com/newz043/#" />
+            <itunes:duration>00:43:24</itunes:duration>
+            <itunes:author>Metaebene Personal Media - Tim Pritlove</itunes:author>
+            <itunes:subtitle>Pope resigns; Assassination of Tunesian opposition leader; Transparency in EU; Raytheon 'Riot' program; Podcasting patent; Asteroids and meteorites; BreakingNews</itunes:subtitle>
+            <itunes:summary>This day we get in touch with all kinds of Higher Powers that reign our earthly being as God decides to let go his direct representative and sends lightning and meteorites to hit earth to make a point. We also look at the assassination of a Tunesian opposition leader that makes clear that Arab Spring revolution is far from over.  Then we look at how companies and governments plan to look at us via social media and we present another Newz Source that delivers exactly what its name implies: breaking news.</itunes:summary>
+            <itunes:image href="http://meta.metaebene.me/media/newz/newz043-a-new-pope.jpg" />
+            <content:encoded><![CDATA[<p><a target="_blank" href="http://meta.metaebene.me/media/newz/newz043-a-new-pope.jpg"><img style="float: right; padding: 5px; margin: 5px; margin-left: 20px; border-style: solid; border-width: 1px; border-color: black;" src="http://meta.metaebene.me/media/newz/newz043-a-new-pope.jpg" alt="Episode image for NEWZ043 A New Pope" width="200" height="200" /></a>This day we get in touch with all kinds of Higher Powers that reign our earthly being as God decides to let go his direct representative and sends lightning and meteorites to hit earth to make a point. We also look at the assassination of a Tunesian opposition leader that makes clear that Arab Spring revolution is far from over.  Then we look at how companies and governments plan to look at us via social media and we present another Newz Source that delivers exactly what its name implies: breaking news.</p>
+			<p><br />
+			</p>
+			<p><strong>Topics:</strong> Pope resigns; Assassination of Tunesian opposition leader; Transparency in EU; Raytheon 'Riot' program; Podcasting patent; Asteroids and meteorites; BreakingNews<br />
+			<span class="podlove-duration"><strong>Duration:</strong> 00:43:24</span><br/><span class="podlove-contributors"><strong>Team:</strong> <span class="podlove-contributors"><span class="contributor"><img alt='' src='http://1.gravatar.com/avatar/5c111db9ca417a89176812f3ab3c4aef?s=18&amp;d=http%3A%2F%2F1.gravatar.com%2Favatar%2Fad516503a11cd5ca435acc9bb6523536%3Fs%3D18&amp;r=G' class='avatar avatar-18 photo' height='18' width='18' /> Mark Fonseca Rendeiro</span>, <span class="contributor"><img alt='' src='http://1.gravatar.com/avatar/97391367796db965d19e63b690e72b3d?s=18&amp;d=http%3A%2F%2F1.gravatar.com%2Favatar%2Fad516503a11cd5ca435acc9bb6523536%3Fs%3D18&amp;r=G' class='avatar avatar-18 photo' height='18' width='18' /> Tim Pritlove</span></span></span></p>
+			<p>Links:</p>
+			<ul>
+			<li><a href="http://www.nytimes.com/2013/02/14/world/europe/pope-benedict-xvi-ash-wednesday-mass.html" target="_blank">Pope Celebrates His Last Mass</a></li>
+			<li><a href="http://www.globalpost.com/dispatch/news/regions/middle-east/130206/chokri-belaid-dead-tunisia-leader-assassinated" target="_blank">Opposition Leader Assassinated in Tunisia</a></li>
+			<li><a href="http://bruxelles.blogs.liberation.fr/coulisses/2013/02/tout-ce-que-vous-avez-toujours-voulu-savoir-sur-le-salaire-des-eurocrates-sans-jamais-oser-le-demand.html" target="_blank">Eurocrat Salaries Published</a></li>
+			<li><a href="http://lobbyplag.eu/" target="_blank">Lobbyplag, Tracking Laws and Lobby Efforts at the EU Level</a></li>
+			<li><a href="http://www.guardian.co.uk/world/2013/feb/10/software-tracks-social-media-defence" target="_blank">Raytheon&#8217;s RIOT Program</a></li>
+			<li><a href="https://www.eff.org/deeplinks/2013/02/podcasting-community-faces-patent-troll-threat-eff-wants-help" target="_blank">EFF Calls for Action Against Podcast Patent Troll</a></li>
+			<li><a href="http://www.theage.com.au/world/meteor-shower-over-russia-sees-meteorites-hit-earth-20130215-2ei2j.html" target="_blank">Meteor Shower in Russia</a></li>
+			<li>NEWZ Sources: <a href="http://www.breakingnews.com/about/faq" target="_blank">Breaking News on Twitter</a></li>
+			</ul>
+			<p><a href="http://newz-of-the-world.com/?flattrss_redirect&amp;id=943&amp;md5=77b3c4a0b53b16e40a6563f1589cff61" title="Flattr" target="_blank"><img src="http://newz-of-the-world.com/wp-content/plugins/flattr/img/flattr-badge-large.png" alt="flattr this!"/></a></p><img src="http://feeds.feedburner.com/~r/newz-of-the-world/~4/phYIsZkIc7o" height="1" width="1"/>]]></content:encoded>
+            <feedburner:origLink>http://newz-of-the-world.com/newz043/</feedburner:origLink>
+            <enclosure url="http://feedproxy.google.com/~r/newz-of-the-world/~5/PkpltSLi66E/newz043-a-new-pope.m4a" length="19384962" type="audio/mp4" />
+            <feedburner:origEnclosureLink>http://meta.metaebene.me/media/newz/newz043-a-new-pope.m4a</feedburner:origEnclosureLink>
+        </item>
+    </channel>
+</rss>

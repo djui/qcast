@@ -20,7 +20,7 @@
     [x y]))
 
 
-;;; API
+;;; Interface
 
 (defn create
   ([] (create 100 "public/img/wall.jpg"))

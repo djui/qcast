@@ -75,7 +75,7 @@
       [:channel (concat channel items)])))
 
 
-;;; API
+;;; Interface
 
 (defn title [s]
   [:title (escape-html s)])
@@ -105,8 +105,8 @@
 (defn enclosure [url length type]
   [:enclosure {:url url, :length length, :type type}])
 
-(defn category [& categories]
-  (map #(vector :category (escape-html %)) categories))
+(defn categories [& cats]
+  (map #(vector :category (escape-html %)) cats))
 
 (defn language [s]
   [:language s])

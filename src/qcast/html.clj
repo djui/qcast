@@ -27,7 +27,7 @@
     (http/head url options)))
 
 
-;;; API
+;;; Interface
 
 (defn content-header [url]
   (let [header (:headers (HEAD url))

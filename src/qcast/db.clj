@@ -6,7 +6,7 @@
             [clojure.java.jdbc.sql :as dml]))
 
 
-;;; API
+;;; Interface
 
 ;; SPECS
 

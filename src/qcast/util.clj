@@ -2,7 +2,7 @@
   (:require [clojure.string :as string]))
 
 
-;;; API
+;;; Interface
 
 ;; Core
 
