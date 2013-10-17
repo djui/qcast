@@ -93,6 +93,9 @@
 (defn pub-date [inst]
   [:pubDate (format-datetime inst)])
 
+(defn last-build-date [inst]
+  [:lastBuildDate (format-datetime inst)])
+
 (defn guid
   ([s]
      (guid s true))
