@@ -20,7 +20,7 @@
 ;; Channel
 
 (defn owner [name email]
-  [:itunes:owner [[:itunes:name name] [:itunes:email email]]])
+  [:itunes:owner '([:itunes:name name] [:itunes:email email])])
 
 (defn categories [& cats]
   (map #(vector :itunes:category {:text (escape-html %)}) cats))
