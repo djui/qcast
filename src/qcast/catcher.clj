@@ -94,18 +94,18 @@
                       keywords summary title authors record-date publish-date
                       length pdf audio video slides times)]
     (debug "Fetching presentation" id)
-    (->> (base-url id)
-         dom
-         md-vals
-         (zipmap md-keys))))
+    (some->> (log-errors (dom (base-url id)))
+             md-vals
+             (zipmap md-keys))))
 
 (defn- latest
   ([] (latest 0))
   ([marker]
      (debug "Fetching overview from index" marker)
-     (let [dom (dom (base-url "/presentations/" marker))
+     (let [dom (log-errors (dom (base-url "/presentations/" marker)))
            items (overview-ids dom)]
-       (when items ;; Stop either on error or when reached last overview page
+       (if (empty? items) ;; Error or last overview page reached?
+         (warn "No items found")
          (lazy-cat items (latest (+ marker (count items))))))))
 
 
@@ -117,13 +117,15 @@
   ([] (cache-updates (cache/latest)))
   ([since] (cache-updates since 100))
   ([since limit]
-     (let [since-id (or (:id since) :inf)]
+     (let [limit (dec limit) ;; One off
+           since-id (or (:id since) :inf)]
        (info "Check for updates since" since-id)
        (->> (latest)
             (take-while #(not= % since-id))
             (pmap metadata)
+            (filter identity)
             (map cache/put)
-            (dorun (dec limit))))))
+            (dorun limit)))))
 
 
 ;;; Main
