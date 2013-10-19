@@ -4,8 +4,9 @@
             [compojure.handler     :as handler]
             [compojure.route       :as route]
             [qcast.cache           :as cache]
-            [qcast.feed.rss        :as rss]
+            [qcast.feed.ext.atom   :as atom]
             [qcast.feed.ext.itunes :as itunes]
+            [qcast.feed.rss        :as rss]
             [qcast.util            :as util :refer [parse-int]]
             [org.httpkit.server    :as http]
             [taoensso.timbre       :as timbre :refer :all]))
@@ -19,7 +20,7 @@
      (rss/link link)
      (rss/description (:summary p))
      ;;(rss/author (string/join ", " (:authors p)))
-     (rss/author "info@infoq.com")
+     (rss/author "info@infoq.com (InfoQ)")
      (rss/pub-date (:publish-date p))
      (rss/guid link)
      (apply rss/enclosure (:video p))
@@ -35,15 +36,17 @@
   (let [base-url #(apply str "http://www.infoq.com" %&)
         entries (cache/latest 50)
         items (map (comp prepare-item :data) entries)
-        channel [(rss/title "QCast - InfoQ Presentation Podcast")
+        title "QCast - InfoQ Presentation Podcast"
+        channel [(rss/title title)
                  (rss/link (base-url))
                  (rss/description (str "Facilitating the spread of knowledge "
                                        "and innovation in enterprise software "
                                        "development"))
-                 (rss/image (base-url "/styles/i/logo-big.jpg") "InfoQ" (base-url))
+                 (rss/image (base-url "/styles/i/logo-big.jpg") title (base-url))
                  (rss/language "en-US")
                  (rss/generator "InfoQ-Feed-Generator/1.0")
                  (rss/last-build-date (get-in (first entries) [:data :publish-date]))
+                 (atom/link "http://infoqcast.herokuapp.com/feed")
                  (itunes/author "InfoQ")
                  (itunes/owner "InfoQ" "info@infoq.com")
                  (itunes/summary (str "InfoQ.com is a practitioner-driven "
@@ -51,10 +54,7 @@
                                       "facilitating the spread of knowledge and "
                                       "innovation in enterprise software "
                                       "development."))
-                 (itunes/categories "development" "architecture & design"
-                                    "process & practices"
-                                    "operations & infrastructure"
-                                    "enterprise architecture")
+                 (itunes/categories "Education" "Technology")
                  (itunes/keywords "Java" ".NET" "dotnet" "Ruby" "SOA"
                                   "Service Oriented Architecture" "Agile"
                                   "enterprise" "software development"
