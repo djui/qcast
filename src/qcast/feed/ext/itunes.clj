@@ -1,4 +1,6 @@
-(ns qcast.feed.ext.itunes
+(ns ^{:doc "iTunes extension: http://www.itunes.com/dtds/podcast-1.0.dtd.
+            Specification: http://www.apple.com/itunes/podcasts/specs.html"}
+  qcast.feed.ext.itunes
   (:require [clojure.string :as string]
             [hiccup.util    :refer [escape-html]]))
 
@@ -51,6 +53,5 @@
 
 ;; Item
 
-;; 00:52:45
 (defn duration [len]
   [:itunes:duration (secs->time len)])
