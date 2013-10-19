@@ -27,7 +27,7 @@
   (map #(vector :itunes:category {:text (escape-html %)}) cats))
 
 (defn keywords [& keywords]
-  [:itunes:keywords (string/join ", " (map escape-html keywords))])
+  [:itunes:keywords (escape-html (string/join ", " keywords))])
 
 (defn block [b]
   [:itunes:block (bool-str b)])
@@ -38,13 +38,13 @@
 ;; Channel or Item
 
 (defn author [s]
-  [:itunes:author s])
+  [:itunes:author (escape-html s)])
 
 (defn summary [s]
-  [:itunes:summary s])
+  [:itunes:summary (escape-html s)])
 
 (defn subtitle [s]
-  [:itunes:subtitle s])
+  [:itunes:subtitle (escape-html s)])
 
 (defn image [url]
   [:itunes:image {:href url}])

@@ -103,7 +103,7 @@
      [:guid {:isPermaLink (str perma-link?)} s]))
 
 (defn image [url title link]
-  [:image [:url url] [:title title] [:link link]])
+  [:image [:url url] [:title (escape-html title)] [:link link]])
 
 (defn enclosure [url length type]
   [:enclosure {:url url, :length length, :type type}])
