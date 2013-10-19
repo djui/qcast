@@ -132,8 +132,9 @@
 
 (defn -main [& args]
   (info "Starting catcher")
-  (if (= (first args) "once")
-    (do (info "Running once")
-        (cache-updates))
-    (do (info "Running periodically")
-        (interspaced (minutes 30) #(logged-future (cache-updates))))))
+  (let [task #(info "Updated" (count (cache-updates)))]
+    (if (= (first args) "once")
+      (do (info "Running once")
+          (task))
+      (do (info "Running periodically")
+          (interspaced (minutes 30) #(logged-future (task)))))))
