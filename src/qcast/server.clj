@@ -6,6 +6,7 @@
             [qcast.cache           :as cache]
             [qcast.feed.ext.atom   :as atom]
             [qcast.feed.ext.itunes :as itunes]
+            [qcast.feed.ext.simple-chapters :as psc]
             [qcast.feed.rss        :as rss]
             [qcast.util            :as util :refer [parse-int]]
             [org.httpkit.server    :as http]
@@ -13,6 +14,12 @@
 
 
 ;;; Internals
+
+(defn- slides
+  ([] (slides 1))
+  ([n]
+     (cons (str "Slide " n)
+           (lazy-seq (slides (inc n))))))
 
 (defn- prepare-item [p]
   (let [link (:link p)]
@@ -30,7 +37,8 @@
      (itunes/summary (:summary p))
      ;;(itunes/image (:poster p))
      (itunes/image (first (:slides p)))
-     (itunes/duration (:length p))]))
+     (itunes/duration (:length p))
+     (apply psc/chapters (map vector (:times p) (slides) (:slides p)))]))
 
 (defn- serve-feed [req]
   (let [base-url #(apply str "http://www.infoq.com" %&)
