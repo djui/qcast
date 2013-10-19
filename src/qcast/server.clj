@@ -70,7 +70,7 @@
                  (itunes/image (base-url "/styles/i/logo-big.jpg"))
                  (itunes/block false)
                  (itunes/explicit false)]
-        extensions [:atom :itunes :feedburner :simple-chapters :content :history]
+        extensions [:atom :itunes :simple-chapters]
         feed (rss/feed channel items extensions)]
     feed))
 
