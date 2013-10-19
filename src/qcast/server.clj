@@ -69,8 +69,13 @@
 
 ;;; Main
 
+(defn- rss-response [body & [status]]
+  {:status (or status 200)
+   :headers {"Content-Type" "application/rss+xml"}
+   :body body})
+
 (defroutes app-routes
-  (GET "/feed" [] serve-feed)
+  (GET "/feed" [] (comp rss-response serve-feed))
   (route/files "/")
   (route/not-found "Not found"))
 
