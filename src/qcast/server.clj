@@ -44,16 +44,20 @@
   (let [base-url #(apply str "http://www.infoq.com" %&)
         entries (cache/latest 50)
         items (map (comp prepare-item :data) entries)
+  (let [entries (map :data (cache/latest 50))
+        items (map #(feed-item media %) entries)
+        change-date (:publish-date (first entries))
+        base-url "http://www.infoq.com"
         title "QCast - InfoQ Presentation Podcast"
         channel [(rss/title title)
-                 (rss/link (base-url))
+                 (rss/link base-url)
                  (rss/description (str "Facilitating the spread of knowledge "
                                        "and innovation in enterprise software "
                                        "development"))
-                 (rss/image (base-url "/styles/i/logo-big.jpg") title (base-url))
+                 (rss/image (str base-url "/styles/i/logo-big.jpg") title base-url)
                  (rss/language "en-US")
                  (rss/generator "InfoQ-Feed-Generator/1.0")
-                 (rss/last-build-date (get-in (first entries) [:data :publish-date]))
+                 (rss/last-build-date change-date)
                  (atom/link "http://infoqcast.herokuapp.com/feed")
                  (itunes/author "InfoQ")
                  (itunes/owner "InfoQ" "info@infoq.com")
@@ -67,12 +71,11 @@
                                   "Service Oriented Architecture" "Agile"
                                   "enterprise" "software development"
                                   "development" "architecture" "programming")
-                 (itunes/image (base-url "/styles/i/logo-big.jpg"))
+                 (itunes/image (str base-url "/styles/i/logo-big.jpg"))
                  (itunes/block false)
                  (itunes/explicit false)]
-        extensions [:atom :itunes :simple-chapters]
-        feed (rss/feed channel items extensions)]
-    feed))
+        extensions [:atom :itunes :simple-chapters]]
+    (rss/feed channel items extensions)))
 
 
 ;;; Main
