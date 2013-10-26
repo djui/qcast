@@ -108,7 +108,9 @@
   [:image [:url url] [:title (escape-html title)] [:link link]])
 
 (defn enclosure [url length type]
-  [:enclosure {:url url, :length length, :type type}])
+  ;; http://feedvalidator.org/docs/error/UseZeroForUnknown.html
+  ;; http://feedvalidator.org/docs/warning/MissingTypeAttr.html
+  [:enclosure {:url url, :length (or length 0) :type (or type "audio/mpeg")}])
 
 (defn categories [& cats]
   (map #(vector :category (escape-html %)) cats))
