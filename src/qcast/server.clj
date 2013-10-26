@@ -68,7 +68,7 @@
      (itunes/block false)
      (itunes/explicit false)]))
 
-(defn- serve-feed [media req]
+(defn- serve-feed [media]
   (let [entries (map :data (cache/latest 50))
         items (map #(feed-item media %) entries)
         channel (feed-channel (:publish-date (first entries)))
