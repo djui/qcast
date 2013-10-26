@@ -7,7 +7,7 @@
 ;; Core
 
 (defn parse-int [s]
-  (Integer/parseInt s))
+  (when s (Integer/parseInt s)))
 
 
 ;; Time

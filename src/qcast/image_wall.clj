@@ -33,7 +33,8 @@
           width+ (+ width border)
           height+ (+ height border)
           black (Color. 0 0 0)
-          img (BufferedImage. (* cols width+) (* rows height+) BufferedImage/TYPE_INT_RGB)
+          img (BufferedImage. (* cols width+) (* rows height+)
+                              BufferedImage/TYPE_INT_RGB)
           graphics (.createGraphics img)]
       (.setPaint graphics black)
       (.fillRect graphics 0 0 (.getWidth img) (.getHeight img))
