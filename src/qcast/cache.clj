@@ -45,5 +45,6 @@
   ([] (first (latest 1)))
   ([n]
     (map post-process (db/select' db-spec * :presentations
-                                  (db/order-by {:publish_date :desc})
+                                  (db/order-by [{:publish_date :desc}
+                                                {:creation_date :desc}])
                                   (db/limit n)))))
