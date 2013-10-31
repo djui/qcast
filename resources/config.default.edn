@@ -1,0 +1,15 @@
+;; -*- mode: clojure -*-
+{:server {:host "localhost"
+          :port "8080"}
+ :db {:classname "org.sqlite.JDBC"
+      :subprotocol "sqlite"
+      :subname "sqlite.db"}
+ :infoq {:username "infoqcast@gmail.com"
+         :password "InfoQCast123"
+         :auth-cookie ""}
+ :feed {:count 50}
+ :catcher {:rewind 100
+           :update 1800}
+ :wall {:file-path "public/img/wall.jpg"
+        :posters "public/img/posters"}
+ :log-level :info}
