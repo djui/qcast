@@ -90,8 +90,8 @@
 
 (defroutes app-routes
   (GET "/feed"       [] (redirect "feed/audio"))
-  (GET "/feed/audio" [] (fn [_req] rss-response (serve-feed :audio)))
-  (GET "/feed/video" [] (fn [_req] rss-response (serve-feed :video)))
+  (GET "/feed/audio" [] (fn [_req] (rss-response (serve-feed :audio))))
+  (GET "/feed/video" [] (fn [_req] (rss-response (serve-feed :video))))
   (GET "/presentations/:filename" [filename]
        (fn [_req] (redirect (infoq/media-link filename))))
   (route/files "/")
