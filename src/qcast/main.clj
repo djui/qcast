@@ -10,6 +10,6 @@
 
 (defn -main []
   (try (cache/init) ;; Database might already exist
-    (catch java.sql.SQLException _))
+    (catch SQLException _))
   (server/-main)
   (catcher/-main))

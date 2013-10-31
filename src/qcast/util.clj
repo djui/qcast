@@ -1,5 +1,5 @@
 (ns qcast.util
-  (:require [clojure.string :as string]))
+  (:require [clojure.string :refer [split]]))
 
 
 ;;; Interface
@@ -7,7 +7,8 @@
 ;; Core
 
 (defn parse-int [s]
-  (when s (Integer/parseInt s)))
+  (when (string? s)
+    (Long/parseLong s)))
 
 
 ;; Time
@@ -44,6 +45,6 @@
   ([n] (* n (hours 24))))
 
 (defn interval->sec [s]
-  (let [units (map parse-int (string/split s #":"))]
+  (let [units (map parse-int (split s #":"))]
     (+ (* (first units) 60)
        (second units))))

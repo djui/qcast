@@ -2,17 +2,17 @@
             Specification: http://cyber.law.harvard.edu/rss/rss.html"}
   qcast.feed.rss
   (:import [java.text.SimpleDateFormat])
-  (:require [clojure.string :as string]
+  (:require [clojure.string :refer [join]]
             [hiccup.core    :as hiccup]
-            [hiccup.page :refer [xml-declaration]]
-            [hiccup.util :refer [escape-html]]))
+            [hiccup.page    :refer [xml-declaration]]
+            [hiccup.util    :refer [escape-html]]))
 
 
 ;;; Globals
 
 (def ^:private feed-generator
   (str "clj-feed/1.0 Clojure/"
-       (clojure.string/join "." (take-while identity (vals *clojure-version*)))))
+       (join "." (take-while identity (vals *clojure-version*)))))
 
 (def ^:private rss-spec
   {:channel
@@ -30,12 +30,12 @@
 
 (def ^:private rss-extensions
   {;; Optional
-   :atom [:xmlns:atom "http://www.w3.org/2005/Atom"]
-   :itunes [:xmlns:itunes "http://www.itunes.com/dtds/podcast-1.0.dtd"]
-   :feedburner [:xmlns:feedburner "http://rssnamespace.org/feedburner/ext/1.0"]
+   :atom            [:xmlns:atom "http://www.w3.org/2005/Atom"]
+   :itunes          [:xmlns:itunes "http://www.itunes.com/dtds/podcast-1.0.dtd"]
+   :feedburner      [:xmlns:feedburner "http://rssnamespace.org/feedburner/ext/1.0"]
    :simple-chapters [:xmlns:psc "http://podlove.org/simple-chapters"]
-   :content [:xmlns:content "http://purl.org/rss/1.0/modules/content/"]
-   :history [:xmlns:fh "http://purl.org/syndication/history/1.0"]})
+   :content         [:xmlns:content "http://purl.org/rss/1.0/modules/content/"]
+   :history         [:xmlns:fh "http://purl.org/syndication/history/1.0"]})
 
 
 ;;; Utilities
@@ -110,7 +110,7 @@
 (defn enclosure [url length type]
   ;; http://feedvalidator.org/docs/error/UseZeroForUnknown.html
   ;; http://feedvalidator.org/docs/warning/MissingTypeAttr.html
-  [:enclosure {:url url, :length (or length 0) :type (or type "audio/mpeg")}])
+  [:enclosure {:url url, :length (or length 0), :type (or type "audio/mpeg")}])
 
 (defn categories [& cats]
   (map #(vector :category (escape-html %)) cats))

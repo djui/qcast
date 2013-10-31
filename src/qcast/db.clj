@@ -14,8 +14,8 @@
   ([] (sqlite "sqlite.db"))
   ([location]
      {:subprotocol "sqlite"
-      :classname "org.sqlite.JDBC"
-      :subname location}))
+      :classname   "org.sqlite.JDBC"
+      :subname     location}))
 
 
 ;; DDL

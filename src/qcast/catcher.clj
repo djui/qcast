@@ -2,12 +2,12 @@
   (:gen-class)
   (:require [clj-time.coerce :as time-coerce]
             [clj-time.format :as time]
-            [clojure.string  :as string :refer [split]]
+            [clojure.string  :refer [split]]
             [qcast.cache     :as cache]
-            [qcast.html      :as html :refer :all]
+            [qcast.html      :refer :all]
             [qcast.infoq     :as infoq]
-            [qcast.util      :as util :refer :all]
-            [taoensso.timbre :as timbre :refer :all])
+            [qcast.util      :refer :all]
+            [taoensso.timbre :refer :all])
   (:refer-clojure :exclude [meta]))
 
 
@@ -93,9 +93,8 @@
                  :record-date :publish-date :length :pdf :audio :video :slides
                  :times]
         md-vals (juxt (constantly id) (constantly (infoq/presentation-url id))
-  poster
-                      keywords summary title authors record-date publish-date
-                      length pdf audio video slides times)]
+                      poster keywords summary title authors record-date
+                      publish-date length pdf audio video slides times)]
     (debug "Fetching presentation" id)
     (some->> (log-errors (dom (infoq/presentation id)))
              md-vals
@@ -136,7 +135,7 @@
 
 (defn -main [& args]
   (info "Starting catcher")
-  (let [task #(info "Updated" (count (cache-updates)))]
+  (let [task #(debug "Updated" (count (cache-updates)))]
     (if (= (first args) "once")
       (do (info "Running once")
           (task))

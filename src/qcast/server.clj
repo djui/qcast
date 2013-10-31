@@ -1,17 +1,18 @@
 (ns qcast.server
   (:gen-class)
-  (:require [compojure.core        :as compojure :refer [defroutes GET]]
+  (:require [compojure.core        :refer [defroutes GET]]
             [compojure.handler     :as handler]
             [compojure.route       :as route]
+            [config]
             [qcast.cache           :as cache]
             [qcast.feed.ext.atom   :as atom]
             [qcast.feed.ext.itunes :as itunes]
             [qcast.feed.ext.simple-chapters :as psc]
             [qcast.feed.rss        :as rss]
             [qcast.infoq           :as infoq]
-            [qcast.util            :as util :refer [parse-int]]
+            [qcast.util            :refer [parse-int]]
             [org.httpkit.server    :as http]
-            [taoensso.timbre       :as timbre :refer :all]))
+            [taoensso.timbre       :refer :all]))
 
 
 ;;; Internals

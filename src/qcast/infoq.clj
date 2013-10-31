@@ -1,9 +1,9 @@
 (ns qcast.infoq
-  (:require [clojure.string   :as string :refer [split]]
+  (:require [clojure.string   :refer [split]]
             [clj-http.client  :as http]
             [clj-http.cookies :as cookies]
             [qcast.html       :as html]
-            [qcast.util       :as util :refer :all])
+            [qcast.util       :refer :all])
   (:refer-clojure :exclude [resolve]))
 
 
@@ -22,7 +22,7 @@
 
 (def ^:private http-options
   {:headers {"User-Agent" ios-user-agent}
-   :as :stream})
+   :as      :stream})
 
 
 ;;; Internals
