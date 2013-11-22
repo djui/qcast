@@ -45,14 +45,12 @@
 
 (defn- pdf [dom]
   (let [transformer #(some->> % (attr :value) (host-url "/"))
-        url (select [:#pdfForm :> [:input (attr= :name "filename")]] transformer
-  dom)]
+        url (select [:#pdfForm :> [:input (attr= :name "filename")]] transformer dom)]
     [url 0 "application/pdf"]))
 
 (defn- audio [dom]
   (let [transformer #(some->> % (attr :value) (host-url "/"))
-        url (select [:#mp3Form :> [:input (attr= :name "filename")]] transformer
-  dom)]
+        url (select [:#mp3Form :> [:input (attr= :name "filename")]] transformer dom)]
     [url 0 "audio/mpeg"]))
 
 (defn- video [dom]

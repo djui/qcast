@@ -1,6 +1,5 @@
 (ns qcast.html
   (:require [clojure.string         :refer [trim]]
-            [qcast.util             :refer [parse-int]]
             [net.cgrand.enlive-html :as css])
   (:refer-clojure :exclude [meta]))
 
