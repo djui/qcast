@@ -9,11 +9,11 @@
             [qcast.feed.ext.itunes :as itunes]
             [qcast.feed.ext.simple-chapters :as psc]
             [qcast.feed.rss        :as rss]
-            [qcast.infoq           :as infoq]
             [qcast.util            :refer [parse-int]]
             [org.httpkit.server    :as http]
             [taoensso.timbre       :refer :all]))
 
+            [qcast.infoq.site               :as infoq]
 
 ;;; Internals
 

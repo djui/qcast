@@ -1,4 +1,4 @@
-(ns qcast.infoq
+(ns qcast.infoq.site
   (:require [clojure.string   :refer [split]]
             [clj-http.client  :as http]
             [clj-http.cookies :as cookies]
@@ -37,7 +37,7 @@
   (http/post url (merge http-options opts)))
 
 (defn- overview-ids [dom]
-  (html/select-all [:.news_type_video :> :a] #(html/attr :href %) dom))
+  (html/select-all [:.itemtitle :> :a] #(html/attr :href %) dom))
 
 (declare base-url)
 (defn- resolve [filename]
@@ -56,10 +56,10 @@
   (apply str "https://www.infoq.com" s))
 
 (defn poster-url [file-path]
-  (base-url file-path))
+  (when file-path (base-url file-path)))
 
 (defn slide-url [file-path]
-  (base-url file-path))
+  (when file-path (base-url file-path)))
 
 (defn presentation-url [id]
   (base-url id))
@@ -74,13 +74,16 @@
     (login username password)
     (resolve (str "presentations/" filename))))
 
+;; TODO: Maybe move functions below into scraper
+
 (defn media-meta [url]
-  (let [headers (:headers (HEAD url))
-        length (parse-int (get headers "content-length"))
-        type (some-> (get headers "content-type") (split #";") first)]
-    (if (= type "text/html")
-      [url length nil] ;; discard the usual
-      [url length type])))
+  (when url
+    (let [headers (:headers (HEAD url))
+          length (some-> (get headers "content-length") parse-int)
+          type (some-> (get headers "content-type") (split #";") first)]
+      (if (= type "text/html")
+        [url length nil] ;; discard the usual
+        [url length type]))))
 
 (defn presentations [index]
   (-> (base-url "/presentations/" index) GET html/dom overview-ids))

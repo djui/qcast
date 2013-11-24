@@ -1,13 +1,13 @@
-(ns qcast.catcher
+(ns qcast.infoq.scraper
   (:gen-class)
-  (:require [clj-time.coerce :as time-coerce]
-            [clj-time.format :as time]
-            [clojure.string  :refer [split]]
-            [qcast.cache     :as cache]
-            [qcast.html      :refer :all]
-            [qcast.infoq     :as infoq]
-            [qcast.util      :refer :all]
-            [taoensso.timbre :refer :all])
+  (:require [clj-time.coerce  :as time-coerce]
+            [clj-time.format  :as time]
+            [clojure.string   :refer [split trim]]
+            [qcast.cache      :as cache]
+            [qcast.html       :refer :all]
+            [qcast.infoq.site :as infoq]
+            [qcast.util       :refer :all]
+            [taoensso.timbre  :refer :all])
   (:refer-clojure :exclude [meta]))
 
 
@@ -26,17 +26,19 @@
   (letfn [(split-keywords [s]
             (let [[lowercase-kw & uppercase-kw] (split s #",")
                   lowercase-kw (split lowercase-kw #" ")]
-              (concat lowercase-kw uppercase-kw)))]
-    (meta :name "keywords" split-keywords dom)))
+              (map trim (concat lowercase-kw uppercase-kw))))]
+    (meta "keywords" split-keywords dom)))
 
 (defn- summary [dom]
-  (meta "description" dom))
+  (meta "description" trim dom))
 
 (defn- title [dom]
   (select [:head :title] inner-text dom))
 
 (defn- authors [dom]
-  (let [transformer #(some-> % inner-text (split #"\s*(and|,)\s*"))]
+  (let [splitter #(split % #"[ ,&]")
+        cleaner (some-fn empty? (partial = "and"))
+        transformer #(some->> % inner-text splitter (remove cleaner))]
     (select [:.author_general :> :a] transformer dom)))
 
 (defn- length [dom]
@@ -46,12 +48,14 @@
 (defn- pdf [dom]
   (let [transformer #(some->> % (attr :value) (host-url "/"))
         url (select [:#pdfForm :> [:input (attr= :name "filename")]] transformer dom)]
-    [url 0 "application/pdf"]))
+  (when url
+    [url 0 "application/pdf"]))) ;; Size yet unknown
 
 (defn- audio [dom]
   (let [transformer #(some->> % (attr :value) (host-url "/"))
         url (select [:#mp3Form :> [:input (attr= :name "filename")]] transformer dom)]
-    [url 0 "audio/mpeg"]))
+    (when url
+      [url 0 "audio/mpeg"]))) ;; Size yet unknown
 
 (defn- video [dom]
   (let [transformer #(some->> % (attr :src) infoq/media-meta)]
@@ -65,6 +69,9 @@
     (select [:#video :> :source] transformer dom)))
 
 (defn- publish-date [dom]
+  (meta "tprox" (comp time-coerce/to-date parse-int) dom))
+
+(defn- online-date [dom]
   (let [transformer #(some->> % (inner-text 2)
                               (re-find #"(?s)on\s*(.*)") second
                               (time/parse (time/formatter "MMM dd, yyyy"))
@@ -88,11 +95,12 @@
 
 (defn- metadata [id]
   (let [md-keys [:id :link :poster :keywords :summary :title :authors
-                 :record-date :publish-date :length :pdf :audio :video :slides
-                 :times]
+                 :record-date :publish-date :online-date
+                 :length :pdf :audio :video :slides :times]
         md-vals (juxt (constantly id) (constantly (infoq/presentation-url id))
-                      poster keywords summary title authors record-date
-                      publish-date length pdf audio video slides times)]
+                      poster keywords summary title authors
+                      record-date publish-date online-date
+                      length pdf audio video slides times)]
     (debug "Fetching presentation" id)
     (some->> (log-errors (dom (infoq/presentation id)))
              md-vals
@@ -114,12 +122,12 @@
   sequence requires one additional GET (page) + three HEAD (video, audio, pdf)
   requests per item, thus n%12 + 2*n."
   ([] (cache-updates (cache/latest)))
-  ([since] (cache-updates since 100))
-  ([since limit]
-     (let [since-id (or (:id since) :inf)]
-       (info "Check for updates since" since-id)
+  ([until] (cache-updates until 3000))
+  ([until limit]
+     (let [until-id (or (:id until) :inf)]
+       (info "Check for updates up until" until-id)
        (->> (latest)
-            (take-while #(not= % since-id))
+            (take-while #(not= % until-id))
             (pmap metadata)
             (filter identity)
             (take limit)
