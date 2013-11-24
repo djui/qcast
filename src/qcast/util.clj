@@ -45,6 +45,8 @@
   ([n] (* n (hours 24))))
 
 (defn interval->sec [s]
-  (let [units (map parse-int (split s #":"))]
-    (+ (* (first units) 60)
-       (second units))))
+  (->> (split s #":")
+       (map parse-int)
+       reverse
+       (map * (iterate (partial * 60) 1))
+       (reduce +)))
