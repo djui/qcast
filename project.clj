@@ -1,4 +1,4 @@
-(defproject qcast "1.0.0"
+(defproject qcast "1.1.0"
   :description "QCast - InfoQ presentation podcast"
   :url "http://infoqcast.herokuapp.com/"
   :license {:name "Eclipse Public License"
