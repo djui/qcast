@@ -1,7 +1,7 @@
 (ns ^{:doc "RSS 2.0 Feed generator.
             Specification: http://cyber.law.harvard.edu/rss/rss.html"}
   qcast.feed.rss
-  (:import [java.text.SimpleDateFormat])
+  (:import [java.text SimpleDateFormat])
   (:require [clojure.string :refer [join]]
             [hiccup.core    :as hiccup]
             [hiccup.page    :refer [xml-declaration]]
@@ -41,7 +41,7 @@
 ;;; Utilities
 
 (defn- format-datetime [inst]
-  (let [format (java.text.SimpleDateFormat. "EEE, dd MMM yyyy HH:mm:ss ZZZZ")]
+  (let [format (SimpleDateFormat. "EEE, dd MMM yyyy HH:mm:ss ZZZZ")]
     (.format format inst)))
 
 (defn- insert? [coll kv]

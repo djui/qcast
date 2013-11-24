@@ -1,5 +1,6 @@
 (ns qcast.cache
   (:gen-class)
+  (:import [java.sql SQLException])
   (:require [qcast.db        :as db]
             [taoensso.timbre :refer :all]))
 
@@ -37,7 +38,7 @@
           :data         item}
          pre-process
          (db/insert db-spec :presentations))
-    (catch java.sql.SQLException e
+    (catch SQLException e
       (warn "Presentation already exists" item))))
 
 (defn lookup [id]
