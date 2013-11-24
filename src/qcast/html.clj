@@ -26,8 +26,8 @@
 (def attr= css/attr=)
 
 (defn meta
-  ([key dom] (meta :name key dom))
-  ([key value dom] (meta key value identity dom))
+  ([value dom] (meta value identity dom))
+  ([value transformer dom] (meta :name value transformer dom))
   ([key value transformer dom]
     (let [transformer' #(->> % (attr :content) transformer)]
       (select [:head [:meta (css/attr= key value)]] transformer' dom))))
