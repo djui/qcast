@@ -36,9 +36,8 @@
   (select [:head :title] inner-text dom))
 
 (defn- authors [dom]
-  (let [splitter #(split % #"[ ,&]")
-        cleaner (some-fn empty? (partial = "and"))
-        transformer #(some->> % inner-text splitter (remove cleaner))]
+  (let [authors-split #(split % #"(\s*,\s*|\s*&\s*|\s+and\s+)")
+        transformer #(some->> % inner-text authors-split (map trim))]
     (select [:.author_general :> :a] transformer dom)))
 
 (defn- length [dom]
