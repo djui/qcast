@@ -87,7 +87,7 @@
 (defroutes api-routes
   "Routes for client API"
   (GET "/api/v1/presentations" []
-    (->> (cache/latest 10)
+    (->> (cache/latest 20)
          (map :data)
          (map #(dissoc % :slides :times :video :audio :pdf))
          respond))
