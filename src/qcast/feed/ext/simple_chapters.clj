@@ -4,6 +4,10 @@
   (:require [hiccup.util :refer [escape-html]]))
 
 
+;;; Globals
+
+(def ^:private version "1.2")
+
 ;;; Interface
 
 ;; Channel
@@ -21,4 +25,4 @@
      (assoc-in (chapter start title link-url) [1 :image] image-url)))
 
 (defn chapters [& chapters]
-  [:psc:chapters {:version "1.2"} (map #(apply chapter %) chapters)])
+  [:psc:chapters {:version version} (map #(apply chapter %) chapters)])
