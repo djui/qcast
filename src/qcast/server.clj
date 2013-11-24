@@ -87,9 +87,16 @@
 (defroutes api-routes
   "Routes for client API"
   (GET "/api/v1/presentations" []
-    (respond (map :data (cache/latest 10))))
+    (->> (cache/latest 10)
+         (map :data)
+         (map #(dissoc % :slides :times :video :audio :pdf))
+         respond))
   (GET "/api/v1/presentations/:id" [id]
-    (respond (map :data (cache/lookup (str "/presentations/" id))))))
+    (->> id
+         (str "/presentations/")
+         cache/lookup
+         (map :data)
+         respond)))
 
 (defroutes feed-routes
   "Routes for RSS Feeds"
