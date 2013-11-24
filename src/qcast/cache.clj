@@ -26,10 +26,10 @@
 (defn init []
   (info "Initializing cache")
   (db/create-table db-spec :presentations
-                   [:id            :TEXT "PRIMARY KEY" "NOT NULL"]
-                   [:creation_date :DATETIME "NOT NULL" "DEFAULT CURRENT_TIMESTAMP"]
-                   [:publish_date  :DATETIME "NOT NULL"]
-                   [:data          :BLOB "NOT NULL"]))
+    [:id            :TEXT     "NOT NULL" "PRIMARY KEY"]
+    [:creation_date :DATETIME "NOT NULL" "DEFAULT CURRENT_TIMESTAMP"]
+    [:publish_date  :DATETIME "NOT NULL"]
+    [:data          :BLOB     "NOT NULL"]))
 
 (defn put [item]
   (try ;; Protect against existing entries
