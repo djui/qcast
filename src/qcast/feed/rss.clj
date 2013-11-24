@@ -123,12 +123,7 @@
 
 (defn feed
   "Create a RSS 2.0 feed. Extensions can be:
-    * Atom
-    * iTunes
-    * FeedBurner
-    * Simple Chapters
-    * Content
-    * History"
+  Atom, iTunes, FeedBurner, Simple Chapters, Content, History"
   [info entries & [extensions]]
   (let [attrs (merge {:version "2.0"} (namespaces extensions))]
     (xml [:rss attrs (channel info entries)])))
