@@ -15,6 +15,9 @@
                  [enlive "1.1.4"]
                  [hiccup "1.0.4"]
                  [http-kit "2.1.10"]
+                 [javax.servlet/servlet-api "2.5"]
                  [org.clojure/clojure "1.5.1"]
                  [org.clojure/java.jdbc "0.3.0-alpha5"]
-                 [org.xerial/sqlite-jdbc "3.7.2"]])
+                 [org.xerial/sqlite-jdbc "3.7.2"]
+                 [ring/ring-core "1.2.1"]
+                 [ring/ring-json "0.2.0"]])

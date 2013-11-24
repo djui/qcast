@@ -1,19 +1,21 @@
 (ns qcast.server
   (:gen-class)
-  (:require [compojure.core        :refer [defroutes GET]]
-            [compojure.handler     :as handler]
-            [compojure.route       :as route]
+  (:require [compojure.core                 :refer [defroutes routes GET]]
+            [compojure.handler              :as handler]
+            [compojure.route                :as route]
             [config]
-            [qcast.cache           :as cache]
-            [qcast.feed.ext.atom   :as atom]
-            [qcast.feed.ext.itunes :as itunes]
+            [org.httpkit.server             :as http]
+            [qcast.cache                    :as cache]
+            [qcast.feed.ext.atom            :as atom]
+            [qcast.feed.ext.itunes          :as itunes]
             [qcast.feed.ext.simple-chapters :as psc]
-            [qcast.feed.rss        :as rss]
-            [qcast.util            :refer [parse-int]]
-            [org.httpkit.server    :as http]
-            [taoensso.timbre       :refer :all]))
-
+            [qcast.feed.rss                 :as rss]
             [qcast.infoq.site               :as infoq]
+            [qcast.ring.middleware.xml      :as xml]
+            [qcast.util                     :refer [parse-int]]
+            [ring.middleware.json           :as json]
+            [ring.util.response             :as response]
+            [taoensso.timbre                :refer :all]))
 
 ;;; Internals
 
@@ -77,29 +79,50 @@
         extensions [:atom :itunes :simple-chapters]]
     (rss/feed channel items extensions)))
 
+(defn- respond [body]
+  (fn [_req] {:body body}))
 
 ;;; Main
 
-(defn- rss-response [body]
-  {:status 200
-   :headers {"Content-Type" "application/rss+xml"}
-   :body body})
+(defroutes api-routes
+  "Routes for client API"
+  (GET "/api/v1/presentations" []
+    (respond (map :data (cache/latest 10))))
+  (GET "/api/v1/presentations/:id" [id]
+    (respond (map :data (cache/lookup (str "/presentations/" id))))))
 
-(defn- redirect [url]
-  {:status 302
-   :headers {"Location" url}
-   :body ""})
+(defroutes feed-routes
+  "Routes for RSS Feeds"
+  (GET "/feed"       [] (response/redirect "feed/audio"))
+  (GET "/feed/audio" [] (respond (serve-feed :audio)))
+  (GET "/feed/video" [] (respond (serve-feed :video))))
 
-(defroutes app-routes
-  (GET "/feed"       [] (redirect "feed/audio"))
-  (GET "/feed/audio" [] (fn [_req] (rss-response (serve-feed :audio))))
-  (GET "/feed/video" [] (fn [_req] (rss-response (serve-feed :video))))
+(defroutes files-routes
+  "Routes for file handling and downloads"
   (GET "/presentations/:filename" [filename]
-       (fn [_req] (redirect (infoq/media-link filename))))
-  (route/files "/")
+    (response/redirect (infoq/media-link filename))))
+
+(defroutes default-routes
+  (GET "/" []
+    (let [res (response/resource-response "index.html" {:root "public"})]
+      (response/content-type res "text/html")))
+  (route/resources "/")
   (route/not-found "Not found"))
+
+(defn- site []
+  (routes
+    ;; API
+    (-> (handler/api api-routes)
+        json/wrap-json-response)
+    ;; RSS Feed
+    (-> feed-routes
+        xml/wrap-rss-response)
+    ;; RSS Feed media
+    files-routes
+    ;; Static content
+    (handler/site default-routes)))
 
 (defn -main []
   (info "Starting web server")
   (let [port (parse-int (or (System/getenv "PORT") "8080"))]
-    (http/run-server (handler/site app-routes) {:port port})))
+    (http/run-server (site) {:port port})))

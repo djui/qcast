@@ -59,9 +59,6 @@
            flatten
            (apply hash-map)))
 
-(defn- xml [root]
-  (hiccup/html (xml-declaration "utf-8") root))
-
 (defn- item [entry]
   (let [{:keys [title description]} (set (map first entry))]
     (assert (or title description)
@@ -90,7 +87,7 @@
 
 (defn author [s]
   ;; Has to be a single email address
-  [:author (escape-html s)])
+  [:author s])
 
 (defn pub-date [inst]
   [:pubDate (format-datetime inst)])
@@ -121,9 +118,14 @@
 (defn generator [s]
   [:generator (escape-html s)])
 
+(defn as-xml
+  "Convert a RSS feed data structure to XML."
+  [tree]
+  (hiccup/html (xml-declaration "utf-8") tree))
+
 (defn feed
   "Create a RSS 2.0 feed. Extensions can be:
   Atom, iTunes, FeedBurner, Simple Chapters, Content, History"
   [info entries & [extensions]]
   (let [attrs (merge {:version "2.0"} (namespaces extensions))]
-    (xml [:rss attrs (channel info entries)])))
+    [:rss attrs (channel info entries)]))
