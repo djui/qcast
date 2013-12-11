@@ -86,8 +86,8 @@
 
 (defroutes api-routes
   "Routes for client API"
-  (GET "/api/v1/presentations" []
-    (->> (cache/latest 20)
+  (GET "/api/v1/presentations" {{since-id "since"} :query-params}
+    (->> (if since-id (cache/latest 20 since-id) (cache/latest 20))
          (map :data)
          (map #(dissoc % :slides :times :video :audio :pdf))
          respond))

@@ -1,3 +1,4 @@
+;; TODO: Replace everything SQL with HoneySQL
 (ns qcast.cache
   (:gen-class)
   (:import [java.sql SQLException])
@@ -50,4 +51,8 @@
     (map post-process (db/select' db-spec * :presentations
                                   (db/order-by [{:publish_date  :desc}
                                                 {:creation_date :desc}])
-                                  (db/limit n)))))
+                                  (db/limit n))))
+  ([n since-id]
+     (let [since-date (:publish_date (pre-process (first (lookup since-id))))
+           sql-stmt "SELECT * FROM presentations WHERE publish_date < ? ORDER BY publish_date DESC, creation_date DESC LIMIT ?"]
+       (map post-process (db/query db-spec [sql-stmt since-date n])))))
