@@ -114,7 +114,7 @@
     (let [res (response/resource-response "index.html" {:root "public"})]
       (response/content-type res "text/html")))
   (route/resources "/")
-  (route/not-found "Not found"))
+  (route/not-found nil))
 
 (defn- site []
   (routes
