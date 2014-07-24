@@ -51,6 +51,7 @@
       ;; (pre-cond not= "http://www.infoq.com/error?sc=404")
       ))
 
+
 ;;; Interface
 
 (defn base-url [& s]
@@ -90,7 +91,11 @@
         [url length type]))))
 
 (defn presentations [index]
-  (-> (base-url "/presentations/" index) GET html/dom overview-ids))
+  (->> index
+       (base-url "/presentations/")
+       GET
+       html/dom
+       overview-ids))
 
 (defn presentation [id]
   (-> id
