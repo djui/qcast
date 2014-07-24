@@ -11,7 +11,7 @@
 ;; SPECS
 
 (defn sqlite
-  ([] (sqlite "sqlite.db"))
+  ([] (sqlite "qcast.db"))
   ([location]
      {:subprotocol "sqlite"
       :classname   "org.sqlite.JDBC"
