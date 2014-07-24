@@ -75,7 +75,8 @@
 (defn- serve-feed [media]
   (let [entries (map :data (cache/latest 50))
         items (map #(feed-item media %) entries)
-        channel (feed-channel (:publish-date (first entries)))
+        change-date (or (:publish-date (first entries)) 0)
+        channel (feed-channel change-date)
         extensions [:atom :itunes :simple-chapters]]
     (rss/feed channel items extensions)))
 
