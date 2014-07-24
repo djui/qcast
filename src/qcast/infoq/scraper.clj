@@ -112,10 +112,11 @@
   ([marker]
      (debug "Fetching overview from index" marker)
      (let [items (log-errors (infoq/presentations marker))]
-       (if (empty? items) ;; Error or last overview page reached?
-         (warn "No items found. HTML/CSS layout changed?")
+       (if (empty? items)
+         (if (> marker 0)
+           (info "No more items found")
+           (warn "No items found. HTML/CSS layout changed?"))
          (lazy-cat items (latest (+ marker (count items))))))))
-
 
 (defn- cache-updates
   "Scrape the overview sites and collect its oughly 12 items per site until
