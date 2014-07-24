@@ -101,9 +101,11 @@
                       record-date publish-date online-date
                       length pdf audio video slides times)]
     (debug "Fetching presentation" id)
-    (some->> (log-errors (dom (infoq/presentation id)))
-             md-vals
-             (zipmap md-keys))))
+    (log-errors (some->> id
+                         infoq/presentation
+                         dom
+                         md-vals
+                         (zipmap md-keys)))))
 
 (defn- latest
   ([] (latest 0))

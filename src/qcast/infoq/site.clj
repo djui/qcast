@@ -93,4 +93,6 @@
   (-> (base-url "/presentations/" index) GET html/dom overview-ids))
 
 (defn presentation [id]
-  (-> (presentation-url id) GET))
+  (-> id
+      presentation-url
+      (GET {:follow-redirects false})))
