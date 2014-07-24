@@ -111,7 +111,7 @@
      (debug "Fetching overview from index" marker)
      (let [items (log-errors (infoq/presentations marker))]
        (if (empty? items) ;; Error or last overview page reached?
-         (warn "No items found")
+         (warn "No items found. HTML/CSS layout changed?")
          (lazy-cat items (latest (+ marker (count items))))))))
 
 
