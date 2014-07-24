@@ -17,6 +17,14 @@
             [ring.util.response             :as response]
             [taoensso.timbre                :refer :all]))
 
+;;; Utilities
+
+(defn wrap-request-logging [handler]
+  (fn [{:keys [request-method uri] :as req}]
+    (debug request-method uri)
+    (handler req)))
+
+
 ;;; Internals
 
 (defn- slides
@@ -83,6 +91,7 @@
 (defn- respond [body]
   (fn [_req] {:body body}))
 
+
 ;;; Main
 
 (defroutes api-routes
@@ -120,17 +129,23 @@
 (defn- site []
   (routes
     ;; API
-    (-> (handler/api api-routes)
+    (-> api-routes
+        wrap-request-logging
+        handler/api
         json/wrap-json-response)
     ;; RSS Feed
     (-> feed-routes
+        wrap-request-logging
         xml/wrap-rss-response)
     ;; RSS Feed media
-    files-routes
+    (-> files-routes
+        wrap-request-logging)
     ;; Static content
-    (handler/site default-routes)))
+    (-> default-routes
+        wrap-request-logging
+        handler/site)))
 
 (defn -main []
-  (info "Starting web server")
   (let [port (parse-int (or (System/getenv "PORT") "8080"))]
+    (info "Starting web server on port" port)
     (http/run-server (site) {:port port})))

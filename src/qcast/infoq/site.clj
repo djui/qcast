@@ -3,7 +3,8 @@
             [clj-http.client  :as http]
             [clj-http.cookies :as cookies]
             [qcast.html       :as html]
-            [qcast.util       :refer :all])
+            [qcast.util       :refer :all]
+            [taoensso.timbre  :refer :all])
   (:refer-clojure :exclude [resolve]))
 
 
@@ -28,12 +29,15 @@
 ;;; Internals
 
 (defn- HEAD [url & [opts]]
+  (debug :head url opts)
   (http/head url (merge http-options {:follow-redirects false} opts)))
 
 (defn- GET [url & [opts]]
+  (debug :get url opts)
   (http/get url (merge http-options opts)))
 
 (defn- POST [url & [opts]]
+  (debug :post url opts)
   (http/post url (merge http-options opts)))
 
 (defn- overview-ids [dom]
