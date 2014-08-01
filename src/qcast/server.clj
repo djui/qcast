@@ -24,7 +24,9 @@
     (handler req)))
 
 (defn- respond [body]
-  (fn [_req] {:body body}))
+  (if body
+    (fn [_req] {:body body})
+    (route/not-found nil)))
 
 (defn- json-keyword [kw]
   (-> kw name (s/replace "-" "_")))
