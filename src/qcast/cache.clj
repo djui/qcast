@@ -12,14 +12,14 @@
 
 ;;; Internals
 (defn- pre-process [row]
-  (-> row
-      (update-in [:data]         db/from-edn)
-      (update-in [:publish_date] db/from-inst)))
+  (some-> row
+          (update-in [:data]         db/from-edn)
+          (update-in [:publish_date] db/from-inst)))
 
 (defn- post-process [row]
-  (-> row
-      (update-in [:publish_date] db/to-inst)
-      (update-in [:data]         db/to-edn)))
+  (some-> row
+          (update-in [:publish_date] db/to-inst)
+          (update-in [:data]         db/to-edn)))
 
 
 ;;; Interface
