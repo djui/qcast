@@ -120,11 +120,11 @@
 
 (defn- cache-updates
   "Scrape the overview sites and collect its oughly 12 items per site until
-  finding an seen item (since). Scrape a maximum of limit or 100 items. This
+  finding an seen item (since). Scrape a maximum of limit or 1000 items. This
   sequence requires one additional GET (page) + three HEAD (video, audio, pdf)
   requests per item, thus n%12 + 2*n."
   ([] (cache-updates (cache/latest)))
-  ([until] (cache-updates until 100))
+  ([until] (cache-updates until 1000))
   ([until limit]
      (let [until-id (or (:id until) :inf)]
        (info "Check for updates up until" until-id)
