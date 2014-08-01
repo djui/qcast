@@ -45,7 +45,8 @@
     (->> id
          (str "/presentations/")
          cache/lookup
-         (map :data)
+         first
+         :data
          respond)))
 
 (defroutes feed-routes
