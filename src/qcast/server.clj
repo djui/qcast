@@ -1,6 +1,7 @@
 (ns qcast.server
   (:gen-class)
-  (:require [compojure.core            :refer [defroutes routes GET]]
+  (:require [clojure.string            :as s]
+            [compojure.core            :refer [defroutes routes GET]]
             [compojure.handler         :as handler]
             [compojure.route           :as route]
             [config]
@@ -24,6 +25,9 @@
 
 (defn- respond [body]
   (fn [_req] {:body body}))
+
+(defn- json-keyword [kw]
+  (-> kw name (s/replace "-" "_")))
 
 
 ;;; Main
@@ -66,7 +70,7 @@
     (-> api-routes
         wrap-request-logging
         handler/api
-        json/wrap-json-response)
+        (json/wrap-json-response {:key-fn json-keyword}))
     ;; RSS Feed
     (-> feed-routes
         wrap-request-logging
