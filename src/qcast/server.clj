@@ -12,6 +12,7 @@
             [qcast.ring.middleware.xml :as xml]
             [qcast.util                :refer [parse-int]]
             [ring.middleware.json      :as json]
+            [ring.middleware.ratelimit :refer [wrap-ratelimit]]
             [ring.util.response        :as response]
             [taoensso.timbre           :refer :all]))
 
@@ -73,14 +74,17 @@
     (-> api-routes
         wrap-request-logging
         handler/api
-        (json/wrap-json-response {:key-fn json-keyword}))
+        (json/wrap-json-response {:key-fn json-keyword})
+        wrap-ratelimit)
     ;; RSS Feed
     (-> feed-routes
         wrap-request-logging
-        xml/wrap-rss-response)
+        xml/wrap-rss-response
+        wrap-ratelimit)
     ;; RSS Feed media
     (-> files-routes
-        wrap-request-logging)
+        wrap-request-logging
+        wrap-ratelimit)
     ;; Static content
     (-> default-routes
         wrap-request-logging

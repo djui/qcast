@@ -19,5 +19,6 @@
                  [org.clojure/clojure "1.6.0"]
                  [org.clojure/java.jdbc "0.3.0-alpha5"]
                  [org.xerial/sqlite-jdbc "3.7.2"]
+                 [ring-ratelimit "0.2.2"]
                  [ring/ring-core "1.3.0"]
                  [ring/ring-json "0.3.1"]])
