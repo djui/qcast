@@ -73,14 +73,17 @@
     (-> api-routes
         wrap-request-logging
         handler/api
-        (json/wrap-json-response {:key-fn json-keyword}))
+        (json/wrap-json-response {:key-fn json-keyword})
+        )
     ;; RSS Feed
     (-> feed-routes
         wrap-request-logging
-        xml/wrap-rss-response)
+        xml/wrap-rss-response
+        )
     ;; RSS Feed media
     (-> files-routes
-        wrap-request-logging)
+        wrap-request-logging
+        )
     ;; Static content
     (-> default-routes
         wrap-request-logging
