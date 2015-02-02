@@ -23,6 +23,7 @@
 
 (def ^:private http-options
   {:headers {"User-Agent" ios-user-agent}
+   :insecure? true
    :as      :stream})
 
 
