@@ -1,8 +1,6 @@
 (ns qcast.infoq.site
-  (:require [clojure.string   :refer [split]]
-            [clj-http.client  :as http]
-            [clj-http.cookies :as cookies]
-            [qcast.html       :as html]
+  (:require [clj-http.cookies :as cookies]
+            [qcast.http       :as http]
             [qcast.util       :refer :all]
             [taoensso.timbre  :refer :all])
   (:refer-clojure :exclude [resolve]))
@@ -12,48 +10,16 @@
 
 (def ^:private base-url-prefix "https://www.infoq.com")
 
-(def ^:private ios-user-agent
-  (str "Mozilla/5.0 (iPad; CPU OS 7_0 like Mac OS X) "
-       "AppleWebKit/537.51.1 (KHTML, like Gecko) "
-       "Version/7.0 "
-       "Mobile/11A465 "
-       "Safari/9537.53"))
-
-(def ^:private http-options
-  {:headers   {"User-Agent" ios-user-agent}
-   :insecure? true
-   :as        :stream})
-
 
 ;;; Internals
-
-(defn- HEAD [url & [opts]]
-  (debug :head url opts)
-  (http/head url (merge http-options {:follow-redirects false} opts)))
-
-(defn- GET [url & [opts]]
-  (debug :get url opts)
-  (http/get url (merge http-options opts)))
-
-(defn- POST [url & [opts]]
-  (debug :post url opts)
-  (http/post url (merge http-options opts)))
-
-(defn- overview-ids [dom]
-  (html/select-all [:.itemtitle :> :a] #(html/attr :href %) dom))
 
 (declare base-url)
 (defn- resolve [filename]
   (-> (base-url "/mp3download.action")
-      (HEAD {:query-params {:filename filename}})
+      (http/head {:query-params {:filename filename}})
       (get-in [:headers "location"])
       ;; (pre-cond not= "http://www.infoq.com/error?sc=404")
       ))
-
-(defn- ensure-url-schema [url]
-  (if (.startsWith url "//")
-    (str "https:" url)
-    url))
 
 
 ;;; Interface
@@ -75,7 +41,7 @@
   (base-url id))
 
 (defn login [user pass]
-  (POST "https://www.infoq.com/login.action"
+  (http/post "https://www.infoq.com/login.action"
         {:form-params {:username user
                        :password pass}}))
 
@@ -83,27 +49,3 @@
   (binding [clj-http.core/*cookie-store* (cookies/cookie-store)]
     (login user pass)
     (resolve (str "presentations/" filename))))
-
-;; TODO: Maybe move functions below into scraper
-
-(defn media-meta [url]
-  (when url
-    (let [full-url (ensure-url-schema url)
-          headers (:headers (HEAD full-url))
-          length (some-> (get headers "content-length") parse-int)
-          type (some-> (get headers "content-type") (split #";") first)]
-      (if (= type "text/html")
-        [full-url length nil] ;; discard the usual
-        [full-url length type]))))
-
-(defn presentations [index]
-  (->> index
-       (base-url "/presentations/")
-       GET
-       html/dom
-       overview-ids))
-
-(defn presentation [id]
-  (-> id
-      presentation-url
-      (GET {:follow-redirects false})))

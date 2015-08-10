@@ -5,6 +5,7 @@
             [clojure.string   :refer [split trim]]
             [qcast.cache      :as cache]
             [qcast.html       :refer :all]
+            [qcast.http       :as http]
             [qcast.infoq.site :as infoq]
             [qcast.util       :refer :all]
             [taoensso.timbre  :refer :all])
@@ -20,6 +21,22 @@
   (if-let [host (System/getenv "HOST")]
     (apply str "https://" host "/" paths)
     (apply str "http://localhost:8080/" paths)))
+
+(defn- ensure-url-schema [url]
+  (if (.startsWith url "//")
+    (str "https:" url)
+    url))
+
+(defn- media-meta [url]
+  (when url
+    (let [full-url (ensure-url-schema url)
+          headers (:headers (http/head full-url))
+          length (some-> (get headers "content-length") parse-int)
+          type (some-> (get headers "content-type") (split #";") first)]
+      (if (= type "text/html")
+        [full-url length nil] ;; discard the usual
+        [full-url length type]))))
+
 
 ;; Scraping Internals
 
@@ -61,7 +78,7 @@
       [url 0 "audio/mpeg"]))) ;; Size yet unknown
 
 (defn- video [dom]
-  (let [transformer #(some->> % (attr :src) infoq/media-meta)]
+  (let [transformer #(some->> % (attr :src) media-meta)]
     (select [:#video :> :source] transformer dom)))
 
 (defn- record-date [dom]
@@ -93,8 +110,23 @@
                          (map (comp parse-int second)))]
     (select-all [:script] transformer filter dom)))
 
+(defn- overview-ids [dom]
+  (select-all [:.itemtitle :> :a] #(attr :href %) dom))
+
 
 ;; Scraping API
+
+(defn- presentation [id]
+  (-> id
+      infoq/presentation-url
+      (http/get {:follow-redirects false})))
+
+(defn- presentations [index]
+  (->> index
+       (infoq/base-url "/presentations/")
+       http/get
+       dom
+       overview-ids))
 
 (defn- metadata [id]
   (let [md-keys [:id :link :poster :keywords :summary :title :authors
@@ -106,7 +138,7 @@
                       length pdf audio video slides times)]
     (debug "Fetching presentation" id)
     (log-errors (some->> id
-                         infoq/presentation
+                         presentation
                          dom
                          md-vals
                          (zipmap md-keys)))))
@@ -115,7 +147,7 @@
   ([] (latest 0))
   ([marker]
      (debug "Fetching overview from index" marker)
-     (let [items (log-errors (infoq/presentations marker))]
+     (let [items (log-errors (presentations marker))]
        (if (empty? items)
          (if (> marker 0)
            (info "No more items found")
