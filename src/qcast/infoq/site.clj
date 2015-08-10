@@ -29,17 +29,20 @@
 
 ;;; Internals
 
+(defn- url-prefix-protocol [url]
+  (if (.startsWith url "//") (clojure.string/join ["http:" url]) url))
+
 (defn- HEAD [url & [opts]]
   (debug :head url opts)
-  (http/head url (merge http-options {:follow-redirects false} opts)))
+  (http/head (url-prefix-protocol url) (merge http-options {:follow-redirects false} opts)))
 
 (defn- GET [url & [opts]]
   (debug :get url opts)
-  (http/get url (merge http-options opts)))
+  (http/get (url-prefix-protocol url) (merge http-options opts)))
 
 (defn- POST [url & [opts]]
   (debug :post url opts)
-  (http/post url (merge http-options opts)))
+  (http/post (url-prefix-protocol url) (merge http-options opts)))
 
 (defn- overview-ids [dom]
   (html/select-all [:.itemtitle :> :a] #(html/attr :href %) dom))
