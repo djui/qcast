@@ -6,6 +6,7 @@
  :infoq {:username "infoqcast@gmail.com"
          :password "InfoQCast123"
          :auth-cookie ""}
+ :api {:items-count 20}
  :feed {:items-count 50}
  :catcher {:update-interval 1800 ;; 30 mins
            :lookback-count 100}

@@ -36,18 +36,19 @@
 
 (defroutes api-routes
   "Routes for client API"
-  (GET "/api/v1/presentations" {{since-id "since"} :query-params}
-    (->> (if since-id (cache/latest 20 since-id) (cache/latest 20))
-         (map :data)
-         (map #(dissoc % :slides :times :video :audio :pdf))
-         respond))
-  (GET "/api/v1/presentations/:id" [id]
-    (->> id
-         (str "/presentations/")
-         cache/lookup
-         first
-         :data
-         respond)))
+  (let [api-count (config/get :api :items-count)]
+    (GET "/api/v1/presentations" {{since-id "since"} :query-params}
+      (->> (if since-id (cache/latest api-count since-id) (cache/latest api-count))
+           (map :data)
+           (map #(dissoc % :slides :times :video :audio :pdf))
+           respond))
+    (GET "/api/v1/presentations/:id" [id]
+      (->> id
+           (str "/presentations/")
+           cache/lookup
+           first
+           :data
+           respond))))
 
 (defroutes feed-routes
   "Routes for RSS Feeds"
