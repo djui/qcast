@@ -63,9 +63,6 @@
 (defn base-url [& s]
   (apply str "http://www.infoq.com" s))
 
-(defn sbase-url [& s]
-  (apply str "https://www.infoq.com" s))
-
 (defn poster-url [file-path]
   (when file-path (base-url file-path)))
 
@@ -76,7 +73,7 @@
   (base-url id))
 
 (defn login [user pass]
-  (POST (sbase-url "/login.action")
+  (POST "https://www.infoq.com/login.action"
         {:form-params {:username user
                        :password pass}}))
 
