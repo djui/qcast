@@ -10,7 +10,7 @@
 
 ;;; Globals
 
-(def ^:private base-url-prefix "http://www.infoq.com")
+(def ^:private base-url-prefix "https://www.infoq.com")
 
 (def ^:private username "infoqcast@gmail.com")
 

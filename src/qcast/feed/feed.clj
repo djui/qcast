@@ -32,7 +32,7 @@
        (apply psc/chapters (map vector (:times p) (slides) (:slides p)))])))
 
 (defn- feed-channel [change-date]
-  (let [base-url "http://www.infoq.com"
+  (let [base-url "https://www.infoq.com"
         title "QCast - InfoQ Presentation Podcast"]
     [(rss/title title)
      (rss/link base-url)
