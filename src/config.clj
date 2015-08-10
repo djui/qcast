@@ -52,7 +52,7 @@
 
 ;;; Interface
 
-(defn load []
+(defn load! []
   (reset! config (config-and-env)))
 
 (defn get [& keys]
