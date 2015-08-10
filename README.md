@@ -26,7 +26,7 @@ The Overview page can be reached at:
 [local](http://localhost:8080/).
 
 The Feed can be reached at: [remote feed](https://infoqcast.herokuapp.com/feed)
- or [local feed](https://localhost:8080/feed).
+or [local feed](https://localhost:8080/feed).
 
 
 ## Components
