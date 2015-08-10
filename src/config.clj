@@ -33,7 +33,9 @@
                 (filter not-empty)
                 (map string/lower-case)
                 (map keyword))]
-    (when-not (empty? ks) (assoc-in {} ks v))))
+    (if (empty? ks)
+      {} ;; Skip environment variables with weird names, e.g. "_"
+      (assoc-in {} ks v))))
 
 (defn deep-keywordize-keys [m]
   (->> m (map str-keys-to-map) (apply deep-merge)))
