@@ -1,11 +1,10 @@
 ;; -*- mode: clojure -*-
-{:server {:host "localhost"
-          :port "8080"}
+{:server {:port "8080"}
  :db {:classname "org.sqlite.JDBC"
       :subprotocol "sqlite"
       :subname "qcast.db"}
- :infoq {:username "********"
-         :password "********"
+ :infoq {:username "infoqcast@gmail.com"
+         :password "InfoQCast123"
          :auth-cookie ""}
  :feed {:items-count 50}
  :catcher {:update-interval 1800 ;; 30 mins

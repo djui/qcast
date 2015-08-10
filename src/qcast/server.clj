@@ -94,7 +94,6 @@
 
 (defn -main []
   (config/load!)
-  (let [host (config/get :server :host)
-        port (parse-int (or (config/get :port) (config/get :server :port)))]
+  (let [port (parse-int (or (config/get :port) (config/get :server :port)))]
     (info "Starting web server on port" port)
-    (http/run-server (site) {:ip host, :port port})))
+    (http/run-server (site) {:port port})))
