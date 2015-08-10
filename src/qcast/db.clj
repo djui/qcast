@@ -3,19 +3,18 @@
             [clojure.edn           :as edn]
             [clojure.java.jdbc     :as jdbc]
             [clojure.java.jdbc.ddl :as ddl]
-            [clojure.java.jdbc.sql :as dml]))
+            [clojure.java.jdbc.sql :as dml]
+            [config]))
 
 
 ;;; Interface
 
 ;; SPECS
 
-(defn sqlite
-  ([] (sqlite "qcast.db"))
-  ([location]
-     {:subprotocol "sqlite"
-      :classname   "org.sqlite.JDBC"
-      :subname     location}))
+(defn sqlite []
+  {:subprotocol (or (config/get :db :subprotocol) "sqlite")
+   :classname   (or (config/get :db :classname)   "org.sqlite.JDBC")
+   :subname     (or (config/get :db :subname)     "qcast.db")})
 
 
 ;; DDL

@@ -3,13 +3,11 @@
           :port "8080"}
  :db {:classname "org.sqlite.JDBC"
       :subprotocol "sqlite"
-      :subname "sqlite.db"}
- :infoq {:username "infoqcast@gmail.com"
-         :password "InfoQCast123"
+      :subname "qcast.db"}
+ :infoq {:username "********"
+         :password "********"
          :auth-cookie ""}
- :feed {:count 50}
- :catcher {:rewind 100
-           :update 1800}
- :wall {:file-path "public/img/wall.jpg"
-        :posters "public/img/posters"}
+ :feed {:items-count 50}
+ :catcher {:update-interval 1800 ;; 30 mins
+           :lookback-count 100}
  :log-level :info}

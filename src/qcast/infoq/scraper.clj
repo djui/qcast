@@ -119,22 +119,21 @@
          (lazy-cat items (latest (+ marker (count items))))))))
 
 (defn- cache-updates
-  "Scrape the overview sites and collect its oughly 12 items per site until
-  finding an seen item (since). Scrape a maximum of limit or 1000 items. This
-  sequence requires one additional GET (page) + three HEAD (video, audio, pdf)
-  requests per item, thus n%12 + 2*n."
-  ([] (cache-updates (cache/latest)))
-  ([until] (cache-updates until 1000))
-  ([until limit]
-     (let [until-id (or (:id until) :inf)]
-       (info "Check for updates up until" until-id)
-       (->> (latest)
-            (take-while #(not= % until-id))
-            (pmap metadata)
-            (filter identity)
-            (take limit)
-            (map cache/put)
-            doall))))
+  "Scrape the overview sites and collect its (mostly) 12 items per site until
+  finding an seen item (`until`). Scrape a maximum of `limit` or a configured
+  number or items. This sequence requires one additional GET (`page`) + three
+  HEAD (video, audio, pdf) requests per item, thus n%12 + 2*n."
+  [limit]
+  (let [until (cache/latest)
+        until-id (or (:id until) :inf)]
+    (info "Check for updates up until" until-id)
+    (->> (latest)
+         (take-while #(not= % until-id))
+         (pmap metadata)
+         (filter identity)
+         (take limit)
+         (map cache/put)
+         doall)))
 
 
 ;;; Interface
@@ -142,10 +141,13 @@
 ;; Main
 
 (defn -main [& args]
+  (config/load!)
   (info "Starting catcher")
-  (let [task #(debug "Updated" (count (cache-updates)))]
+  (let [limit (config/get :catcher :lookback-count)
+        interval (config/get :catcher :update-interval)
+        task #(debug "Updated" (count (cache-updates limit)))]
     (if (= (first args) "once")
       (do (info "Running once")
           (task))
       (do (info "Running periodically")
-          (interspaced (minutes 30) #(logged-future (task)))))))
+          (interspaced (seconds interval) #(logged-future (task)))))))

@@ -51,14 +51,17 @@
 
 (defroutes feed-routes
   "Routes for RSS Feeds"
-  (GET "/feed"       [] (response/redirect "feed/audio"))
-  (GET "/feed/audio" [] (respond (feed/serve :audio (cache/latest 50))))
-  (GET "/feed/video" [] (respond (feed/serve :video (cache/latest 50)))))
+  (let [feed-count (config/get :feed :items-count)]
+    (GET "/feed"       [] (response/redirect "feed/audio"))
+    (GET "/feed/audio" [] (respond (feed/serve :audio (cache/latest feed-count))))
+    (GET "/feed/video" [] (respond (feed/serve :video (cache/latest feed-count))))))
 
 (defroutes files-routes
   "Routes for file handling and downloads"
   (GET "/presentations/:filename" [filename]
-    (response/redirect (infoq/media-link filename))))
+    (let [user (config/get :infoq :username)
+          pass (config/get :infoq :password)]
+      (response/redirect (infoq/media-link filename user pass)))))
 
 (defroutes default-routes
   (GET "/" []
@@ -90,6 +93,8 @@
         handler/site)))
 
 (defn -main []
-  (let [port (parse-int (or (System/getenv "PORT") "8080"))]
+  (config/load!)
+  (let [host (config/get :server :host)
+        port (parse-int (or (config/get :port) (config/get :server :port)))]
     (info "Starting web server on port" port)
-    (http/run-server (site) {:port port})))
+    (http/run-server (site) {:ip host, :port port})))

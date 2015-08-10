@@ -12,10 +12,6 @@
 
 (def ^:private base-url-prefix "https://www.infoq.com")
 
-(def ^:private username "infoqcast@gmail.com")
-
-(def ^:private password "InfoQCast123")
-
 (def ^:private ios-user-agent
   (str "Mozilla/5.0 (iPad; CPU OS 7_0 like Mac OS X) "
        "AppleWebKit/537.51.1 (KHTML, like Gecko) "
@@ -83,9 +79,9 @@
         {:form-params {:username user
                        :password pass}}))
 
-(defn media-link [filename]
+(defn media-link [filename user pass]
   (binding [clj-http.core/*cookie-store* (cookies/cookie-store)]
-    (login username password)
+    (login user pass)
     (resolve (str "presentations/" filename))))
 
 ;; TODO: Maybe move functions below into scraper
