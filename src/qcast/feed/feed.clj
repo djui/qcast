@@ -43,7 +43,7 @@
      (rss/language "en-US")
      (rss/generator "InfoQ-Feed-Generator/1.0")
      (rss/last-build-date change-date)
-     (atom/link "http://infoqcast.herokuapp.com/feed")
+     (atom/link "https://infoqcast.herokuapp.com/feed")
      (itunes/author "InfoQ")
      (itunes/owner "InfoQ" "info@infoq.com")
      (itunes/summary (str "InfoQ.com is a practitioner-driven "
