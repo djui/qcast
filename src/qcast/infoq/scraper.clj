@@ -13,9 +13,13 @@
 
 ;;; Internals
 
-(defn- host-url [& s]
-  (let [host (or (System/getenv "HOST") "localhost:8080")]
-    (apply str "http://" host s)))
+(defn- host-url
+  "A bit of a hack to get a full url that works for production and
+  local testing."
+  [& paths]
+  (if-let [host (System/getenv "HOST")]
+    (apply str "https://" host "/" paths)
+    (apply str "http://localhost:8080/" paths)))
 
 ;; Scraping Internals
 
@@ -45,13 +49,13 @@
     (select [:.videolength2] transformer dom)))
 
 (defn- pdf [dom]
-  (let [transformer #(some->> % (attr :value) (host-url "/"))
+  (let [transformer #(some->> % (attr :value) (host-url))
         url (select [:#pdfForm :> [:input (attr= :name "filename")]] transformer dom)]
   (when url
     [url 0 "application/pdf"]))) ;; Size yet unknown
 
 (defn- audio [dom]
-  (let [transformer #(some->> % (attr :value) (host-url "/"))
+  (let [transformer #(some->> % (attr :value) (host-url))
         url (select [:#mp3Form :> [:input (attr= :name "filename")]] transformer dom)]
     (when url
       [url 0 "audio/mpeg"]))) ;; Size yet unknown
