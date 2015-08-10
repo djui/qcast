@@ -2,6 +2,7 @@
 
 A podcast feed for InfoQ presentations.
 
+
 ## Installation
 
 Either using Leiningen:
@@ -17,6 +18,7 @@ Or using Java:
     $ lein uberjar
     $ java -jar qcast-standalone.jar
 
+
 ## Usage
 
 The Overview page can be reached at:
@@ -25,6 +27,7 @@ The Overview page can be reached at:
 
 The Feed can be reached at: [remote feed](http://infoqcast.herokuapp.com/feed)
  or [local feed](http://localhost:8080/feed).
+
 
 ## Components
 
@@ -42,6 +45,7 @@ nice as it doesn't require XML or property files.
 
 The data store can be a SQLite database for testing or PostgreSQL for
 production and hosting.
+
 
 ## Design
 
@@ -63,9 +67,10 @@ production and hosting.
                                   : +---------+  :
                                   :              :
 
+
 ## License
 
-Copyright © 2013 Uwe Dauernheim <uwe@dauernheim.net>
+Copyright © 2013-2015 Uwe Dauernheim <uwe@dauernheim.net>
 
 Distributed under the Eclipse Public License either version 1.0 or (at your
 option) any later version.
