@@ -10,6 +10,8 @@
 
 ;;; Globals
 
+(def ^:private base-url-prefix "http://www.infoq.com")
+
 (def ^:private username "infoqcast@gmail.com")
 
 (def ^:private password "InfoQCast123")
@@ -60,8 +62,12 @@
 
 ;;; Interface
 
-(defn base-url [& s]
-  (apply str "http://www.infoq.com" s))
+(defn base-url
+  ([] base-url-prefix)
+  ([& paths]
+     (if (.startsWith (first paths) "http") ;; e.g. CDN links
+       (reduce str paths)
+       (reduce str base-url-prefix paths))))
 
 (defn poster-url [file-path]
   (when file-path (base-url file-path)))
