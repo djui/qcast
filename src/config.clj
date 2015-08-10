@@ -29,7 +29,10 @@
     (last maps)))
 
 (defn str-keys-to-map [[k v]]
-  (let [ks (map keyword (filter not-empty (string/split k #"[\._]")))]
+  (let [ks (->> (string/split k #"[\._]")
+                (filter not-empty)
+                (map string/lower-case)
+                (map keyword))]
     (when-not (empty? ks) (assoc-in {} ks v))))
 
 (defn deep-keywordize-keys [m]
