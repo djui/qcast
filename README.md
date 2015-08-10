@@ -22,11 +22,11 @@ Or using Java:
 ## Usage
 
 The Overview page can be reached at:
-[remote](http://infoqcast.herokuapp.com/) or
+[remote](https://infoqcast.herokuapp.com/) or
 [local](http://localhost:8080/).
 
-The Feed can be reached at: [remote feed](http://infoqcast.herokuapp.com/feed)
- or [local feed](http://localhost:8080/feed).
+The Feed can be reached at: [remote feed](https://infoqcast.herokuapp.com/feed)
+ or [local feed](https://localhost:8080/feed).
 
 
 ## Components
