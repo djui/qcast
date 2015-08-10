@@ -63,9 +63,9 @@
 
 ;;; Interface
 
-(defn serve [media data]
+(defn serve [media-type data]
   (let [entries (map :data data)
-        items (map #(feed-item media %) entries)
+        items (map #(feed-item media-type %) entries)
         change-date (or (:publish-date (first entries)) 0)
         channel (feed-channel change-date)
         extensions [:atom :itunes :simple-chapters]]
