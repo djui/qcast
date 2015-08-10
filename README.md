@@ -1,6 +1,6 @@
 # QCast - InfoQ presentation podcast
 
-A podcast feed for InfoQ presentations.
+A podcast feed (audio & video) for InfoQ presentations.
 
 
 ## Installation
