@@ -27,22 +27,17 @@
 
 ;;; Internals
 
-(defn- ensure-url-schema [url]
-  (if (.startsWith url "//")
-    (str "https:" url)
-    url))
-
 (defn- HEAD [url & [opts]]
   (debug :head url opts)
-  (http/head (ensure-url-schema url) (merge http-options {:follow-redirects false} opts)))
+  (http/head url (merge http-options {:follow-redirects false} opts)))
 
 (defn- GET [url & [opts]]
   (debug :get url opts)
-  (http/get (ensure-url-schema url) (merge http-options opts)))
+  (http/get url (merge http-options opts)))
 
 (defn- POST [url & [opts]]
   (debug :post url opts)
-  (http/post (ensure-url-schema url) (merge http-options opts)))
+  (http/post url (merge http-options opts)))
 
 (defn- overview-ids [dom]
   (html/select-all [:.itemtitle :> :a] #(html/attr :href %) dom))
@@ -54,6 +49,11 @@
       (get-in [:headers "location"])
       ;; (pre-cond not= "http://www.infoq.com/error?sc=404")
       ))
+
+(defn- ensure-url-schema [url]
+  (if (.startsWith url "//")
+    (str "https:" url)
+    url))
 
 
 ;;; Interface
@@ -88,12 +88,13 @@
 
 (defn media-meta [url]
   (when url
-    (let [headers (:headers (HEAD url))
+    (let [full-url (ensure-url-schema url)
+          headers (:headers (HEAD full-url))
           length (some-> (get headers "content-length") parse-int)
           type (some-> (get headers "content-type") (split #";") first)]
       (if (= type "text/html")
-        [url length nil] ;; discard the usual
-        [url length type]))))
+        [full-url length nil] ;; discard the usual
+        [full-url length type]))))
 
 (defn presentations [index]
   (->> index
