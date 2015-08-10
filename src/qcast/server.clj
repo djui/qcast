@@ -51,10 +51,13 @@
 
 (defroutes feed-routes
   "Routes for RSS Feeds"
-  (let [feed-count (config/get :feed :items-count)]
-    (GET "/feed"       [] (response/redirect "feed/audio"))
-    (GET "/feed/audio" [] (respond (feed/serve :audio (cache/latest feed-count))))
-    (GET "/feed/video" [] (respond (feed/serve :video (cache/latest feed-count))))))
+  (GET "/feed"       [] (response/redirect "feed/audio"))
+  (GET "/feed/audio" []
+    (let [feed-count (config/get :feed :items-count)]
+      (respond (feed/serve :audio (cache/latest feed-count)))))
+  (GET "/feed/video" []
+    (let [feed-count (config/get :feed :items-count)]
+      (respond (feed/serve :video (cache/latest feed-count))))))
 
 (defroutes files-routes
   "Routes for file handling and downloads"
