@@ -3,8 +3,8 @@
  :db {:classname "org.sqlite.JDBC"
       :subprotocol "sqlite"
       :subname "qcast.db"}
- :infoq {:username "infoqcast@gmail.com"
-         :password "InfoQCast123"
+ :infoq {:username "********"
+         :password "********"
          :auth-cookie ""}
  :api {:items-count 20}
  :feed {:items-count 50}
