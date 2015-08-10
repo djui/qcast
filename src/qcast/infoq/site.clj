@@ -22,9 +22,9 @@
        "Safari/9537.53"))
 
 (def ^:private http-options
-  {:headers {"User-Agent" ios-user-agent}
+  {:headers   {"User-Agent" ios-user-agent}
    :insecure? true
-   :as      :stream})
+   :as        :stream})
 
 
 ;;; Internals
