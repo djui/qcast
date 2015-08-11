@@ -68,6 +68,11 @@ production and hosting.
                                   :              :
 
 
+## Credits
+
+Thanks to [InfoQ](http://www.infoq.com) for their great service!
+
+
 ## License
 
 Copyright © 2013-2015 Uwe Dauernheim <uwe@dauernheim.net>
