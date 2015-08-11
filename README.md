@@ -2,6 +2,8 @@
 
 A podcast feed (audio & video) for InfoQ presentations.
 
+![Landing site](https://raw.githubusercontent.com/djui/qcast/master/screenshot.png)
+
 
 ## Installation
 
