@@ -5,7 +5,6 @@
             [clojure.string   :refer [split trim]]
             [qcast.cache      :as cache]
             [qcast.html       :refer :all]
-            [qcast.http       :as http]
             [qcast.infoq.site :as infoq]
             [qcast.util       :refer :all]
             [taoensso.timbre  :refer :all])
@@ -30,7 +29,7 @@
 (defn- media-meta [url]
   (when url
     (let [full-url (ensure-url-schema url)
-          headers (:headers (http/head full-url))
+          headers (infoq/media-headers full-url)
           length (some-> (get headers "content-length") parse-int)
           type (some-> (get headers "content-type") (split #";") first)]
       (if (= type "text/html")
@@ -116,15 +115,10 @@
 
 ;; Scraping API
 
-(defn- presentation [id]
-  (-> id
-      infoq/presentation-url
-      (http/get {:follow-redirects false})))
-
 (defn- presentations [index]
   (->> index
-       (infoq/base-url "/presentations/")
-       http/get
+       infoq/presentations-url
+       infoq/presentations
        dom
        overview-ids))
 
@@ -138,7 +132,8 @@
                       length pdf audio video slides times)]
     (debug "Fetching presentation" id)
     (log-errors (some->> id
-                         presentation
+                         infoq/presentation-url
+                         infoq/presentation
                          dom
                          md-vals
                          (zipmap md-keys)))))

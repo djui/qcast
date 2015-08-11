@@ -1,5 +1,6 @@
-(ns qcast.http
+(ns qcast.http-client
   (:require [clj-http.client  :as http]
+            [clj-http.cookies :as cookies]
             [taoensso.timbre  :refer :all])
   (:refer-clojure :exclude [get]))
 
@@ -32,3 +33,7 @@
 (defn post [url & [opts]]
   (debug :post url opts)
   (http/post url (merge http-options opts)))
+
+(defn with-cookies [fn]
+  (binding [clj-http.core/*cookie-store* (cookies/cookie-store)]
+    (fn)))

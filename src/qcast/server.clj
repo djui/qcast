@@ -67,7 +67,7 @@
   (GET "/presentations/:filename" [filename]
     (let [user (config/get :infoq :username)
           pass (config/get :infoq :password)]
-      (response/redirect (infoq/media-link filename user pass)))))
+      (response/redirect (infoq/media-url filename user pass)))))
 
 (defroutes default-routes
   (GET "/" []
