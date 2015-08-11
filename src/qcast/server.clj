@@ -38,7 +38,9 @@
   "Routes for client API"
   (let [api-count (config/get :api :items-count)]
     (GET "/api/v1/presentations" {{since-id "since"} :query-params}
-      (->> (if since-id (cache/latest api-count since-id) (cache/latest api-count))
+      (->> (if since-id
+             (cache/latest api-count since-id)
+             (cache/latest api-count))
            (map :data)
            (map #(dissoc % :slides :times :video :audio :pdf))
            respond))
@@ -60,7 +62,7 @@
     (let [feed-count (config/get :feed :items-count)]
       (respond (feed/serve :video (cache/latest feed-count))))))
 
-(defroutes files-routes
+(defroutes media-routes
   "Routes for file handling and downloads"
   (GET "/presentations/:filename" [filename]
     (let [user (config/get :infoq :username)
@@ -74,23 +76,20 @@
   (route/resources "/")
   (route/not-found nil))
 
-(defn- site []
+(defn- site [user pass] ;; Don't know how to pass the arguments to the routes (macros)
   (routes
     ;; API
     (-> api-routes
         wrap-request-logging
         handler/api
-        (json/wrap-json-response {:key-fn json-keyword})
-        )
+        (json/wrap-json-response {:key-fn json-keyword}))
     ;; RSS Feed
     (-> feed-routes
         wrap-request-logging
-        xml/wrap-rss-response
-        )
+        xml/wrap-rss-response)
     ;; RSS Feed media
-    (-> files-routes
-        wrap-request-logging
-        )
+    (-> media-routes
+        wrap-request-logging)
     ;; Static content
     (-> default-routes
         wrap-request-logging
@@ -98,6 +97,9 @@
 
 (defn -main []
   (config/load!)
-  (let [port (parse-int (or (config/get :port) (config/get :server :port)))]
+  (let [port (parse-int (or (config/get :port) (config/get :server :port)))
+        user (config/get :infoq :username)
+        pass (config/get :infoq :password)]
     (info "Starting web server on port" port)
-    (http/run-server (site) {:port port})))
+    (info "Using credentials" user pass)
+    (http/run-server (site user pass) {:port port})))
