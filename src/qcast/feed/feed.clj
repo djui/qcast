@@ -12,24 +12,25 @@
   ([n] (cons (str "Slide " n) (lazy-seq (slides (inc n))))))
 
 (defn- feed-item [media-type p]
-  (let [link (:link p)]
+(let [link (:link p)]
     (remove nil?
-      [(rss/title (:title p))
-       (rss/link link)
-       (rss/description (:summary p))
-       ;;(rss/author (string/join ", " (:authors p)))
-       (rss/author "info@infoq.com (InfoQ)")
-       (rss/pub-date (:publish-date p))
-       (rss/guid link)
-       (when (contains? p media-type) (apply rss/enclosure (media-type p)))
-       (apply rss/categories (:keywords p))
-       ;;(itunes/author (string/join ", " (:authors p)))
-       (itunes/author "info@infoq.com")
-       (itunes/summary (:summary p))
-       ;;(itunes/image (:poster p))
-       (itunes/image (first (:slides p)))
-       (itunes/duration (:length p))
-       (apply psc/chapters (map vector (:times p) (slides) (:slides p)))])))
+      (when-not (nil? (media-type p))
+        [(rss/title (:title p))
+         (rss/link link)
+         (rss/description (:summary p))
+         ;;(rss/author (string/join ", " (:authors p)))
+         (rss/author "info@infoq.com (InfoQ)")
+         (rss/pub-date (:publish-date p))
+         (rss/guid link)
+         (when (contains? p media-type) (apply rss/enclosure (media-type p)))
+         (apply rss/categories (:keywords p))
+         ;;(itunes/author (string/join ", " (:authors p)))
+         (itunes/author "info@infoq.com")
+         (itunes/summary (:summary p))
+         ;;(itunes/image (:poster p))
+         (itunes/image (first (:slides p)))
+         (itunes/duration (:length p))
+         (apply psc/chapters (map vector (:times p) (slides) (:slides p)))]))))
 
 (defn- feed-channel [change-date]
   (let [base-url "https://www.infoq.com"

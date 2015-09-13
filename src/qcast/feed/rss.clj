@@ -70,7 +70,7 @@
     (assert (and link title description)
             "RSS channel requires at least :link, :title, and :description")
     (let [channel (insert? info [:generator feed-generator])
-          items (map item entries)]
+          items (map item (remove empty? entries))]
       [:channel (concat channel items)])))
 
 
