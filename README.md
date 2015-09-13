@@ -75,6 +75,14 @@ production and hosting.
 Thanks to [InfoQ](http://www.infoq.com) for their great service!
 
 
+## Contributors
+
+Thanks to the following set of people that helped to find, debug, and fix bugs:
+
+- [i-s-o-g-r-a-m](https://github.com/i-s-o-g-r-a-m)
+- [JKesMc9tqIQe9M](https://github.com/JKesMc9tqIQe9M)
+
+
 ## License
 
 Copyright © 2013-2015 Uwe Dauernheim <uwe@dauernheim.net>
