@@ -57,10 +57,10 @@
   (GET "/feed"       [] (response/redirect "feed/audio"))
   (GET "/feed/audio" []
     (let [feed-count (config/get :feed :items-count)]
-      (respond (feed/serve :audio (cache/latest feed-count)))))
+      (respond (feed/serve :audio (map :data (cache/latest feed-count))))))
   (GET "/feed/video" []
     (let [feed-count (config/get :feed :items-count)]
-      (respond (feed/serve :video (cache/latest feed-count))))))
+      (respond (feed/serve :video (map :data (cache/latest feed-count)))))))
 
 (defroutes media-routes
   "Routes for file handling and downloads"

@@ -59,13 +59,16 @@
      (itunes/block false)
      (itunes/explicit false)]))
 
+(defn- feed-date [entries]
+  (let [latest-entry (first entries)]
+    (or (:publish-date latest-entry) 0)))
+
 
 ;;; Interface
 
-(defn serve [media-type data]
-  (let [entries (map :data data)
+(defn serve [media-type entries]
+  (let [feed-date (feed-date entries)
+        channel (feed-channel feed-date)
         items (map #(feed-item media-type %) entries)
-        change-date (or (:publish-date (first entries)) 0)
-        channel (feed-channel change-date)
         extensions [:atom :itunes :simple-chapters]]
     (rss/feed channel (remove nil? items) extensions)))
