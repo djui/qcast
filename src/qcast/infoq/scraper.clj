@@ -178,7 +178,7 @@
         interval (config/get :catcher :update-interval)
         task #(debug "Updated" (count (cache-updates limit)))]
     (if (= (first args) "once")
-      (do (info "Running once")
+      (do (info "Running once (max." limit "items)")
           (task))
-      (do (info "Running periodically")
+      (do (info "Running periodically every" (seconds interval) "ms (max." limit "items)")
           (interspaced (seconds interval) #(logged-future (task)))))))
