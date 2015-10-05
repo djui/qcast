@@ -23,9 +23,8 @@ Or using Java:
 
 ## Usage
 
-The Overview page can be reached at:
-[remote](https://infoqcast.herokuapp.com/) or
-[local](http://localhost:8080/).
+The Overview page can be reached at: [remote](https://infoqcast.herokuapp.com/)
+or [local](http://localhost:8080/).
 
 The Feed can be reached at: [remote feed](https://infoqcast.herokuapp.com/feed)
 or [local feed](https://localhost:8080/feed).
@@ -35,18 +34,18 @@ or [local feed](https://localhost:8080/feed).
 
 The application quite small and currently has just under 900 LoC currently uses
 [HTTP-Kit](https://github.com/http-kit/http-kit) as server instead of
-[Ring](https://github.com/ring-clojure/ring), but there is not really reason
-for either choice.
+[Ring](https://github.com/ring-clojure/ring), but there is not really reason for
+either choice.
 
-For HTML scraping is done using [Enlive](https://github.com/cgrand/enlive)
-and the XML feeds are produced using
+For HTML scraping is done using [Enlive](https://github.com/cgrand/enlive) and
+the XML feeds are produced using
 [Hiccup](https://github.com/weavejester/hiccup).
 
-For logging, [Timbre](https://github.com/ptaoussanis/timbre) is used; it's
-nice as it doesn't require XML or property files.
+For logging, [Timbre](https://github.com/ptaoussanis/timbre) is used; it's nice
+as it doesn't require XML or property files.
 
-The data store can be a SQLite database for testing or PostgreSQL for
-production and hosting.
+The data store can be a SQLite database for testing or PostgreSQL for production
+and hosting.
 
 
 ## Design
