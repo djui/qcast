@@ -124,14 +124,13 @@
        overview-ids))
 
 (defn- metadata [id]
-  (let [md-keys [:id :link :poster :keywords :summary :title :authors
-                 :record-date :publish-date :online-date
-                 :length :pdf :audio :video :slides :times]
-        allow-insecure #(replace-first % #"^https://" "http://")
-        md-vals (juxt (constantly id) (constantly (allow-insecure (infoq/presentation-url id)))
-                      poster keywords summary title authors
-                      record-date publish-date online-date
-                      length pdf audio video slides times)]
+  (let [link (replace-first (infoq/presentation-url id) #"^https://" "http://")
+        md-keys [:id :link :poster :keywords :summary :title :authors
+                 :record-date :publish-date :online-date :length :pdf :audio
+                 :video :slides :times]
+        md-vals (juxt (constantly id) (constantly link) poster keywords summary
+                      title authors record-date publish-date online-date length
+                      pdf audio video slides times)]
     (debug "Fetching presentation" id)
     (log-errors (some->> id
                          infoq/presentation-url
