@@ -8,17 +8,17 @@
   :main qcast.main
   :aot :all
   :profiles {:production {}}
-  :dependencies [[clj-http "0.9.2"]
-                 [clj-time "0.7.0"]
-                 [com.taoensso/timbre "3.2.1"]
-                 [compojure "1.1.8"]
-                 [enlive "1.1.5"]
+  :dependencies [[clj-http "2.0.0"]
+                 [clj-time "0.11.0"]
+                 [com.taoensso/timbre "4.1.4"]
+                 [compojure "1.4.0"]
+                 [enlive "1.1.6"]
                  [hiccup "1.0.5"]
-                 [http-kit "2.1.16"]
+                 [http-kit "2.1.18"]
                  [javax.servlet/servlet-api "2.5"]
-                 [org.clojure/clojure "1.6.0"]
-                 [org.clojure/java.jdbc "0.3.0-alpha5"]
-                 [org.xerial/sqlite-jdbc "3.7.2"]
+                 [org.clojure/clojure "1.7.0"]
+                 [org.clojure/java.jdbc "0.4.2"]
+                 [org.xerial/sqlite-jdbc "3.8.11.2"]
                  [ring-ratelimit "0.2.2"]
-                 [ring/ring-core "1.3.0"]
-                 [ring/ring-json "0.3.1"]])
+                 [ring/ring-core "1.4.0"]
+                 [ring/ring-json "0.4.0"]])
