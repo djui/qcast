@@ -5,6 +5,8 @@
       :subname "qcast.db"}
  :infoq {:username "********"
          :password "********"}
+ :hooks {:alertid "66"
+         :apikey "********"}
  :api {:items-count 20}
  :feed {:items-count 50}
  :catcher {:update-interval 10800 ;; 3h

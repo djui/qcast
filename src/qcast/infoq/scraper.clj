@@ -4,6 +4,7 @@
             [clj-time.format  :as time]
             [clojure.string   :refer [replace-first split trim]]
             [qcast.cache      :as cache]
+            [qcast.hooks-app  :as hooksapp]
             [qcast.html       :refer :all]
             [qcast.infoq.site :as infoq]
             [qcast.util       :refer :all]
@@ -150,7 +151,17 @@
            (warn "No items found. HTML/CSS layout changed?"))
          (lazy-cat items (latest (+ marker (count items))))))))
 
-(defn- cache-updates
+(defn- process-updates
+  "Currently, caches updates and publishes them to Hooks App."
+  [updates hooks-alertid hooks-apikey]
+  (let [publish #(hooksapp/publish % hooks-alertid hooks-apikey)
+        tasks (juxt cache/put publish)]
+    (->> updates
+         (take 3)
+         (map tasks)
+         doall)))
+
+(defn- fetch-updates
   "Scrape the overview sites and collect its (mostly) 12 items per site until
   finding an seen item (`until`). Scrape a maximum of `limit` or a configured
   number or items. This sequence requires one additional GET (`page`) + three
@@ -163,9 +174,11 @@
          (take-while #(not= % until-id))
          (pmap metadata)
          (filter identity)
-         (take limit)
-         (map cache/put)
-         doall)))
+         (take limit))))
+
+(defn- scraper-task [limit hooks-alertid hooks-apikey]
+  (-> (fetch-updates limit)
+      (process-updates hooks-alertid hooks-apikey)))
 
 
 ;;; Interface
@@ -177,7 +190,10 @@
   (info "Starting catcher")
   (let [limit (config/get :catcher :lookback-count)
         interval (config/get :catcher :update-interval)
-        task #(debug "Updated" (count (cache-updates limit)))]
+        hooks-alertid (config/get :hooks :alertid)
+        hooks-apikey (config/get :hooks :apikey)
+        task #(debug "Updated" (count (scraper-task limit hooks-alertid hooks-apikey)))]
+    (info "Using HooksApp API credentials" hooks-alertid hooks-apikey)
     (if (= (first args) "once")
       (do (info "Running once (max." limit "items)")
           (task))

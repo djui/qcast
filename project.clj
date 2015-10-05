@@ -10,6 +10,7 @@
   :profiles {:production {}}
   :dependencies [[clj-http "2.0.0"]
                  [clj-time "0.11.0"]
+                 [cheshire "5.5.0"]
                  [com.taoensso/timbre "4.1.4"]
                  [compojure "1.4.0"]
                  [enlive "1.1.6"]
