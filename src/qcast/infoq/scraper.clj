@@ -2,7 +2,7 @@
   (:gen-class)
   (:require [clj-time.coerce  :as time-coerce]
             [clj-time.format  :as time]
-            [clojure.string   :refer [split trim]]
+            [clojure.string   :refer [replace-first split trim]]
             [qcast.cache      :as cache]
             [qcast.html       :refer :all]
             [qcast.infoq.site :as infoq]
@@ -126,7 +126,8 @@
   (let [md-keys [:id :link :poster :keywords :summary :title :authors
                  :record-date :publish-date :online-date
                  :length :pdf :audio :video :slides :times]
-        md-vals (juxt (constantly id) (constantly (infoq/presentation-url id))
+        allow-insecure #(replace-first % #"^https://" "http://")
+        md-vals (juxt (constantly id) (constantly (allow-insecure (infoq/presentation-url id)))
                       poster keywords summary title authors
                       record-date publish-date online-date
                       length pdf audio video slides times)]
