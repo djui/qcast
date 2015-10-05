@@ -33,7 +33,7 @@ or [local feed](https://localhost:8080/feed).
 
 ## Components
 
-The application currently uses
+The application quite small and currently has just under 900 LoC currently uses
 [HTTP-Kit](https://github.com/http-kit/http-kit) as server instead of
 [Ring](https://github.com/ring-clojure/ring), but there is not really reason
 for either choice.
