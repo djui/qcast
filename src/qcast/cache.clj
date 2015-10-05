@@ -33,6 +33,7 @@
     [:data          :BLOB     "NOT NULL"]))
 
 (defn put [item]
+  (debug "Storing" (:id item))
   (try ;; Protect against existing entries
     (->> {:id           (:id item)
           :publish_date (:publish-date item)
@@ -40,6 +41,7 @@
          pre-process
          (db/insert db-spec :presentations))
     (catch SQLException e
+      (error "SQLError:" e)
       (warn "Presentation already exists" item))))
 
 (defn lookup [id]
