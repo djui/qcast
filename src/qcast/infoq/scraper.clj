@@ -157,7 +157,6 @@
   (let [publish #(hooksapp/publish % hooks-alertid hooks-apikey)
         tasks (juxt cache/put publish)]
     (->> updates
-         (take 3)
          (map tasks)
          doall)))
 
