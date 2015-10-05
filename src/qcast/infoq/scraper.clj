@@ -139,44 +139,55 @@
                          md-vals
                          (zipmap md-keys)))))
 
-(defn- latest
-  ([] (latest 0))
-  ([marker]
-     (debug "Fetching overview from index" marker)
-     (let [items (log-errors (presentations marker))]
-       (if (empty? items)
-         (if (> marker 0)
-           (info "No more items found")
-           (warn "No items found. HTML/CSS layout changed?"))
-         (lazy-cat items (latest (+ marker (count items))))))))
+(defn- fetch-from-page
+  "The core of the scraping process: Given a page index fetch all presentations
+  on that page. If the amount of items is greater than 0, continue with the next
+  page. If the amount of items is 0 and the index greater than 0, assume we have
+  reached the end, i.e.  exhausted all pages. If the amount of items is 0 and
+  the index is equal to 0, assume something went wrong when parsing the site."
+  [index]
+  (debug "Fetching page with index" index)
+  (let [items (log-errors (presentations index))]
+    (if (empty? items)
+      (if (> index 0)
+        (info "No more items found")
+        (warn "No items found. HTML/CSS layout changed?"))
+      (lazy-cat items (fetch-from-page (+ index (count items)))))))
 
 (defn- process-updates
-  "Currently, caches updates and publishes them to Hooks App."
-  [updates hooks-alertid hooks-apikey]
-  (let [publish #(hooksapp/publish % hooks-alertid hooks-apikey)
-        tasks (juxt cache/put publish)]
-    (->> updates
-         (map tasks)
-         doall)))
+  "Currently, caches updates and publishes them to Hooks App.
+  Only publish to Hooks App if database is not empty, i.e. until not :inf."
+  ([updates]
+   (info "Caching updates")
+   (doall (map cache/put updates)))
+  ([updates hooks-alertid hooks-apikey]
+   (info "Caching and publishing updates")
+   (let [publish #(hooksapp/publish % hooks-alertid hooks-apikey)
+         process (juxt cache/put publish)]
+     (doall (map process updates)))))
 
 (defn- fetch-updates
   "Scrape the overview sites and collect its (mostly) 12 items per site until
   finding an seen item (`until`). Scrape a maximum of `limit` or a configured
   number or items. This sequence requires one additional GET (`page`) + three
   HEAD (video, audio, pdf) requests per item, thus n%12 + 2*n."
-  [limit]
-  (let [until (cache/latest)
-        until-id (or (:id until) :inf)]
-    (info "Check for updates up until" until-id)
-    (->> (latest)
-         (take-while #(not= % until-id))
-         (pmap metadata)
-         (filter identity)
-         (take limit))))
+  [until]
+  (info "Fetching updates and metadata until" until)
+  (->> (fetch-from-page 0)
+       (take-until #(= % until))
+       (pmap metadata)
+       (remove nil?)))
 
-(defn- scraper-task [limit hooks-alertid hooks-apikey]
-  (-> (fetch-updates limit)
-      (process-updates hooks-alertid hooks-apikey)))
+(defn- scraper-task [limit until hooks-alertid hooks-apikey]
+  (fn []
+    (info "Scraping max" limit "updates up until" until)
+    (let [updates (->> (fetch-updates until) (take limit))
+          count (count updates)]
+      (if (> count 0)
+        (if (= until :inf)
+          (process-updates updates)
+          (process-updates updates hooks-alertid hooks-apikey))
+        (info "No new items found")))))
 
 
 ;;; Interface
@@ -186,11 +197,12 @@
 (defn -main [& args]
   (config/load!)
   (info "Starting catcher")
-  (let [limit (config/get :catcher :lookback-count)
-        interval (config/get :catcher :update-interval)
-        hooks-alertid (config/get :hooks :alertid)
+  (let [hooks-alertid (config/get :hooks :alertid)
         hooks-apikey (config/get :hooks :apikey)
-        task #(debug "Updated" (count (scraper-task limit hooks-alertid hooks-apikey)))]
+        interval (config/get :catcher :update-interval)
+        limit (config/get :catcher :lookback-count)
+        until (or (:id (cache/latest)) :inf)
+        task (scraper-task limit until hooks-alertid hooks-apikey)]
     (info "Using HooksApp API credentials" hooks-alertid hooks-apikey)
     (if (= (first args) "once")
       (do (info "Running once (max." limit "items)")

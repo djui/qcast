@@ -10,6 +10,12 @@
   (when (string? s)
     (Long/parseLong s)))
 
+(defn take-until
+  "Returns a lazy sequence of successive items from coll until (pred item)
+  returns true, excluding that item. pred must be free of side-effects."
+  [pred coll]
+  (take-while (complement pred) coll))
+
 
 ;; Time
 
