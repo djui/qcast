@@ -37,6 +37,8 @@
 (defroutes api-routes
   "Routes for client API"
   (let [api-count (config/get :api :items-count)]
+    (GET "/api"    [] (response/redirect "api/v1"))
+    (GET "/api/v1" [] (response/redirect "api/v1/presentations"))
     (GET "/api/v1/presentations" {{since-id "since"} :query-params}
       (->> (if since-id
              (cache/latest api-count since-id)
